@@ -6,44 +6,47 @@ from selenium.webdriver.common.by import By
 # Armazena os valores resultantes do web scrapping
 values = []
 
-def web_scrapping():
-  # Site onde sera realizado o web scrapping
-  url = "https://veiculos.fipe.org.br/"
+# Site onde sera realizado o web scrapping
+url = "https://veiculos.fipe.org.br/"
 
-  # Seletor das opcoes de busca
-  cars_selector = '#front > div.content > div.tab.vertical.tab-veiculos > ul > li:nth-child(1) > a'
-  
-  # Seletor da data referencia
-  time_period_selector = '#selectTabelaReferenciacarro_chosen > a'
+# Seletor das opcoes de busca
+cars_selector = '#front > div.content > div.tab.vertical.tab-veiculos > ul > li:nth-child(1) > a'
 
-  # Seletor da marca do veiculo
-  brand_selector = '#selectMarcacarro_chosen > a'
+# Seletor da data referencia
+time_period_selector = '#selectTabelaReferenciacarro_chosen > a'
 
-  # Seletor da entrada da marca do veiculo desejado
-  input_brand_selector = '#selectMarcacarro_chosen > div > div > input[type=text]'
+# Seletor da marca do veiculo
+brand_selector = '#selectMarcacarro_chosen > a'
 
-  # Seletor da lista de marcas
-  item_brand_selector = '#selectMarcacarro_chosen > div:nth-child(2) > ul:nth-child(2) > li:nth-child(1)'
+# Seletor da entrada da marca do veiculo desejado
+input_brand_selector = '#selectMarcacarro_chosen > div > div > input[type=text]'
 
-  # Seletor do modelo do veiculo
-  model_selector = '#selectAnoModelocarro_chosen > a:nth-child(1)'
+# Seletor da lista de marcas
+item_brand_selector = '#selectMarcacarro_chosen > div:nth-child(2) > ul:nth-child(2) > li:nth-child(1)'
 
-  # Seletor da entrada do modelo do veiculo desejado
-  input_model_selector = '#selectAnoModelocarro_chosen > div:nth-child(2) > div:nth-child(1) > input:nth-child(1)'
-  
-  # Seletor da lista de modelos
-  ul_model_selector = '#selectAnoModelocarro_chosen > div:nth-child(2) > ul:nth-child(2)'
+# Seletor do modelo do veiculo
+model_selector = '#selectAnoModelocarro_chosen > a:nth-child(1)'
 
-  # Seletor do botao 'Pesquisar'
-  search_button_selector = '#buttonPesquisarcarro'
+# Seletor da entrada do modelo do veiculo desejado
+input_model_selector='#selectAnoModelocarro_chosen > div:nth-child(2) > div:nth-child(1) > input:nth-child(1)'
 
-  # Seletor do 'Limpar Pesquisa'
-  clear_search_selector = '#buttonLimparPesquisarcarro > a'
+# Seletor da lista de modelos
+ul_model_selector = '#selectAnoModelocarro_chosen > div:nth-child(2) > ul:nth-child(2)'
 
-  option = Options()
-  option.headless = False
-  driver = webdriver.Firefox(options=option)
+# Seletor do botao 'Pesquisar'
+search_button_selector = '#buttonPesquisarcarro'
 
+# Seletor do 'Limpar Pesquisa'
+clear_search_selector = '#buttonLimparPesquisarcarro > a'
+
+# Seletor do preço
+price_vehicle = '#resultadoConsultacarroFiltros > table > tbody > tr.last > td:nth-child(2) > p'
+
+option = Options()
+option.headless = False
+driver = webdriver.Firefox(options=option)
+
+def web_scrapping1():
   # Carregar a página
   driver.get(url)
   time.sleep(3)
@@ -56,7 +59,7 @@ def web_scrapping():
   driver.find_element(By.CSS_SELECTOR, time_period_selector).click()
   time.sleep(1)
 
-  
+def web_scrapping2():
 
   # Seleciona o seletor das marcas
   driver.find_element(By.CSS_SELECTOR, brand_selector).click()
@@ -134,4 +137,5 @@ def web_scrapping():
 
   driver.quit()
 
-web_scrapping()
+web_scrapping1()
+web_scrapping2()
