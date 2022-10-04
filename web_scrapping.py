@@ -12,8 +12,14 @@ url = "https://veiculos.fipe.org.br/"
 # Seletor das opcoes de busca
 cars_selector = '#front > div.content > div.tab.vertical.tab-veiculos > ul > li:nth-child(1) > a'
 
-# Seletor da data referencia
+# Seletor do seletor de data referencia
 time_period_selector = '#selectTabelaReferenciacarro_chosen > a'
+
+# Input da data referencia
+input_time_period_selector = '#selectTabelaReferenciacarro_chosen > div:nth-child(2) > div:nth-child(1) > input:nth-child(1)'
+
+# Item da data referencia
+item_time_period_selector = '.active-result'
 
 # Seletor da marca do veiculo
 brand_selector = '#selectMarcacarro_chosen > a'
@@ -61,6 +67,12 @@ def web_scrapping1():
 
 def web_scrapping2():
 
+  # Seleciona o input do periodo
+  driver.find_element(By.CSS_SELECTOR, input_time_period_selector).send_keys("janeiro/2020")
+  time.sleep(1)
+
+  driver.find_element(By.CSS_SELECTOR, item_time_period_selector).click()
+
   # Seleciona o seletor das marcas
   driver.find_element(By.CSS_SELECTOR, brand_selector).click()
   time.sleep(1)
@@ -76,6 +88,7 @@ def web_scrapping2():
   # Seleciona o seletor dos modelos
   driver.find_element(By.CSS_SELECTOR, model_selector).click()
   time.sleep(1)
+
   # Filtro do modelo desejado
   driver.find_element(By.CSS_SELECTOR, input_model_selector).send_keys("850")
   time.sleep(1)
@@ -85,7 +98,7 @@ def web_scrapping2():
   ul_model_element_children = ul_model_element.find_elements(By.XPATH, "./*")
 
   # Iteracao para cada modelo
-  for i in range(len(ul_model_element_children)):
+  for i in range(1):
     print(f"i = {i}")
 
     if i != 0:
@@ -107,33 +120,45 @@ def web_scrapping2():
     driver.find_element(By.CSS_SELECTOR, '#selectAnocarro_chosen > a').click()
     time.sleep(1)
 
+    # Selecionar o input dos ano-modelo
+    driver.find_element(By.CSS_SELECTOR, '#selectAnocarro_chosen > div > div > input[type=text]').send_keys("2017")
+    time.sleep(1)
+
     # Pega todos os filhos da <ul> de anos-modelo
     ul_year_model_element = driver.find_element(By.CSS_SELECTOR, '#selectAnocarro_chosen > div > ul')
     ul_year_model_element_children = ul_year_model_element.find_elements(By.XPATH, "./*")
+    print(f"Quantidade de anos-modelo: {len(ul_year_model_element_children)}")
     
-    for j in range(len(ul_year_model_element_children)):
+    for j in range(1):
       print(f"j = {j}")
 
-      if j != 0:
-        # Seleciona seletor dos anos-modelo
-        driver.find_element(By.CSS_SELECTOR, '#selectAnocarro_chosen > a:nth-child(1)').click()
-        time.sleep(1)
 
-      item_year_model_selector = f'li.active-result:nth-child({j + 1})'
 
-      # Seleciona o ano-modelo desejado
-      driver.find_element(By.CSS_SELECTOR, item_year_model_selector).click()
-      time.sleep(1)
+      if len(ul_year_model_element_children) > 0:
+        if(ul_year_model_element_children[0].get_attribute("class") != 'no-results'):
 
-      # Seleciona "Pesquisar"
-      driver.find_element(By.CSS_SELECTOR, search_button_selector).click()
-      time.sleep(1)
+          if j != 0:
+            # Seleciona seletor dos anos-modelo
+            driver.find_element(By.CSS_SELECTOR, '#selectAnocarro_chosen > a:nth-child(1)').click()
+            time.sleep(1)
 
-      # Pegar o preço do veiculo
+          item_year_model_selector = f'li.active-result:nth-child({j + 1})'
 
-      # Limpar pesquisa
-      driver.find_element(By.CSS_SELECTOR, clear_search_selector).click()
-      time.sleep(1)
+          # Seleciona o ano-modelo desejado
+          driver.find_element(By.CSS_SELECTOR, item_year_model_selector).click()
+          time.sleep(1)
+
+          # Seleciona "Pesquisar"
+          driver.find_element(By.CSS_SELECTOR, search_button_selector).click()
+          time.sleep(1)
+
+          # Pegar o preço do veiculo
+          price = driver.find_element(By.CSS_SELECTOR, '#resultadoConsultacarroFiltros > table > tbody > tr.last > td:nth-child(2) > p').text
+          print(f"Preço: {price}")
+
+          # Limpar pesquisa
+          driver.find_element(By.CSS_SELECTOR, clear_search_selector).click()
+          time.sleep(1)
 
   driver.quit()
 
