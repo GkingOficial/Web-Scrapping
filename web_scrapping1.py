@@ -1,91 +1,189 @@
-
 import time
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.common.by import By
 
-# Faz o Web-Scrapping para algum site
+# Armazena os valores resultantes do web scrapping
 values = []
 
-def web_scrapping():
-    '''
-    url = "https://www.youtube.com/"
-    '''
-    url = "https://veiculos.fipe.org.br/"
+# Site onde sera realizado o web scrapping
+url = "https://veiculos.fipe.org.br/"
 
-    option = Options()
-    option.headless = False
-    driver = webdriver.Firefox(options=option)
+# Seletor das opcoes de busca
+cars_selector = '#front > div.content > div.tab.vertical.tab-veiculos > ul > li:nth-child(1) > a'
 
-    # Carregar a página
-    driver.get(url)
-    time.sleep(3)
+# Seletor do seletor de data referencia
+time_period_selector = '#selectTabelaReferenciacarro_chosen > a'
 
-    substring = '/html/body/div[1]/section[2]/div[1]/div[1]/ul/li[1]'
+# Input da data referencia
+input_time_period_selector = '#selectTabelaReferenciacarro_chosen > div:nth-child(2) > div:nth-child(1) > input:nth-child(1)'
 
-    # Clicar na tabela de Carros
-    element = substring + '/a/div[2]'
-    element = substring + ''
-    element = substring + '/a'
+# Item da data referencia
+item_time_period_selector = '.active-result'
 
-    cars_selector_li = driver.find_element_by_class_name("ilustra")
-    cars_selector_li.click()
-    time.sleep(3)
+# Seletor da marca do veiculo
+brand_selector = '#selectMarcacarro_chosen > a'
 
-    # Selecionar a parte da data dos dados
-    driver.find_element_by_css_selector("#selectTabelaReferenciacarro_chosen > a:nth-child(1)").click()
-    time.sleep(2)
+# Seletor da entrada da marca do veiculo desejado
+input_brand_selector = '#selectMarcacarro_chosen > div > div > input[type=text]'
 
-    # Escolher determinada data
-    element = substring + f"/div/article[1]/div[1]/div/ul/li[1]"
-    driver.find_element_by_css_selector(f"li.active-result:nth-child(1)").click()
-    time.sleep(1)
+# Seletor da lista de marcas
+item_brand_selector = '#selectMarcacarro_chosen > div:nth-child(2) > ul:nth-child(2) > li:nth-child(1)'
 
-    # Clicar na parte de selecionar a marca do veiculo
-    element = substring + '/div/article[1]/div[3]/div[1]/div/div/a'
-    driver.find_element_by_css_selector('#selectMarcacarro_chosen > a:nth-child(1)').click()
-    time.sleep(1)
+# Seletor do modelo do veiculo
+model_selector = '#selectAnoModelocarro_chosen > a:nth-child(1)'
 
-    # Escolher determinada marca
-    element = substring + '/div/article[1]/div[3]/div[1]/div/div/div/ul/li[1]'
-    driver.find_element_by_css_selector('#selectMarcacarro_chosen > div:nth-child(2) > ul:nth-child(2) > li:nth-child(1)').click()
-    time.sleep(1)
+# Seletor da entrada do modelo do veiculo desejado
+input_model_selector='#selectAnoModelocarro_chosen > div:nth-child(2) > div:nth-child(1) > input:nth-child(1)'
 
-    # Clicar na parte de selecionar o modelo do veiculo
-    element = substring + '/div/article[1]/div[3]/div[2]/div[1]/div[1]/a'
-    driver.find_element_by_css_selector('#selectAnoModelocarro_chosen > a:nth-child(1)').click()
-    time.sleep(1)
+# Seletor da lista de modelos
+ul_model_selector = '#selectAnoModelocarro_chosen > div:nth-child(2) > ul:nth-child(2)'
 
-    # Escolher determinado modelo
-    element = substring + "/div/article[1]/div[3]/div[2]/div[1]/div[1]/div/ul/li[1]"
-    driver.find_element_by_css_selector("li.active-result:nth-child(1)").click()
-    time.sleep(1)
+# Seletor do botao 'Pesquisar'
+search_button_selector = '#buttonPesquisarcarro'
 
-    # Clicar na parte de selecionar o ano do veiculo
-    element = substring + '/div/article[1]/div[3]/div[2]/div[2]/div/a'
-    driver.find_element_by_css_selector("#selectAnocarro_chosen").click()
-    time.sleep(1)
+# Seletor do 'Limpar Pesquisa'
+clear_search_selector = '#buttonLimparPesquisarcarro > a'
 
-    # Escolher ano do veiculo
-    element = substring + "/div/article[1]/div[3]/div[2]/div[2]/div/div/ul/li[1]"
-    driver.find_element_by_css_selector("li.active-result:nth-child(1)").click()
-    time.sleep(1)
+# Seletor do preço
+price_vehicle = '#resultadoConsultacarroFiltros > table > tbody > tr.last > td:nth-child(2) > p'
 
-    # Pesquisar
-    element = '//*[@id="buttonPesquisarcarro"]'
-    driver.find_element_by_xpath(element).click()
-    time.sleep(1)
+# Seletor do seletor do ano-modelo
+year_model_selector = '#selectAnocarro_chosen > a'
 
-    element = substring + '/div/article[1]/div[3]/div[4]/table/tbody/tr[8]/td[2]/p'
-    value = driver.find_element_by_css_selector("#resultadoConsultacarroFiltros > table:nth-child(4) > tbody:nth-child(1) > tr:nth-child(8) > td:nth-child(2) > p:nth-child(1)").text
-    print("Preço médio com ano-modelo[1]: " + value)
-    time.sleep(1)
+# Seletor do input do ano-modelo
+input_year_model_selector = '#selectAnocarro_chosen > div > div > input[type=text]'
 
-    values.append(value)
+# Seketor da <ul> do ano-modelo
+ul_year_model_selector = '#selectAnocarro_chosen > div > ul'
 
-    driver.find_element_by_css_selector("#buttonLimparPesquisarcarro > a:nth-child(1)").click()
-    time.sleep(1)
+option = Options()
+option.headless = False
+driver = webdriver.Firefox(options=option)
 
-    driver.quit()
+meses = [
+  "janeiro",
+  "fevereiro",
+]
 
-web_scrapping()
-print(values)
+anos = [
+  2020, 2021, 2022
+]
+
+def web_scrapping1():
+  # Carregar a página
+  driver.get(url)
+  time.sleep(3)
+
+  # Selecionar opcao de busca de carros
+  driver.find_element(By.CSS_SELECTOR, cars_selector).click()
+  time.sleep(1)
+
+def web_scrapping2(marca, modelo):
+
+  for ano_busca in anos:
+    for mes_busca in meses:
+      # Seleciona o periodo
+      driver.find_element(By.CSS_SELECTOR, time_period_selector).click()
+      time.sleep(1)
+
+      # Seleciona o input do periodo
+      driver.find_element(By.CSS_SELECTOR, input_time_period_selector).send_keys(f"{mes_busca}/{ano_busca}")
+      time.sleep(1)
+
+      driver.find_element(By.CSS_SELECTOR, item_time_period_selector).click()
+
+      # Seleciona o seletor das marcas
+      driver.find_element(By.CSS_SELECTOR, brand_selector).click()
+      time.sleep(1)
+      
+      # Filtro da marca desejada
+      driver.find_element(By.CSS_SELECTOR, input_brand_selector).send_keys(marca)
+      time.sleep(1)
+
+      # Seleciona a primeira marca disponivel (marca desejada)
+      driver.find_element(By.CSS_SELECTOR, item_brand_selector).click()
+      time.sleep(1)
+
+      # Seleciona o seletor dos modelos
+      driver.find_element(By.CSS_SELECTOR, model_selector).click()
+      time.sleep(1)
+
+      # Filtro do modelo desejado
+      driver.find_element(By.CSS_SELECTOR, input_model_selector).send_keys(modelo)
+      time.sleep(1)
+
+      # Pega todos os filhos da <ul> de modelos
+      ul_model_element = driver.find_element(By.CSS_SELECTOR, ul_model_selector)
+      ul_model_element_children = ul_model_element.find_elements(By.XPATH, "./*")
+
+      # Iteracao para cada modelo
+      for i in range(1):
+        print(f"i = {i}")
+
+        if i != 0:
+          # Seleciona o seletor dos modelos
+          driver.find_element(By.CSS_SELECTOR, model_selector).click()
+          time.sleep(1)
+
+          # Filtro do modelo desejado
+          driver.find_element(By.CSS_SELECTOR, input_model_selector).send_keys(modelo)
+          time.sleep(1)
+        
+        item_model_selector = f'li.active-result:nth-child({i + 1})'
+
+        # Seleciona modelo desejado
+        driver.find_element(By.CSS_SELECTOR, item_model_selector).click()
+        time.sleep(1)
+
+        for ano in range(2020, 2022 + 1):
+
+          # Selecionar seletor dos anos-modelo
+          driver.find_element(By.CSS_SELECTOR, year_model_selector).click()
+          time.sleep(1)
+
+          # Selecionar o input dos ano-modelo
+          input = driver.find_element(By.CSS_SELECTOR, input_year_model_selector)
+          if ano == 2022:
+            input.send_keys("zero")
+          else:
+            input.send_keys(str(ano))
+            
+          time.sleep(1)
+
+          # Pega todos os filhos da <ul> de anos-modelo
+          ul_year_model_element = driver.find_element(By.CSS_SELECTOR, ul_year_model_selector)
+          ul_year_model_element_children = ul_year_model_element.find_elements(By.XPATH, "./*")
+          print(f"Quantidade de anos-modelo: {len(ul_year_model_element_children)}")
+          
+
+          if len(ul_year_model_element_children) > 0:
+            if(ul_year_model_element_children[0].get_attribute("class") != 'no-results'):
+
+              item_year_model_selector = f'li.active-result:nth-child({1})'
+
+              # Seleciona o ano-modelo desejado
+              driver.find_element(By.CSS_SELECTOR, item_year_model_selector).click()
+              time.sleep(1)
+
+              # Seleciona "Pesquisar"
+              driver.find_element(By.CSS_SELECTOR, search_button_selector).click()
+              time.sleep(1)
+
+              # Pegar o preço do veiculo
+              price = driver.find_element(By.CSS_SELECTOR, price_vehicle).text
+              print(f"Preço: {price}")
+          
+          # input.clear()
+
+    # # Limpar pesquisa
+    # driver.find_element(By.CSS_SELECTOR, clear_search_selector).click()
+    # time.sleep(1)
+
+  driver.quit()
+
+web_scrapping1()
+
+# AMAROK Comfor. CD 2.0 TDI 4x4 Dies. Aut.
+# FOX
+web_scrapping2(marca="VolksWagen", modelo="AMAROK Comfor. CD 2.0 TDI 4x4 Dies. Aut.")
