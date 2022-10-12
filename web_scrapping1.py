@@ -3,6 +3,8 @@ from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
 
+
+
 # Armazena os valores resultantes do web scrapping
 values = []
 
@@ -49,10 +51,10 @@ clear_search_selector = '#buttonLimparPesquisarcarro > a'
 price_vehicle = '#resultadoConsultacarroFiltros > table > tbody > tr.last > td:nth-child(2) > p'
 
 # Seletor do seletor do ano-modelo
-year_model_selector = '#selectAnocarro_chosen > a'
+year_model_selector = '#selectAnocarro_chosen > a:nth-child(1)'
 
 # Seletor do input do ano-modelo
-input_year_model_selector = '#selectAnocarro_chosen > div > div > input[type=text]'
+input_year_model_selector = '#selectAnocarro_chosen > div > div > input'
 
 # Seketor da <ul> do ano-modelo
 ul_year_model_selector = '#selectAnocarro_chosen > div > ul'
@@ -117,73 +119,64 @@ def web_scrapping2(marca, modelo):
       ul_model_element = driver.find_element(By.CSS_SELECTOR, ul_model_selector)
       ul_model_element_children = ul_model_element.find_elements(By.XPATH, "./*")
 
-      # Iteracao para cada modelo
-      for i in range(1):
-        print(f"i = {i}")
+      # Seleciona o seletor dos modelos
+      driver.find_element(By.CSS_SELECTOR, model_selector).click()
+      time.sleep(1)
 
-        if i != 0:
-          # Seleciona o seletor dos modelos
-          driver.find_element(By.CSS_SELECTOR, model_selector).click()
-          time.sleep(1)
-
-          # Filtro do modelo desejado
-          driver.find_element(By.CSS_SELECTOR, input_model_selector).send_keys(modelo)
-          time.sleep(1)
+      # Filtro do modelo desejado
+      driver.find_element(By.CSS_SELECTOR, input_model_selector).send_keys(modelo)
+      time.sleep(1)
         
-        item_model_selector = f'li.active-result:nth-child({i + 1})'
+      item_model_selector = f'li.active-result:nth-child({0 + 1})'
 
-        # Seleciona modelo desejado
-        driver.find_element(By.CSS_SELECTOR, item_model_selector).click()
+      # Seleciona modelo desejado
+      driver.find_element(By.CSS_SELECTOR, item_model_selector).click()
+      time.sleep(1)
+      
+      for ano in range(2020, 2022 + 1):
+        print(f"Ano: {ano}")
+
+        # Selecionar seletor dos anos-modelo
+        year_model_selector_element = driver.find_element(By.CSS_SELECTOR, year_model_selector)
+        year_model_selector_element.click()
         time.sleep(1)
 
-        for ano in range(2020, 2022 + 1):
+        # Selecionar o input dos ano-modelo
+        input = driver.find_element(By.CSS_SELECTOR, input_year_model_selector)
+        time.sleep(1)
 
-          # Selecionar seletor dos anos-modelo
-          driver.find_element(By.CSS_SELECTOR, year_model_selector).click()
-          time.sleep(1)
+        if ano == 2022:
+          input.send_keys("zero")
+        else:
+          input.send_keys(str(ano))
+    
+        time.sleep(1)
 
-          # Selecionar o input dos ano-modelo
-          input = driver.find_element(By.CSS_SELECTOR, input_year_model_selector)
-          if ano == 2022:
-            input.send_keys("zero")
-          else:
-            input.send_keys(str(ano))
-            
-          time.sleep(1)
+        # Pega todos os filhos da <ul> de anos-modelo
+        ul_year_model_element = driver.find_element(By.CSS_SELECTOR, ul_year_model_selector)
+        ul_year_model_element_children = ul_year_model_element.find_elements(By.XPATH, "./*")
+        print(f"Quantidade de anos-modelo: {len(ul_year_model_element_children)}")
+        
 
-          # Pega todos os filhos da <ul> de anos-modelo
-          ul_year_model_element = driver.find_element(By.CSS_SELECTOR, ul_year_model_selector)
-          ul_year_model_element_children = ul_year_model_element.find_elements(By.XPATH, "./*")
-          print(f"Quantidade de anos-modelo: {len(ul_year_model_element_children)}")
-          
+        if len(ul_year_model_element_children) > 0:
+          if(ul_year_model_element_children[0].get_attribute("class") != 'no-results'):
 
-          if len(ul_year_model_element_children) > 0:
-            if(ul_year_model_element_children[0].get_attribute("class") != 'no-results'):
+            item_year_model_selector = f'li.active-result:nth-child({1})'
 
-              item_year_model_selector = f'li.active-result:nth-child({1})'
+            # Seleciona o ano-modelo desejado
+            driver.find_element(By.CSS_SELECTOR, item_year_model_selector).click()
+            time.sleep(1)
 
-              # Seleciona o ano-modelo desejado
-              driver.find_element(By.CSS_SELECTOR, item_year_model_selector).click()
-              time.sleep(1)
+            # Seleciona "Pesquisar"
+            driver.find_element(By.CSS_SELECTOR, search_button_selector).click()
+            time.sleep(1)
 
-              # Seleciona "Pesquisar"
-              driver.find_element(By.CSS_SELECTOR, search_button_selector).click()
-              time.sleep(1)
-
-              # Pegar o preço do veiculo
-              price = driver.find_element(By.CSS_SELECTOR, price_vehicle).text
-              print(f"Preço: {price}")
-          
-          # input.clear()
-
-    # # Limpar pesquisa
-    # driver.find_element(By.CSS_SELECTOR, clear_search_selector).click()
-    # time.sleep(1)
-
+            # Pegar o preço do veiculo
+            price = driver.find_element(By.CSS_SELECTOR, price_vehicle).text
+            print(f"Preço: {price}")
+        
+        time.sleep(1)
   driver.quit()
 
 web_scrapping1()
-
-# AMAROK Comfor. CD 2.0 TDI 4x4 Dies. Aut.
-# FOX
 web_scrapping2(marca="VolksWagen", modelo="AMAROK Comfor. CD 2.0 TDI 4x4 Dies. Aut.")

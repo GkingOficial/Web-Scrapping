@@ -3342,3 +3342,1324 @@ TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
 1665086410648	Marionette	INFO	Stopped listening on port 37331
+1665089114378	geckodriver	INFO	Listening on 127.0.0.1:38095
+1665089114437	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "38275" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile9G2fa7"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1665089115238	Marionette	INFO	Marionette enabled
+1665089115243	Marionette	INFO	Listening on port 33323
+Read port: 33323
+WebDriver BiDi listening on ws://127.0.0.1:38275
+1665089115394	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile9G2fa7/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:38275/devtools/browser/64e4f1fe-6827-4b50-8743-2098046d37c3
+1665089133174	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665089137464	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665089141707	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665089145988	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665592245089	geckodriver	INFO	Listening on 127.0.0.1:51663
+1665592245832	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "56909" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile848LY3"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1665592247488	Marionette	INFO	Marionette enabled
+1665592247495	Marionette	INFO	Listening on port 42211
+Read port: 42211
+WebDriver BiDi listening on ws://127.0.0.1:56909
+1665592247726	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile848LY3/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:56909/devtools/browser/ff52b952-5b41-4606-a565-04a3835e3562
+1665592261179	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665592265367	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665592268761	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665592274445	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665592278637	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+SourceActor threw an exception: [Exception... "Failed to open input source 'javascript:void(0)'"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 699"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:699:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:543:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:446:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:410:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2150:35
+addAllSources@resource://devtools/server/actors/thread.js:1482:14
+watch@resource://devtools/server/actors/resources/sources.js:62:17
+watchResources@resource://devtools/server/actors/resources/index.js:298:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:71:24
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data/resources.js:9:23
+addSessionDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:46:25
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:535:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:444:21
+Line: 699, column: 0
+console.error: ({})
+SourceActor threw an exception: [Exception... "Failed to open input source 'resource://gre/modules/ExtensionContent.jsm'"  nsresult: "0x805303f4 (<unknown>)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 699"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:699:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:543:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:446:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:410:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2150:35
+addAllSources@resource://devtools/server/actors/thread.js:1482:14
+watch@resource://devtools/server/actors/resources/sources.js:62:17
+watchResources@resource://devtools/server/actors/resources/index.js:298:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:71:24
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data/resources.js:9:23
+addSessionDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:46:25
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:535:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:444:21
+Line: 699, column: 0
+console.error: ({})
+SourceActor threw an exception: [Exception... "Failed to open input source 'moz-extension://c6a0cb92-e209-4c47-8267-0ed067344225/injections/js/bug1772949-youtube-webshare-shim.js'"  nsresult: "0x805303f4 (<unknown>)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 699"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:699:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:543:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:446:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:410:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2150:35
+addAllSources@resource://devtools/server/actors/thread.js:1482:14
+watch@resource://devtools/server/actors/resources/sources.js:62:17
+watchResources@resource://devtools/server/actors/resources/index.js:298:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:71:24
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data/resources.js:9:23
+addSessionDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:46:25
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:535:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:444:21
+Line: 699, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 699: NS_ERROR_NOT_AVAILABLE: Failed to open input source 'javascript:void(0)'
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 699: Failed to open input source 'resource://gre/modules/ExtensionContent.jsm'
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 699: Failed to open input source 'moz-extension://c6a0cb92-e209-4c47-8267-0ed067344225/injections/js/bug1772949-youtube-webshare-shim.js'
+1665593104330	geckodriver	INFO	Listening on 127.0.0.1:55259
+1665593104424	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "55513" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileVGX6nQ"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1665593105460	Marionette	INFO	Marionette enabled
+1665593105466	Marionette	INFO	Listening on port 37885
+Read port: 37885
+WebDriver BiDi listening on ws://127.0.0.1:55513
+1665593105634	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileVGX6nQ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:55513/devtools/browser/47d266e7-f9c6-4db1-96fc-04227b8df406
+1665593118594	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665593122765	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665593126984	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665593131150	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665593135352	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665593137068	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+SourceActor threw an exception: [Exception... "Failed to open input source 'javascript:void(0)'"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 699"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:699:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:543:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:446:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:410:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2150:35
+addAllSources@resource://devtools/server/actors/thread.js:1482:14
+watch@resource://devtools/server/actors/resources/sources.js:62:17
+watchResources@resource://devtools/server/actors/resources/index.js:298:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:71:24
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data/resources.js:9:23
+addSessionDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:46:25
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:535:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:444:21
+Line: 699, column: 0
+console.error: ({})
+SourceActor threw an exception: [Exception... "Failed to open input source 'resource://gre/modules/ExtensionContent.jsm'"  nsresult: "0x805303f4 (<unknown>)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 699"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:699:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:543:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:446:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:410:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2150:35
+addAllSources@resource://devtools/server/actors/thread.js:1482:14
+watch@resource://devtools/server/actors/resources/sources.js:62:17
+watchResources@resource://devtools/server/actors/resources/index.js:298:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:71:24
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data/resources.js:9:23
+addSessionDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:46:25
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:535:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:444:21
+Line: 699, column: 0
+console.error: ({})
+SourceActor threw an exception: [Exception... "Failed to open input source 'moz-extension://47833d1d-fdec-4a5c-ae7a-3f24b0780aba/injections/js/bug1772949-youtube-webshare-shim.js'"  nsresult: "0x805303f4 (<unknown>)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 699"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:699:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:543:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:446:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:410:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2150:35
+addAllSources@resource://devtools/server/actors/thread.js:1482:14
+watch@resource://devtools/server/actors/resources/sources.js:62:17
+watchResources@resource://devtools/server/actors/resources/index.js:298:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:71:24
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data/resources.js:9:23
+addSessionDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:46:25
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:535:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:444:21
+Line: 699, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 699: NS_ERROR_NOT_AVAILABLE: Failed to open input source 'javascript:void(0)'
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 699: Failed to open input source 'resource://gre/modules/ExtensionContent.jsm'
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 699: Failed to open input source 'moz-extension://47833d1d-fdec-4a5c-ae7a-3f24b0780aba/injections/js/bug1772949-youtube-webshare-shim.js'
+1665593328429	geckodriver	INFO	Listening on 127.0.0.1:37367
+1665593328514	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "60141" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilegCEtUJ"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1665593329592	Marionette	INFO	Marionette enabled
+1665593329600	Marionette	INFO	Listening on port 36003
+Read port: 36003
+WebDriver BiDi listening on ws://127.0.0.1:60141
+1665593329790	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilegCEtUJ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:60141/devtools/browser/354cc054-0687-4c54-9285-b022bc1a86e8
+1665593343697	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665593348115	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665593352446	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665593356667	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665593360889	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665593426784	geckodriver	INFO	Listening on 127.0.0.1:47977
+1665593426853	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "57769" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileFFcFo2"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1665593427891	Marionette	INFO	Marionette enabled
+1665593427899	Marionette	INFO	Listening on port 45033
+Read port: 45033
+WebDriver BiDi listening on ws://127.0.0.1:57769
+1665593428091	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileFFcFo2/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:57769/devtools/browser/4666a6da-016c-43cc-a561-986f09287cdf
+1665593443532	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665593448016	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665593451443	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665593457145	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665593461406	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665593463193	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665593467227	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665593470037	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665593471125	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665593473903	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665593477212	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665593480153	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665593484276	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665593486114	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665593490131	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665593492936	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1665593595153	Marionette	INFO	Stopped listening on port 37885
+1665593597226	Marionette	INFO	Stopped listening on port 36003
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1665593599436	Marionette	INFO	Stopped listening on port 42211
+SourceActor threw an exception: [Exception... "Failed to open input source 'javascript:void(0)'"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 699"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:699:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:543:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:446:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:410:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2150:35
+addAllSources@resource://devtools/server/actors/thread.js:1482:14
+watch@resource://devtools/server/actors/resources/sources.js:62:17
+watchResources@resource://devtools/server/actors/resources/index.js:298:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:71:24
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data/resources.js:9:23
+addSessionDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:46:25
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:535:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:444:21
+Line: 699, column: 0
+console.error: ({})
+SourceActor threw an exception: [Exception... "Failed to open input source 'resource://gre/modules/ExtensionContent.jsm'"  nsresult: "0x805303f4 (<unknown>)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 699"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:699:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:543:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:446:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:410:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2150:35
+addAllSources@resource://devtools/server/actors/thread.js:1482:14
+watch@resource://devtools/server/actors/resources/sources.js:62:17
+watchResources@resource://devtools/server/actors/resources/index.js:298:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:71:24
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data/resources.js:9:23
+addSessionDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:46:25
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:535:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:444:21
+Line: 699, column: 0
+console.error: ({})
+SourceActor threw an exception: [Exception... "Failed to open input source 'moz-extension://3f880fac-992a-4629-8e69-9aa1c5e50092/injections/js/bug1772949-youtube-webshare-shim.js'"  nsresult: "0x805303f4 (<unknown>)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 699"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:699:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:543:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:446:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:410:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2150:35
+addAllSources@resource://devtools/server/actors/thread.js:1482:14
+watch@resource://devtools/server/actors/resources/sources.js:62:17
+watchResources@resource://devtools/server/actors/resources/index.js:298:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:71:24
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data/resources.js:9:23
+addSessionDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:46:25
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:535:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:444:21
+Line: 699, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 699: NS_ERROR_NOT_AVAILABLE: Failed to open input source 'javascript:void(0)'
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 699: Failed to open input source 'resource://gre/modules/ExtensionContent.jsm'
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 699: Failed to open input source 'moz-extension://3f880fac-992a-4629-8e69-9aa1c5e50092/injections/js/bug1772949-youtube-webshare-shim.js'
+console.error: "Unable to find target with innerWindowId:4294967302"
+console.error: "Unable to find target with innerWindowId:4294967302"
+console.error: "Unable to find target with innerWindowId:4294967302"
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+JavaScript error: https://trc.taboola.com/sg/navegg/1/cm, line 1: SyntaxError: illegal character U+0001
+1665593996870	geckodriver	INFO	Listening on 127.0.0.1:52699
+1665593996937	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "38045" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileFvzIly"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1665593998019	Marionette	INFO	Marionette enabled
+1665593998024	Marionette	INFO	Listening on port 35991
+Read port: 35991
+WebDriver BiDi listening on ws://127.0.0.1:38045
+1665593998214	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileFvzIly/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:38045/devtools/browser/36742ceb-f3e7-46cb-8189-e6e690614e2c
+1665594012787	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665594016941	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665594020027	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665594025821	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665594029928	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+SourceActor threw an exception: [Exception... "Failed to open input source 'javascript:void(0)'"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 699"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:699:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:543:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:446:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:410:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2150:35
+addAllSources@resource://devtools/server/actors/thread.js:1482:14
+watch@resource://devtools/server/actors/resources/sources.js:62:17
+watchResources@resource://devtools/server/actors/resources/index.js:298:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:71:24
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data/resources.js:9:23
+addSessionDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:46:25
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:535:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:444:21
+Line: 699, column: 0
+console.error: ({})
+SourceActor threw an exception: [Exception... "Failed to open input source 'resource://gre/modules/ExtensionContent.jsm'"  nsresult: "0x805303f4 (<unknown>)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 699"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:699:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:543:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:446:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:410:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2150:35
+addAllSources@resource://devtools/server/actors/thread.js:1482:14
+watch@resource://devtools/server/actors/resources/sources.js:62:17
+watchResources@resource://devtools/server/actors/resources/index.js:298:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:71:24
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data/resources.js:9:23
+addSessionDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:46:25
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:535:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:444:21
+Line: 699, column: 0
+console.error: ({})
+SourceActor threw an exception: [Exception... "Failed to open input source 'moz-extension://afa1cdcf-605a-410d-91c1-b8d5ed472609/injections/js/bug1772949-youtube-webshare-shim.js'"  nsresult: "0x805303f4 (<unknown>)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 699"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:699:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:543:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:446:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:410:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2150:35
+addAllSources@resource://devtools/server/actors/thread.js:1482:14
+watch@resource://devtools/server/actors/resources/sources.js:62:17
+watchResources@resource://devtools/server/actors/resources/index.js:298:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:71:24
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data/resources.js:9:23
+addSessionDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:46:25
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:535:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:444:21
+Line: 699, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 699: NS_ERROR_NOT_AVAILABLE: Failed to open input source 'javascript:void(0)'
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 699: Failed to open input source 'resource://gre/modules/ExtensionContent.jsm'
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 699: Failed to open input source 'moz-extension://afa1cdcf-605a-410d-91c1-b8d5ed472609/injections/js/bug1772949-youtube-webshare-shim.js'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1665594275392	Marionette	INFO	Stopped listening on port 35991
+1665594289064	geckodriver	INFO	Listening on 127.0.0.1:46199
+1665594289132	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "58979" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileqTw8V2"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1665594290155	Marionette	INFO	Marionette enabled
+1665594290162	Marionette	INFO	Listening on port 35031
+Read port: 35031
+WebDriver BiDi listening on ws://127.0.0.1:58979
+1665594290325	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileqTw8V2/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58979/devtools/browser/af86a7c0-23ed-457e-a5a7-4acc2aba7f4e
+1665594305137	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665594309543	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665594312921	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665594318609	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665594327056	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665594331509	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665594335710	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665594344355	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665594347697	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665594353437	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665594362019	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665594365427	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665594371647	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1665594447886	geckodriver	INFO	Listening on 127.0.0.1:42109
+1665594447947	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "42939" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilec6mOgw"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1665594449087	Marionette	INFO	Marionette enabled
+1665594449092	Marionette	INFO	Listening on port 38725
+Read port: 38725
+WebDriver BiDi listening on ws://127.0.0.1:42939
+1665594449281	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilec6mOgw/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:42939/devtools/browser/89f6ccb6-bebf-4c23-9e2f-7c6820585bef
+1665594463102	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665594467569	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665594471010	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665594476971	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665594481206	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665594483029	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665594684002	geckodriver	INFO	Listening on 127.0.0.1:40111
+1665594684062	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "36529" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilejQLZ04"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1665594685052	Marionette	INFO	Marionette enabled
+1665594685058	Marionette	INFO	Listening on port 42139
+Read port: 42139
+WebDriver BiDi listening on ws://127.0.0.1:36529
+1665594685245	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilejQLZ04/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:36529/devtools/browser/8ac2eb81-0878-4eb6-a949-79fc35353e12
+1665594699156	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665594704117	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665594707346	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665594715462	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665594719736	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665595682830	Marionette	INFO	Stopped listening on port 42139
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1665595685574	Marionette	INFO	Stopped listening on port 38725
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1665595688528	Marionette	INFO	Stopped listening on port 45033
+1665595978261	geckodriver	INFO	Listening on 127.0.0.1:43325
+1665595978354	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "58515" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilegtI7VG"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1665595979502	Marionette	INFO	Marionette enabled
+1665595979508	Marionette	INFO	Listening on port 44421
+Read port: 44421
+WebDriver BiDi listening on ws://127.0.0.1:58515
+1665595979675	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilegtI7VG/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58515/devtools/browser/813885db-9466-4238-9f18-67d48e89aa99
+1665595994484	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665595998977	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+SourceActor threw an exception: [Exception... "Failed to open input source 'javascript:void(0)'"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 699"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:699:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:543:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:446:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:410:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2150:35
+addAllSources@resource://devtools/server/actors/thread.js:1482:14
+watch@resource://devtools/server/actors/resources/sources.js:62:17
+watchResources@resource://devtools/server/actors/resources/index.js:298:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:71:24
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data/resources.js:9:23
+addSessionDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:46:25
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:535:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:444:21
+Line: 699, column: 0
+console.error: ({})
+SourceActor threw an exception: [Exception... "Failed to open input source 'resource://gre/modules/ExtensionContent.jsm'"  nsresult: "0x805303f4 (<unknown>)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 699"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:699:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:543:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:446:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:410:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2150:35
+addAllSources@resource://devtools/server/actors/thread.js:1482:14
+watch@resource://devtools/server/actors/resources/sources.js:62:17
+watchResources@resource://devtools/server/actors/resources/index.js:298:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:71:24
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data/resources.js:9:23
+addSessionDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:46:25
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:535:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:444:21
+Line: 699, column: 0
+console.error: ({})
+SourceActor threw an exception: [Exception... "Failed to open input source 'moz-extension://c95d10dd-4cc8-4ede-ba43-9d6022080a7a/injections/js/bug1772949-youtube-webshare-shim.js'"  nsresult: "0x805303f4 (<unknown>)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 699"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:699:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:543:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:446:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:410:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2150:35
+addAllSources@resource://devtools/server/actors/thread.js:1482:14
+watch@resource://devtools/server/actors/resources/sources.js:62:17
+watchResources@resource://devtools/server/actors/resources/index.js:298:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:71:24
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data/resources.js:9:23
+addSessionDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:46:25
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:535:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:444:21
+Line: 699, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 699: NS_ERROR_NOT_AVAILABLE: Failed to open input source 'javascript:void(0)'
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 699: Failed to open input source 'resource://gre/modules/ExtensionContent.jsm'
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 699: Failed to open input source 'moz-extension://c95d10dd-4cc8-4ede-ba43-9d6022080a7a/injections/js/bug1772949-youtube-webshare-shim.js'
+console.error: "Unable to find target with innerWindowId:4294967301"
+console.error: "Unable to find target with innerWindowId:4294967301"
+console.error: "Unable to find target with innerWindowId:4294967301"
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1665596022784	Marionette	INFO	Stopped listening on port 44421
+1665596045867	geckodriver	INFO	Listening on 127.0.0.1:55051
+1665596045930	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "51455" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileVqGB0K"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1665596046923	Marionette	INFO	Marionette enabled
+1665596046930	Marionette	INFO	Listening on port 35999
+Read port: 35999
+WebDriver BiDi listening on ws://127.0.0.1:51455
+1665596047131	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileVqGB0K/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51455/devtools/browser/9ead1119-97ef-4112-adfe-3e026bc2af63
+1665596060203	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665596064664	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665596067999	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665596073769	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665596077916	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665596079712	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665596082539	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+SourceActor threw an exception: [Exception... "Failed to open input source 'javascript:void(0)'"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 699"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:699:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:543:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:446:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:410:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2150:35
+addAllSources@resource://devtools/server/actors/thread.js:1482:14
+watch@resource://devtools/server/actors/resources/sources.js:62:17
+watchResources@resource://devtools/server/actors/resources/index.js:298:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:71:24
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data/resources.js:9:23
+addSessionDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:46:25
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:535:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:444:21
+Line: 699, column: 0
+console.error: ({})
+SourceActor threw an exception: [Exception... "Failed to open input source 'resource://gre/modules/ExtensionContent.jsm'"  nsresult: "0x805303f4 (<unknown>)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 699"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:699:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:543:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:446:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:410:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2150:35
+addAllSources@resource://devtools/server/actors/thread.js:1482:14
+watch@resource://devtools/server/actors/resources/sources.js:62:17
+watchResources@resource://devtools/server/actors/resources/index.js:298:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:71:24
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data/resources.js:9:23
+addSessionDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:46:25
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:535:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:444:21
+Line: 699, column: 0
+console.error: ({})
+SourceActor threw an exception: [Exception... "Failed to open input source 'moz-extension://9569a574-9eff-4bf2-a73b-4cb0a0a3ef91/injections/js/bug1772949-youtube-webshare-shim.js'"  nsresult: "0x805303f4 (<unknown>)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 699"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:699:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:543:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:446:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:410:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2150:35
+addAllSources@resource://devtools/server/actors/thread.js:1482:14
+watch@resource://devtools/server/actors/resources/sources.js:62:17
+watchResources@resource://devtools/server/actors/resources/index.js:298:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:71:24
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data/resources.js:9:23
+addSessionDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:46:25
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:535:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:444:21
+Line: 699, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 699: NS_ERROR_NOT_AVAILABLE: Failed to open input source 'javascript:void(0)'
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 699: Failed to open input source 'resource://gre/modules/ExtensionContent.jsm'
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 699: Failed to open input source 'moz-extension://9569a574-9eff-4bf2-a73b-4cb0a0a3ef91/injections/js/bug1772949-youtube-webshare-shim.js'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1665596227030	geckodriver	INFO	Listening on 127.0.0.1:33191
+1665596227094	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "38955" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileH1LZyB"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1665596228092	Marionette	INFO	Marionette enabled
+1665596228099	Marionette	INFO	Listening on port 34155
+Read port: 34155
+WebDriver BiDi listening on ws://127.0.0.1:38955
+1665596228272	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileH1LZyB/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:38955/devtools/browser/5524e5c1-b3e7-4fd1-b647-bd11e187bc81
+1665596241324	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665596245424	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665596249885	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665596254067	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665596258320	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665596260122	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+SourceActor threw an exception: [Exception... "Failed to open input source 'javascript:void(0)'"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 699"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:699:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:543:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:446:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:410:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2150:35
+addAllSources@resource://devtools/server/actors/thread.js:1482:14
+watch@resource://devtools/server/actors/resources/sources.js:62:17
+watchResources@resource://devtools/server/actors/resources/index.js:298:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:71:24
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data/resources.js:9:23
+addSessionDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:46:25
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:535:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:444:21
+Line: 699, column: 0
+console.error: ({})
+SourceActor threw an exception: [Exception... "Failed to open input source 'resource://gre/modules/ExtensionContent.jsm'"  nsresult: "0x805303f4 (<unknown>)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 699"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:699:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:543:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:446:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:410:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2150:35
+addAllSources@resource://devtools/server/actors/thread.js:1482:14
+watch@resource://devtools/server/actors/resources/sources.js:62:17
+watchResources@resource://devtools/server/actors/resources/index.js:298:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:71:24
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data/resources.js:9:23
+addSessionDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:46:25
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:535:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:444:21
+Line: 699, column: 0
+console.error: ({})
+SourceActor threw an exception: [Exception... "Failed to open input source 'moz-extension://8174e49d-dfdf-408d-bbda-d8c655eac08f/injections/js/bug1772949-youtube-webshare-shim.js'"  nsresult: "0x805303f4 (<unknown>)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 699"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:699:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:543:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:446:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:410:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2150:35
+addAllSources@resource://devtools/server/actors/thread.js:1482:14
+watch@resource://devtools/server/actors/resources/sources.js:62:17
+watchResources@resource://devtools/server/actors/resources/index.js:298:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:71:24
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data/resources.js:9:23
+addSessionDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:46:25
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:535:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:444:21
+Line: 699, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 699: NS_ERROR_NOT_AVAILABLE: Failed to open input source 'javascript:void(0)'
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 699: Failed to open input source 'resource://gre/modules/ExtensionContent.jsm'
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 699: Failed to open input source 'moz-extension://8174e49d-dfdf-408d-bbda-d8c655eac08f/injections/js/bug1772949-youtube-webshare-shim.js'
+1665596597885	geckodriver	INFO	Listening on 127.0.0.1:53847
+1665596597952	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "38201" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileErN5tb"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1665596599078	Marionette	INFO	Marionette enabled
+1665596599084	Marionette	INFO	Listening on port 37009
+Read port: 37009
+WebDriver BiDi listening on ws://127.0.0.1:38201
+1665596599257	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileErN5tb/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:38201/devtools/browser/46a16ad4-70f7-468a-9580-fc67b1608b3a
+1665596612960	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665596617144	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665596621624	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665596625870	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665596629988	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665596631706	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665596637602	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665596640663	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665596641383	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665596645768	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665596647499	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665596650435	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665596652172	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665596654969	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665596929261	geckodriver	INFO	Listening on 127.0.0.1:36591
+1665596929327	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "41767" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilezyWdJ2"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1665596930366	Marionette	INFO	Marionette enabled
+1665596930373	Marionette	INFO	Listening on port 46411
+Read port: 46411
+WebDriver BiDi listening on ws://127.0.0.1:41767
+1665596930553	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilezyWdJ2/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:41767/devtools/browser/3b87f9ff-c7a5-4f21-ae35-0e2765d2e8d7
+1665596944943	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665596949041	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665596952290	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665596957954	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665597010305	Marionette	INFO	Stopped listening on port 46411
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1665597012491	Marionette	INFO	Stopped listening on port 37009
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1665597014833	Marionette	INFO	Stopped listening on port 34155
+1665597016889	Marionette	INFO	Stopped listening on port 35999
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1665597121963	geckodriver	INFO	Listening on 127.0.0.1:38005
+1665597122023	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "57713" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileZCXz6V"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1665597122990	Marionette	INFO	Marionette enabled
+1665597122995	Marionette	INFO	Listening on port 43461
+Read port: 43461
+WebDriver BiDi listening on ws://127.0.0.1:57713
+1665597123177	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileZCXz6V/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:57713/devtools/browser/afeac8a6-4b67-47b0-b0b8-bd3a73883632
+1665597138690	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665597143184	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665597146572	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665597152296	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665597215575	geckodriver	INFO	Listening on 127.0.0.1:44725
+1665597215643	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "56935" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileS2Mede"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1665597216682	Marionette	INFO	Marionette enabled
+1665597216689	Marionette	INFO	Listening on port 35621
+Read port: 35621
+WebDriver BiDi listening on ws://127.0.0.1:56935
+1665597216856	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileS2Mede/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:56935/devtools/browser/04b572b7-5146-48f1-87e3-a610b6bce570
+1665597231397	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665597235480	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665597238515	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665597244210	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+SourceActor threw an exception: [Exception... "Failed to open input source 'javascript:void(0)'"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 699"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:699:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:543:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:446:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:410:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2150:35
+addAllSources@resource://devtools/server/actors/thread.js:1482:14
+watch@resource://devtools/server/actors/resources/sources.js:62:17
+watchResources@resource://devtools/server/actors/resources/index.js:298:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:71:24
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data/resources.js:9:23
+addSessionDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:46:25
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:535:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:444:21
+Line: 699, column: 0
+console.error: ({})
+SourceActor threw an exception: [Exception... "Failed to open input source 'resource://gre/modules/ExtensionContent.jsm'"  nsresult: "0x805303f4 (<unknown>)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 699"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:699:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:543:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:446:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:410:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2150:35
+addAllSources@resource://devtools/server/actors/thread.js:1482:14
+watch@resource://devtools/server/actors/resources/sources.js:62:17
+watchResources@resource://devtools/server/actors/resources/index.js:298:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:71:24
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data/resources.js:9:23
+addSessionDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:46:25
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:535:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:444:21
+Line: 699, column: 0
+console.error: ({})
+SourceActor threw an exception: [Exception... "Failed to open input source 'moz-extension://fd3998e3-8e57-4ebc-866d-e007fb9112d6/injections/js/bug1772949-youtube-webshare-shim.js'"  nsresult: "0x805303f4 (<unknown>)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 699"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:699:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:543:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:446:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:410:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2150:35
+addAllSources@resource://devtools/server/actors/thread.js:1482:14
+watch@resource://devtools/server/actors/resources/sources.js:62:17
+watchResources@resource://devtools/server/actors/resources/index.js:298:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:71:24
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data/resources.js:9:23
+addSessionDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:46:25
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:535:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:444:21
+Line: 699, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 699: NS_ERROR_NOT_AVAILABLE: Failed to open input source 'javascript:void(0)'
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 699: Failed to open input source 'resource://gre/modules/ExtensionContent.jsm'
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 699: Failed to open input source 'moz-extension://fd3998e3-8e57-4ebc-866d-e007fb9112d6/injections/js/bug1772949-youtube-webshare-shim.js'
+1665597641539	geckodriver	INFO	Listening on 127.0.0.1:52217
+1665597641603	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "50327" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileKK4j9k"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1665597642605	Marionette	INFO	Marionette enabled
+1665597642610	Marionette	INFO	Listening on port 44313
+Read port: 44313
+WebDriver BiDi listening on ws://127.0.0.1:50327
+1665597642800	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileKK4j9k/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50327/devtools/browser/50e1618a-3811-45b8-95ec-e66f22ac12c1
+1665597655034	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665597659201	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665597662235	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665597668055	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665597684195	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665597687623	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665597693497	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665597709663	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665597714255	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665597718488	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1665598024577	Marionette	INFO	Stopped listening on port 44313
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1665598027247	Marionette	INFO	Stopped listening on port 35621
+1665598029836	Marionette	INFO	Stopped listening on port 43461
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
