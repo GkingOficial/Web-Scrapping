@@ -3,7 +3,6 @@ from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-
 from selenium.common.exceptions import ElementNotInteractableException
 
 # Armazena os valores resultantes do web scrapping
@@ -11,6 +10,9 @@ values = []
 
 # Site onde sera realizado o web scrapping
 url = "https://veiculos.fipe.org.br/"
+
+
+
 
 # Seletor das opcoes de busca
 cars_selector = '#front > div.content > div.tab.vertical.tab-veiculos > ul > li:nth-child(1) > a'
@@ -51,6 +53,18 @@ clear_search_selector = '#buttonLimparPesquisarcarro > a'
 # Seletor do preço
 price_vehicle = '#resultadoConsultacarroFiltros > table > tbody > tr.last > td:nth-child(2) > p'
 
+# Seletor dos anos-modelo
+year_model_selector ='#selectAnocarro_chosen > a'
+
+# Seletor do input dos anos-modelo
+input_year_model_selector = '#selectAnocarro_chosen > div > div > input[type=text]'
+
+# Seletor do input do ano-modelo
+ul_year_model_selector = '#selectAnocarro_chosen > div > ul'
+
+# Seletor do preço
+price_vehicle = '#resultadoConsultacarroFiltros > table > tbody > tr.last > td:nth-child(2) > p'
+
 
 
 
@@ -63,12 +77,20 @@ anos = [
   2020, 2021
 ]
 
+anos_modelo = [
+  2020, 2021, 2022
+]
+
 
 
 
 option = Options()
 option.headless = False
 driver = webdriver.Firefox(options=option)
+
+
+
+
 
 def web_scrapping1():
   # Carregar a página
@@ -83,7 +105,7 @@ def web_scrapping1():
   driver.find_element(By.CSS_SELECTOR, time_period_selector).click()
   time.sleep(1)
 
-def web_scrapping2(marca, modelo, anos, meses):
+def web_scrapping2(marca, modelo, anos, meses, anos_modelo):
 
   for ano_busca in anos:
     for mes_busca in meses:
@@ -92,7 +114,7 @@ def web_scrapping2(marca, modelo, anos, meses):
       driver.find_element(By.CSS_SELECTOR, input_time_period_selector).send_keys(f"{mes_busca}/{ano_busca}")
       time.sleep(1)
 
-      driver.find_element(By.CSS_SELECTOR, item_time_period_selector).click()
+      driver.find_element(By.CSS_SELECTOR, '#selectTabelaReferenciacarro_chosen > div > ul > li').click()
 
       # Seleciona o seletor das marcas
       driver.find_element(By.CSS_SELECTOR, brand_selector).click()
@@ -124,16 +146,16 @@ def web_scrapping2(marca, modelo, anos, meses):
       driver.find_element(By.CSS_SELECTOR, item_model_selector).click()
       time.sleep(1)
 
-      for ano in range(2020, 2022 + 1):
+      for ano in anos_modelo:
         print(f"Ano: {ano}")
 
-        if ano == 2010:
-          # Selecionar seletor dos anos-modelo
-          driver.find_element(By.CSS_SELECTOR, '#selectAnocarro_chosen > a').click()
-          time.sleep(1)
+        # if ano == 2020:
+        #   # Selecionar seletor dos anos-modelo
+        #   driver.find_element(By.CSS_SELECTOR, year_model_selector).click()
+        #   time.sleep(1)
 
         # Selecionar o input dos ano-modelo
-        input = driver.find_element(By.CSS_SELECTOR, '#selectAnocarro_chosen > div > div > input[type=text]')
+        input = driver.find_element(By.CSS_SELECTOR, input_year_model_selector)
         time.sleep(1)
 
         for i in range(0, 4):
@@ -147,7 +169,7 @@ def web_scrapping2(marca, modelo, anos, meses):
         time.sleep(1)
 
         # Pega todos os filhos da <ul> de anos-modelo
-        ul_year_model_element = driver.find_element(By.CSS_SELECTOR, '#selectAnocarro_chosen > div > ul')
+        ul_year_model_element = driver.find_element(By.CSS_SELECTOR, ul_year_model_selector)
         ul_year_model_element_children = ul_year_model_element.find_elements(By.XPATH, "./*")
 
         time.sleep(1)
@@ -168,7 +190,7 @@ def web_scrapping2(marca, modelo, anos, meses):
           time.sleep(1)
 
           # Pegar o preço do veiculo
-          price = driver.find_element(By.CSS_SELECTOR, '#resultadoConsultacarroFiltros > table > tbody > tr.last > td:nth-child(2) > p').text
+          price = driver.find_element(By.CSS_SELECTOR, price_vehicle).text
           print(f"Preço: {price}")
       
       try:
@@ -182,4 +204,10 @@ def web_scrapping2(marca, modelo, anos, meses):
   driver.quit()
 
 web_scrapping1()
-web_scrapping2("VolksWagen", "AMAROK CD2.0 16V/S CD2.0 16V TDI 4x2 Die", anos, meses)
+
+lista_veiculos = [
+  "AMAROK CD2.0 16V/S CD2.0 16V TDI 4x2 Die"
+]
+
+for veiculo in lista_veiculos:
+  web_scrapping2("VolksWagen", veiculo, anos, meses, anos_modelo)

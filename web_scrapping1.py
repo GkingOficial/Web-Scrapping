@@ -106,7 +106,7 @@ def web_scrapping2(marca, modelo):
       driver.find_element(By.CSS_SELECTOR, item_brand_selector).click()
       time.sleep(1)
 
-      # Seleciona o seletor dos modelos
+      # Seleciona o modelos
       driver.find_element(By.CSS_SELECTOR, model_selector).click()
       time.sleep(1)
 
@@ -126,7 +126,7 @@ def web_scrapping2(marca, modelo):
       driver.find_element(By.CSS_SELECTOR, input_model_selector).send_keys(modelo)
       time.sleep(1)
       
-      item_model_selector = '#selectAnoModelocarro_chosen > div > ul > li:nth-child(1)'
+      item_model_selector = 'li.active-result:nth-child(1)'
 
       # Seleciona modelo desejado
       item = driver.find_element(By.CSS_SELECTOR, item_model_selector)
