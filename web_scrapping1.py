@@ -126,10 +126,12 @@ def web_scrapping2(marca, modelo):
       driver.find_element(By.CSS_SELECTOR, input_model_selector).send_keys(modelo)
       time.sleep(1)
       
-      item_model_selector = f'li.active-result:nth-child({0 + 1})'
+      item_model_selector = '#selectAnoModelocarro_chosen > div > ul > li:nth-child(1)'
 
       # Seleciona modelo desejado
-      driver.find_element(By.CSS_SELECTOR, item_model_selector).click()
+      item = driver.find_element(By.CSS_SELECTOR, item_model_selector)
+      print(item)
+      item.click()
       time.sleep(1)
       
       for ano in range(2020, 2022 + 1):
@@ -173,9 +175,9 @@ def web_scrapping2(marca, modelo):
             # Pegar o preço do veiculo
             price = driver.find_element(By.CSS_SELECTOR, price_vehicle).text
             time.sleep(1)
-            
+
             print(f"Preço: {price}")
   driver.quit()
 
 web_scrapping1()
-web_scrapping2(marca="VolksWagen", modelo="AMAROK Comfor. CD 2.0 TDI 4x4 Dies. Aut.")
+web_scrapping2(marca="VolksWagen", modelo="FOX")
