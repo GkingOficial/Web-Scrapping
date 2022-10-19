@@ -3,8 +3,6 @@ from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
 
-
-
 # Armazena os valores resultantes do web scrapping
 values = []
 
@@ -93,6 +91,7 @@ def web_scrapping2(marca, modelo):
       driver.find_element(By.CSS_SELECTOR, input_time_period_selector).send_keys(f"{mes_busca}/{ano_busca}")
       time.sleep(1)
 
+      # Seleciona o primeiro mês/ano disponível (mês/ano desejado)
       driver.find_element(By.CSS_SELECTOR, item_time_period_selector).click()
 
       # Seleciona o seletor das marcas
@@ -126,7 +125,7 @@ def web_scrapping2(marca, modelo):
       # Filtro do modelo desejado
       driver.find_element(By.CSS_SELECTOR, input_model_selector).send_keys(modelo)
       time.sleep(1)
-        
+      
       item_model_selector = f'li.active-result:nth-child({0 + 1})'
 
       # Seleciona modelo desejado
@@ -156,12 +155,12 @@ def web_scrapping2(marca, modelo):
         ul_year_model_element = driver.find_element(By.CSS_SELECTOR, ul_year_model_selector)
         ul_year_model_element_children = ul_year_model_element.find_elements(By.XPATH, "./*")
         print(f"Quantidade de anos-modelo: {len(ul_year_model_element_children)}")
-        
+        time.sleep(1)
 
         if len(ul_year_model_element_children) > 0:
           if(ul_year_model_element_children[0].get_attribute("class") != 'no-results'):
 
-            item_year_model_selector = f'li.active-result:nth-child({1})'
+            item_year_model_selector = f'li.active-result:nth-child({0 + 1})'
 
             # Seleciona o ano-modelo desejado
             driver.find_element(By.CSS_SELECTOR, item_year_model_selector).click()
@@ -173,9 +172,9 @@ def web_scrapping2(marca, modelo):
 
             # Pegar o preço do veiculo
             price = driver.find_element(By.CSS_SELECTOR, price_vehicle).text
+            time.sleep(1)
+            
             print(f"Preço: {price}")
-        
-        time.sleep(1)
   driver.quit()
 
 web_scrapping1()
