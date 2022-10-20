@@ -5,6 +5,9 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import ElementNotInteractableException
 
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
 # Armazena os valores resultantes do web scrapping
 values = []
 
@@ -68,17 +71,16 @@ price_vehicle = '#resultadoConsultacarroFiltros > table > tbody > tr.last > td:n
 
 
 
-meses = [
-  "janeiro",
-  "fevereiro",
+anos = [
+  2020
 ]
 
-anos = [
-  2020, 2021
+meses = [
+  "janeiro", "fevereiro"
 ]
 
 anos_modelo = [
-  2020, 2021, 2022
+  2020, 2021, "zero"
 ]
 
 
@@ -88,6 +90,7 @@ option = Options()
 option.headless = False
 driver = webdriver.Firefox(options=option)
 
+wait = WebDriverWait(driver, 10)
 
 
 
@@ -105,16 +108,23 @@ def web_scrapping1():
   driver.find_element(By.CSS_SELECTOR, time_period_selector).click()
   time.sleep(1)
 
-def web_scrapping2(marca, modelo, anos, meses, anos_modelo):
+def web_scrapping2(anos, meses, marca, modelo, anos_modelo):
 
   for ano_busca in anos:
     for mes_busca in meses:
 
       # Seleciona o input do periodo
       driver.find_element(By.CSS_SELECTOR, input_time_period_selector).send_keys(f"{mes_busca}/{ano_busca}")
-      time.sleep(1)
+      time.sleep(3)
 
-      driver.find_element(By.CSS_SELECTOR, '#selectTabelaReferenciacarro_chosen > div > ul > li').click()
+      period_selector = '#selectTabelaReferenciacarro_chosen > div > ul > li'
+
+      # Seleciona o primeiro item do período
+      elemento = wait.until(
+        EC.element_to_be_clickable((By.CSS_SELECTOR, period_selector))
+      )
+      print(elemento)
+      elemento.click()
 
       # Seleciona o seletor das marcas
       driver.find_element(By.CSS_SELECTOR, brand_selector).click()
@@ -149,10 +159,10 @@ def web_scrapping2(marca, modelo, anos, meses, anos_modelo):
       for ano in anos_modelo:
         print(f"Ano: {ano}")
 
-        # if ano == 2020:
-        #   # Selecionar seletor dos anos-modelo
-        #   driver.find_element(By.CSS_SELECTOR, year_model_selector).click()
-        #   time.sleep(1)
+        if ano == anos_modelo[0]:
+          # Selecionar seletor dos anos-modelo
+          driver.find_element(By.CSS_SELECTOR, year_model_selector).click()
+          time.sleep(1)
 
         # Selecionar o input dos ano-modelo
         input = driver.find_element(By.CSS_SELECTOR, input_year_model_selector)
@@ -161,18 +171,14 @@ def web_scrapping2(marca, modelo, anos, meses, anos_modelo):
         for i in range(0, 4):
           input.send_keys(Keys.BACK_SPACE)
 
-        if ano == 2022:
-          input.send_keys("zero")
-        else:
-          input.send_keys(str(ano))
-
-        time.sleep(1)
+        input.send_keys(str(ano))
+        time.sleep(3)
 
         # Pega todos os filhos da <ul> de anos-modelo
         ul_year_model_element = driver.find_element(By.CSS_SELECTOR, ul_year_model_selector)
         ul_year_model_element_children = ul_year_model_element.find_elements(By.XPATH, "./*")
 
-        time.sleep(1)
+        time.sleep(3)
       
         if(ul_year_model_element_children[0].get_attribute("class") == 'no-results'):
           print(f"Quantidade de anos-modelo: 0")
@@ -181,33 +187,51 @@ def web_scrapping2(marca, modelo, anos, meses, anos_modelo):
 
           item_year_model_selector = f'li.active-result:nth-child({0 + 1})'
 
-          # Seleciona o ano-modelo desejado
+          # Selecionar o ano-modelo desejado
           driver.find_element(By.CSS_SELECTOR, item_year_model_selector).click()
           time.sleep(1)
 
-          # Seleciona "Pesquisar"
+          # Selecionar "Pesquisar"
           driver.find_element(By.CSS_SELECTOR, search_button_selector).click()
           time.sleep(1)
 
           # Pegar o preço do veiculo
           price = driver.find_element(By.CSS_SELECTOR, price_vehicle).text
-          print(f"Preço: {price}")
+          print(f"Preço: {price}\n")
       
+      # Limpar pesquisa
       try:
-        # Limpar pesquisa
         element = driver.find_element(By.CSS_SELECTOR, clear_search_selector)
         element.click()
+        print("Limpando a pesquisa!\n")
         time.sleep(1)
       except ElementNotInteractableException:
-        print("Não foi possível limpar a pesquisa!")
+        print("Não foi possível limpar a pesquisa!\n")
 
-  driver.quit()
+
+lista_veiculos = [
+  {
+    "marca": "VolksWagen",
+    "modelos_base": [
+      "AMAROK CD2.0 16V/S CD2.0 16V TDI 4x2 Die",
+      "AMAROK Comfor. CD 2.0 TDI 4x4 Dies. Aut.",
+      "AMAROK CS2.0 16V/S2.0 16V TDI 4x4 Diesel"
+    ]
+  },
+  {
+    "marca": "Fiat",
+    "modelos_base": [
+      "ARGO 1.0 6V Flex.",
+      "ARGO DRIVE 1.0 6V Flex",
+      "ARGO PRECISION 1.8 16V Flex Aut."
+    ]
+  },
+]
 
 web_scrapping1()
 
-lista_veiculos = [
-  "AMAROK CD2.0 16V/S CD2.0 16V TDI 4x2 Die"
-]
+for item in lista_veiculos:
+  for modelo in item["modelos_base"]:
+    web_scrapping2(anos, meses, item["marca"], modelo, anos_modelo)
 
-for veiculo in lista_veiculos:
-  web_scrapping2("VolksWagen", veiculo, anos, meses, anos_modelo)
+driver.quit()
