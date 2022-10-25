@@ -1,15 +1,15 @@
 import time
+import json
+
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import ElementNotInteractableException
-
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-# Armazena os valores resultantes do web scrapping
-values = []
+import util
 
 # Site onde sera realizado o web scrapping
 url = "https://veiculos.fipe.org.br/"
@@ -76,7 +76,7 @@ anos = [
 ]
 
 meses = [
-  "janeiro", "fevereiro"
+  "janeiro"
 ]
 
 anos_modelo = [
@@ -84,6 +84,15 @@ anos_modelo = [
 ]
 
 
+# Identificador básico: [marca][modelo_base][modelo_especifico]
+# Leitura do JSON dos veiculos que queremos buscar
+with open("vehicles_to_search.json") as jsonFile:
+  vehicles_to_search = json.load(jsonFile)
+  vehicles_to_search_formatted = json.dumps(vehicles_to_search, indent=2)
+
+# Busca dos indices de: marca, modelo_base e modelo_especifico
+with open("indices_de_busca.json") as jsonFile:
+  indices = json.load(jsonFile)
 
 
 option = Options()
@@ -95,7 +104,8 @@ wait = WebDriverWait(driver, 10)
 
 
 
-def web_scrapping1():
+# Configura inicialmente o web_scrapping
+def setup():
   # Carregar a página
   driver.get(url)
   time.sleep(3)
@@ -108,10 +118,20 @@ def web_scrapping1():
   driver.find_element(By.CSS_SELECTOR, time_period_selector).click()
   time.sleep(1)
 
-def web_scrapping2(anos, meses, marca, modelo, anos_modelo):
+# Retorna um dicionário com os valores correspondentes
+def get_model_prices(anos, meses, marca, modelo, anos_modelo):
+
+  vehicle_information = {
+    "marca": marca,
+    "modelo": modelo,
+    "anos": {}
+  }
 
   for ano_busca in anos:
+    vehicle_information['anos'][ano_busca] = {}
+
     for mes_busca in meses:
+      vehicle_information['anos'][ano_busca][mes_busca] = {}
 
       # Seleciona o input do periodo
       driver.find_element(By.CSS_SELECTOR, input_time_period_selector).send_keys(f"{mes_busca}/{ano_busca}")
@@ -123,7 +143,6 @@ def web_scrapping2(anos, meses, marca, modelo, anos_modelo):
       elemento = wait.until(
         EC.element_to_be_clickable((By.CSS_SELECTOR, period_selector))
       )
-      print(elemento)
       elemento.click()
 
       # Seleciona o seletor das marcas
@@ -156,10 +175,13 @@ def web_scrapping2(anos, meses, marca, modelo, anos_modelo):
       driver.find_element(By.CSS_SELECTOR, item_model_selector).click()
       time.sleep(1)
 
-      for ano in anos_modelo:
-        print(f"Ano: {ano}")
+      for ano_modelo_busca in anos_modelo:
 
-        if ano == anos_modelo[0]:
+        vehicle_information['anos'][ano_busca][mes_busca][ano_modelo_busca] = None
+
+        print(f"Ano_modelo: {ano_modelo_busca}")
+
+        if ano_modelo_busca == anos_modelo[0]:
           # Selecionar seletor dos anos-modelo
           driver.find_element(By.CSS_SELECTOR, year_model_selector).click()
           time.sleep(1)
@@ -171,7 +193,7 @@ def web_scrapping2(anos, meses, marca, modelo, anos_modelo):
         for i in range(0, 4):
           input.send_keys(Keys.BACK_SPACE)
 
-        input.send_keys(str(ano))
+        input.send_keys(str(ano_modelo_busca))
         time.sleep(3)
 
         # Pega todos os filhos da <ul> de anos-modelo
@@ -197,8 +219,10 @@ def web_scrapping2(anos, meses, marca, modelo, anos_modelo):
 
           # Pegar o preço do veiculo
           price = driver.find_element(By.CSS_SELECTOR, price_vehicle).text
+          vehicle_information['anos'][ano_busca][mes_busca][ano_modelo_busca] = price
+
           print(f"Preço: {price}\n")
-      
+
       # Limpar pesquisa
       try:
         element = driver.find_element(By.CSS_SELECTOR, clear_search_selector)
@@ -208,30 +232,36 @@ def web_scrapping2(anos, meses, marca, modelo, anos_modelo):
       except ElementNotInteractableException:
         print("Não foi possível limpar a pesquisa!\n")
 
+  return vehicle_information
 
-lista_veiculos = [
-  {
-    "marca": "VolksWagen",
-    "modelos_base": [
-      "AMAROK CD2.0 16V/S CD2.0 16V TDI 4x2 Die",
-      "AMAROK Comfor. CD 2.0 TDI 4x4 Dies. Aut.",
-      "AMAROK CS2.0 16V/S2.0 16V TDI 4x4 Diesel"
-    ]
-  },
-  {
-    "marca": "Fiat",
-    "modelos_base": [
-      "ARGO 1.0 6V Flex.",
-      "ARGO DRIVE 1.0 6V Flex",
-      "ARGO PRECISION 1.8 16V Flex Aut."
-    ]
-  },
-]
 
-web_scrapping1()
+# Executions
+setup()
 
-for item in lista_veiculos:
-  for modelo in item["modelos_base"]:
-    web_scrapping2(anos, meses, item["marca"], modelo, anos_modelo)
+while True:
+  try:
+    util.update_index()
+  except:
+    print("Algo ERRADO!")
+    break
 
+  vehicle_information = get_model_prices(
+    anos, 
+    meses, 
+    vehicles_to_search
+      [indices["marca"]]["marca"],
+    vehicles_to_search
+      [indices["marca"]]["modelos_base"]
+      [indices["modelo_base"]]
+      [indices["modelo_especifico"]],
+    anos_modelo
+  )
+
+  vehicle_information_formatted = json.dumps(vehicle_information, indent=2)
+  print(vehicle_information_formatted)
+  print("\n=======================\n")
+
+
+
+# Fechamento de execução do web_scrapping
 driver.quit()
