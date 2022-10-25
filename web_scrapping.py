@@ -241,8 +241,8 @@ setup()
 while True:
   try:
     util.update_index()
-  except:
-    print("Algo ERRADO!")
+  except IndexError:
+    print("Não há mais indices disponiveis para consulta!")
     break
 
   vehicle_information = get_model_prices(
