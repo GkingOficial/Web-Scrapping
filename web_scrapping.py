@@ -234,6 +234,8 @@ def get_model_prices(anos, meses, marca, modelo, anos_modelo):
 
   return vehicle_information
 
+with open("vehicles_with_price.json") as jsonFile:
+  vehicles_with_price = json.load(jsonFile)
 
 # Executions
 setup()
@@ -259,6 +261,11 @@ while True:
 
   vehicle_information_formatted = json.dumps(vehicle_information, indent=2)
   print(vehicle_information_formatted)
+
+  vehicles_with_price.append(vehicle_information)
+  with open("vehicles_with_price.json", "w") as jsonFile:
+    json.dump(vehicles_with_price, jsonFile, indent=2)
+
   print("\n=======================\n")
 
 

@@ -77,9 +77,9 @@ def web_scrapping():
 values = web_scrapping()
 print(values)
 
-json_object = json.dumps(values, indent = 2)
+json_object = json.dumps(values, indent=2, ensure_ascii=False)
 print(json_object)
 
-file = open("vehicles.json", "w")
+file = open("vehicles.json", "w", encoding="utf8")
 file.write(json_object)
 file.close()
