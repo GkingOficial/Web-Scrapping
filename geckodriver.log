@@ -8274,3 +8274,414 @@ TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1666730845869	Marionette	INFO	Stopped listening on port 41805
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1666730846377	Marionette	INFO	Stopped listening on port 35321
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1666730846619	Marionette	INFO	Stopped listening on port 35843
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1666730846845	Marionette	INFO	Stopped listening on port 33471
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1666730847092	Marionette	INFO	Stopped listening on port 40243
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1666870808848	geckodriver	INFO	Listening on 127.0.0.1:41561
+1666870816727	geckodriver	INFO	Listening on 127.0.0.1:45123
+1666870816896	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "60835" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile5GbRw1"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1666870818010	Marionette	INFO	Marionette enabled
+1666870818017	Marionette	INFO	Listening on port 36601
+Read port: 36601
+WebDriver BiDi listening on ws://127.0.0.1:60835
+1666870818301	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile5GbRw1/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:60835/devtools/browser/a635ca16-6c20-4f96-9489-3c60821ca05c
+1666870838535	Marionette	INFO	Stopped listening on port 36601
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1666870890765	geckodriver	INFO	Listening on 127.0.0.1:58039
+1666870890819	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "43413" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileCIbLMF"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1666870891631	Marionette	INFO	Marionette enabled
+1666870891636	Marionette	INFO	Listening on port 33705
+Read port: 33705
+WebDriver BiDi listening on ws://127.0.0.1:43413
+1666870891797	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileCIbLMF/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:43413/devtools/browser/edb94b49-1ce9-406e-8fbb-d7ab53180d9b
+1666870907965	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1666870910989	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1666871643333	geckodriver	INFO	Listening on 127.0.0.1:37593
+1666871643387	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "36923" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileaeGSN8"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1666871644207	Marionette	INFO	Marionette enabled
+1666871644212	Marionette	INFO	Listening on port 39749
+Read port: 39749
+WebDriver BiDi listening on ws://127.0.0.1:36923
+1666871644368	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileaeGSN8/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:36923/devtools/browser/53bc1ad0-5a00-4756-b4e7-db4ae4bdc817
+1666871666675	geckodriver	INFO	Listening on 127.0.0.1:51535
+1666871666732	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "40673" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileuNGEaZ"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1666871667562	Marionette	INFO	Marionette enabled
+1666871667572	Marionette	INFO	Listening on port 39149
+Read port: 39149
+WebDriver BiDi listening on ws://127.0.0.1:40673
+1666871667728	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileuNGEaZ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:40673/devtools/browser/147eaf7b-81d2-43c2-b453-7be809a29d18
+1666871698880	geckodriver	INFO	Listening on 127.0.0.1:59483
+1666871698952	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "32809" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile9OofHw"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1666871699812	Marionette	INFO	Marionette enabled
+1666871699817	Marionette	INFO	Listening on port 44911
+Read port: 44911
+WebDriver BiDi listening on ws://127.0.0.1:32809
+1666871699951	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile9OofHw/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:32809/devtools/browser/ca0feed6-fc3d-4826-b618-00485dacf2f0
+1666871706339	Marionette	INFO	Stopped listening on port 44911
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1666871707999	Marionette	INFO	Stopped listening on port 39149
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1666871710060	Marionette	INFO	Stopped listening on port 39749
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1666871712436	Marionette	INFO	Stopped listening on port 33705
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1666872948454	geckodriver	INFO	Listening on 127.0.0.1:49799
+1666872948511	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "58255" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilecLJt6K"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1666872949314	Marionette	INFO	Marionette enabled
+1666872949319	Marionette	INFO	Listening on port 38519
+Read port: 38519
+WebDriver BiDi listening on ws://127.0.0.1:58255
+1666872949480	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilecLJt6K/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58255/devtools/browser/0f94d425-fedd-4679-b9e0-c7bba7312d16
+1666872965738	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1666872968842	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1666872972919	Marionette	INFO	Stopped listening on port 38519
+1666873055748	geckodriver	INFO	Listening on 127.0.0.1:56289
+1666873055803	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "44393" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileHUbY13"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1666873056613	Marionette	INFO	Marionette enabled
+1666873056618	Marionette	INFO	Listening on port 44039
+Read port: 44039
+WebDriver BiDi listening on ws://127.0.0.1:44393
+1666873056779	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileHUbY13/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:44393/devtools/browser/6667443f-c4fe-44c2-9380-3386742ccb69
+1666873073996	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1666873077132	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1666873081191	Marionette	INFO	Stopped listening on port 44039
+1666873164789	geckodriver	INFO	Listening on 127.0.0.1:51797
+1666873164844	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "37969" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile3I6f0O"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1666873165679	Marionette	INFO	Marionette enabled
+1666873165684	Marionette	INFO	Listening on port 35731
+Read port: 35731
+WebDriver BiDi listening on ws://127.0.0.1:37969
+1666873165842	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile3I6f0O/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:37969/devtools/browser/f29e7ca8-fe50-4423-bcfd-77e33ff2163c
+1666873182109	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1666873185140	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1666873189234	Marionette	INFO	Stopped listening on port 35731
+1666873267297	geckodriver	INFO	Listening on 127.0.0.1:43433
+1666873267351	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "46205" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileNkH2UF"
+*** You are running in headless mode.
+1666873267758	Marionette	INFO	Marionette enabled
+1666873267763	Marionette	INFO	Listening on port 44607
+WebDriver BiDi listening on ws://127.0.0.1:46205
+Read port: 44607
+1666873268012	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileNkH2UF/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:46205/devtools/browser/24324672-baa9-46f0-9974-9563fa50e3d5
+1666873284465	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1666873287500	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1666873291453	Marionette	INFO	Stopped listening on port 44607
+1666873457700	geckodriver	INFO	Listening on 127.0.0.1:46803
+1666873457756	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "50283" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilepw06Zg"
+*** You are running in headless mode.
+1666873458147	Marionette	INFO	Marionette enabled
+1666873458151	Marionette	INFO	Listening on port 40831
+Read port: 40831
+WebDriver BiDi listening on ws://127.0.0.1:50283
+1666873458269	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilepw06Zg/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50283/devtools/browser/75607a88-bcf5-4771-94f2-126fce6bb7dc
+1666873472183	geckodriver	INFO	Listening on 127.0.0.1:59189
+1666873472240	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "44817" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileR4cGGr"
+*** You are running in headless mode.
+1666873472645	Marionette	INFO	Marionette enabled
+1666873472650	Marionette	INFO	Listening on port 46537
+WebDriver BiDi listening on ws://127.0.0.1:44817
+Read port: 46537
+1666873472911	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileR4cGGr/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:44817/devtools/browser/9a8b2508-bac7-4962-8367-c674736d051c
+1666873694389	geckodriver	INFO	Listening on 127.0.0.1:49031
+1666873694447	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "33043" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilebAcc1j"
+*** You are running in headless mode.
+1666873694846	Marionette	INFO	Marionette enabled
+1666873694850	Marionette	INFO	Listening on port 46415
+WebDriver BiDi listening on ws://127.0.0.1:33043
+Read port: 46415
+1666873695138	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilebAcc1j/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:33043/devtools/browser/81cbb6a0-6fe4-4980-ac4f-3d2beb14b25b
+1666873712530	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1666873715657	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1666873719633	Marionette	INFO	Stopped listening on port 46415
+1666873775024	geckodriver	INFO	Listening on 127.0.0.1:53863
+1666873775080	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "55557" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileN0dB0b"
+*** You are running in headless mode.
+1666873775480	Marionette	INFO	Marionette enabled
+1666873775485	Marionette	INFO	Listening on port 35085
+WebDriver BiDi listening on ws://127.0.0.1:55557
+Read port: 35085
+1666873775745	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileN0dB0b/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:55557/devtools/browser/3acd7e26-4c8c-4367-b13e-1c9018f77fd5
+1666873791981	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1666873795022	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1666873799078	Marionette	INFO	Stopped listening on port 35085
+1666873841408	geckodriver	INFO	Listening on 127.0.0.1:60117
+1666873841464	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "45121" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileDAKoeY"
+*** You are running in headless mode.
+1666873841863	Marionette	INFO	Marionette enabled
+1666873841868	Marionette	INFO	Listening on port 35067
+WebDriver BiDi listening on ws://127.0.0.1:45121
+Read port: 35067
+1666873842195	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileDAKoeY/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:45121/devtools/browser/04c06290-e329-4f34-b405-72c5926b4195
+1666873857669	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1666873861002	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1666873865180	Marionette	INFO	Stopped listening on port 35067
+1666874612893	geckodriver	INFO	Listening on 127.0.0.1:43329
+1666874612956	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "42133" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilePptIE8"
+*** You are running in headless mode.
+1666874613367	Marionette	INFO	Marionette enabled
+1666874613372	Marionette	INFO	Listening on port 44585
+WebDriver BiDi listening on ws://127.0.0.1:42133
+Read port: 44585
+1666874613637	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilePptIE8/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:42133/devtools/browser/3c978fd7-3cd8-4fb9-98a3-2a1f1370a941
+1666874629619	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1666874632688	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1666874831253	geckodriver	INFO	Listening on 127.0.0.1:55471
+1666874831311	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "37961" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile9BsHIZ"
+*** You are running in headless mode.
+1666874831741	Marionette	INFO	Marionette enabled
+1666874831746	Marionette	INFO	Listening on port 34031
+Read port: 34031
+WebDriver BiDi listening on ws://127.0.0.1:37961
+1666874831868	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile9BsHIZ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:37961/devtools/browser/f9870146-3896-4011-a755-6acee89b7c26
+1666874849106	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1666874852196	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1666874880296	geckodriver	INFO	Listening on 127.0.0.1:44837
+1666874880355	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "37671" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilepZvidk"
+*** You are running in headless mode.
+1666874880779	Marionette	INFO	Marionette enabled
+1666874880784	Marionette	INFO	Listening on port 41749
+Read port: 41749
+WebDriver BiDi listening on ws://127.0.0.1:37671
+1666874880934	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilepZvidk/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:37671/devtools/browser/bb5ab02f-f908-49a5-9400-f7aeb4ced941
+1666874898257	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1666874901332	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1666874929538	geckodriver	INFO	Listening on 127.0.0.1:51065
+1666874929610	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "35167" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileRjmQJe"
+*** You are running in headless mode.
+1666874930070	Marionette	INFO	Marionette enabled
+1666874930075	Marionette	INFO	Listening on port 43445
+Read port: 43445
+WebDriver BiDi listening on ws://127.0.0.1:35167
+1666874930196	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileRjmQJe/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:35167/devtools/browser/722d6224-8bda-4044-b525-2d84da7fb169
+1666874947438	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1666874950595	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1666874970435	geckodriver	INFO	Listening on 127.0.0.1:60977
+1666874970503	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "58303" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileB971PV"
+*** You are running in headless mode.
+1666874971015	Marionette	INFO	Marionette enabled
+1666874971021	Marionette	INFO	Listening on port 42437
+Read port: 42437
+WebDriver BiDi listening on ws://127.0.0.1:58303
+1666874971182	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileB971PV/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58303/devtools/browser/484300ed-a838-488a-9d13-4dcd155e6288
+1666874981542	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1666874987774	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1666874991132	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1666874995104	Marionette	INFO	Stopped listening on port 42437
+1666875383536	geckodriver	INFO	Listening on 127.0.0.1:51363
+1666875383599	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "50873" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilexbRqFx"
+*** You are running in headless mode.
+1666875384026	Marionette	INFO	Marionette enabled
+1666875384031	Marionette	INFO	Listening on port 41263
+Read port: 41263
+WebDriver BiDi listening on ws://127.0.0.1:50873
+1666875384171	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilexbRqFx/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50873/devtools/browser/60fb56a0-b6ae-4425-944d-a85d68a2cbfa
+1666875401166	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1666875404899	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1666875409340	Marionette	INFO	Stopped listening on port 41263
