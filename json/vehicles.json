@@ -45,7 +45,7 @@
       ]
     },
     {
-      "Sed\u00e3 compacto": [
+      "Sedã compacto": [
         {
           "marca": "Chevrolet",
           "modelo": " Onix Plus"
@@ -68,7 +68,7 @@
         },
         {
           "marca": "Toyota",
-          "modelo": " Yaris Sed\u00e3"
+          "modelo": " Yaris Sedã"
         },
         {
           "marca": "Renault",
@@ -123,12 +123,12 @@
           "modelo": " T-Cross"
         },
         {
-          "marca": "Hyundai",
-          "modelo": " Creta"
-        },
-        {
           "marca": "Chevrolet",
           "modelo": " Tracker"
+        },
+        {
+          "marca": "Hyundai",
+          "modelo": " Creta"
         },
         {
           "marca": "Jeep",
@@ -143,7 +143,7 @@
           "modelo": " Duster"
         },
         {
-          "marca": "Citro\u00ebn",
+          "marca": "Citroën",
           "modelo": " C4 Cactus"
         },
         {
@@ -151,12 +151,12 @@
           "modelo": " Tiggo 5X"
         },
         {
-          "marca": "Peugeot",
-          "modelo": " 2008"
-        },
-        {
           "marca": "Honda",
           "modelo": " HR-V"
+        },
+        {
+          "marca": "Peugeot",
+          "modelo": " 2008"
         }
       ]
     },
@@ -169,6 +169,10 @@
         {
           "marca": "Honda",
           "modelo": " Fit"
+        },
+        {
+          "marca": "BYD",
+          "modelo": " D1 EV"
         }
       ]
     },
@@ -189,7 +193,7 @@
       ]
     },
     {
-      "SUV m\u00e9dio": [
+      "SUV médio": [
         {
           "marca": "Jeep",
           "modelo": " Compass"
@@ -233,7 +237,7 @@
       ]
     },
     {
-      "Sed\u00e3 m\u00e9dio": [
+      "Sedã médio": [
         {
           "marca": "Toyota",
           "modelo": " Corolla"
@@ -265,11 +269,15 @@
         {
           "marca": "Kia",
           "modelo": " Cerato"
+        },
+        {
+          "marca": "Hyundai",
+          "modelo": " Ioniq"
         }
       ]
     },
     {
-      "Picape compacta-m\u00e9dia": [
+      "Picape compacta-média": [
         {
           "marca": "Fiat",
           "modelo": " Toro"
@@ -285,7 +293,7 @@
       ]
     },
     {
-      "Picape m\u00e9dia": [
+      "Picape média": [
         {
           "marca": "Toyota",
           "modelo": " Hilux"

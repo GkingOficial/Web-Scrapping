@@ -86,12 +86,12 @@ anos_modelo = [
 
 # Identificador básico: [marca][modelo_base][modelo_especifico]
 # Leitura do JSON dos veiculos que queremos buscar
-with open("vehicles_to_search.json") as jsonFile:
+with open("json/vehicles_to_search.json") as jsonFile:
   vehicles_to_search = json.load(jsonFile)
   vehicles_to_search_formatted = json.dumps(vehicles_to_search, indent=2)
 
 # Busca dos indices de: marca, modelo_base e modelo_especifico
-with open("indices_de_busca.json") as jsonFile:
+with open("json/indices_de_busca.json") as jsonFile:
   indices = json.load(jsonFile)
 
 
@@ -234,7 +234,7 @@ def get_model_prices(anos, meses, marca, modelo, anos_modelo):
 
   return vehicle_information
 
-with open("vehicles_with_price.json") as jsonFile:
+with open("json/vehicles_with_price.json") as jsonFile:
   vehicles_with_price = json.load(jsonFile)
 
 # Executions
@@ -263,7 +263,7 @@ while True:
   print(vehicle_information_formatted)
 
   vehicles_with_price.append(vehicle_information)
-  with open("vehicles_with_price.json", "w") as jsonFile:
+  with open("json/vehicles_with_price.json", "w") as jsonFile:
     json.dump(vehicles_with_price, jsonFile, indent=2)
 
   print("\n=======================\n")

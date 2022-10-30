@@ -1,9 +1,9 @@
 import json
 
-with open("vehicles_to_search.json") as jsonFile:
+with open("json/vehicles_to_search.json") as jsonFile:
   vehicles_to_search = json.load(jsonFile)
 
-with open("indices_de_busca.json") as jsonFile:
+with open("json/indices_de_busca.json") as jsonFile:
   indices = json.load(jsonFile)
 
 # Variar indices
