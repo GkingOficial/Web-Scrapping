@@ -8,6 +8,7 @@ with open("json/indices_de_busca.json") as jsonFile:
 
 # Variar indices
 def update_index():
+  right = True
   try:
     print(
       vehicles_to_search
@@ -43,11 +44,21 @@ def update_index():
             [indices["modelo_especifico"]]
         )
       except IndexError:
+        indices["modelo_especifico"] = -1
+        indices["modelo_base"] = -1
+        indices["marca"] == -1
+
         print("ACABOU os modelos para busca!")
-        raise IndexError
+        right = False
   
   print(indices)
   with open("json/indices_de_busca.json", "w") as jsonFile:
     json.dump(indices, jsonFile)
   
   indices["modelo_especifico"] += 1
+  return right
+
+def read_json(path):
+  with open(path) as jsonFile:
+    json_object = json.load(jsonFile)
+  return json_object

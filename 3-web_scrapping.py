@@ -48,7 +48,7 @@ input_model_selector='#selectAnoModelocarro_chosen > div:nth-child(2) > div:nth-
 ul_model_selector = '#selectAnoModelocarro_chosen > div:nth-child(2) > ul:nth-child(2)'
 
 # Seletor do item correspondente ao modelo desejado
-item_model_selector = 'li.active-result:nth-child(1)'
+item_model_selector = '#selectAnoModelocarro_chosen > div > ul > li:nth-child(1)'
 
 # Seletor do botao 'Pesquisar'
 search_button_selector = '#buttonPesquisarcarro'
@@ -69,7 +69,8 @@ input_year_model_selector = '#selectAnocarro_chosen > div > div > input[type=tex
 ul_year_model_selector = '#selectAnocarro_chosen > div > ul'
 
 # Seletor do item do ano-modelo desejado
-item_year_model_selector = 'li.active-result:nth-child(1)'
+item_year_model_selector = '#selectAnocarro_chosen > div > ul > li:nth-child(1)'
+# li.active-result:nth-child(1)
 
 # Seletor do preço
 price_vehicle = '#resultadoConsultacarroFiltros > table > tbody > tr.last > td:nth-child(2) > p'
@@ -90,24 +91,14 @@ anos_modelo = [
 ]
 
 
-# Identificador básico: [marca][modelo_base][modelo_especifico]
-# Leitura do JSON dos veiculos que queremos buscar
-with open("json/vehicles_to_search.json") as jsonFile:
-  vehicles_to_search = json.load(jsonFile)
-  vehicles_to_search_formatted = json.dumps(vehicles_to_search, indent=2)
-
-# Busca dos indices de: marca, modelo_base e modelo_especifico
-with open("json/indices_de_busca.json") as jsonFile:
-  indices = json.load(jsonFile)
 
 
 option = Options()
 option.headless = False
+option.set_window_rect
+
 driver = webdriver.Firefox(options=option)
-
 wait = WebDriverWait(driver, 10)
-
-
 
 
 # Configura inicialmente o web_scrapping
@@ -115,6 +106,13 @@ def setup():
   # Carregar a página
   driver.get(url)
   time.sleep(3)
+
+  # Zoom In
+  driver.set_context("chrome")
+  win = driver.find_element(By.TAG_NAME, "html")
+  for i in range(0, 7):
+    win.send_keys(Keys.CONTROL + "-")
+  driver.set_context("content")
 
   # Selecionar opcao de busca de carros
   driver.find_element(By.CSS_SELECTOR, cars_selector).click()
@@ -182,7 +180,7 @@ def get_model_prices(anos, meses, marca, modelo, anos_modelo):
           driver.find_element(By.CSS_SELECTOR, year_model_selector).click()
           time.sleep(1)
 
-        # Selecionar o input dos ano-modelo
+        # Selecionar o input dos anos-modelo
         input = driver.find_element(By.CSS_SELECTOR, input_year_model_selector)
         time.sleep(1)
 
@@ -228,39 +226,51 @@ def get_model_prices(anos, meses, marca, modelo, anos_modelo):
 
   return vehicle_information
 
-with open("json/vehicles_with_price.json") as jsonFile:
-  vehicles_with_price = json.load(jsonFile)
 
-# Executions
-setup()
+def execution():
+  with open("json/vehicles_with_price.json") as jsonFile:
+    vehicles_with_price = json.load(jsonFile)
 
-while True:
-  try:
-    util.update_index()
-  except IndexError:
-    print("Não há mais indices disponiveis para consulta!")
-    break
+  # Identificador básico: [marca][modelo_base][modelo_especifico]
+  # Leitura do JSON dos veiculos que queremos buscar
+  with open("json/vehicles_to_search.json") as jsonFile:
+    vehicles_to_search = json.load(jsonFile)
 
-  vehicle_information = get_model_prices(
-    anos, 
-    meses, 
-    vehicles_to_search
-      [indices["marca"]]["marca"],
-    vehicles_to_search
-      [indices["marca"]]["modelos_base"]
-      [indices["modelo_base"]]
-      [indices["modelo_especifico"]],
-    anos_modelo
-  )
+  setup()
+  while True:
+    updated = util.update_index()
 
-  vehicle_information_formatted = json.dumps(vehicle_information, indent=2)
-  print(vehicle_information_formatted)
+    if updated:
 
-  vehicles_with_price.append(vehicle_information)
-  with open("json/vehicles_with_price.json", "w") as jsonFile:
-    json.dump(vehicles_with_price, jsonFile, indent=2)
+      # Busca dos indices de: marca, modelo_base e modelo_especifico
+      with open("json/indices_de_busca.json") as jsonFile:
+        indices = json.load(jsonFile)
 
-  print("\n=======================\n")
+      vehicle_information = get_model_prices(
+        anos, 
+        meses, 
+        vehicles_to_search
+          [indices["marca"]]["marca"],
+        vehicles_to_search
+          [indices["marca"]]["modelos_base"]
+          [indices["modelo_base"]]
+          [indices["modelo_especifico"]],
+        anos_modelo
+      )
 
-# Fechamento de execução do web_scrapping
-driver.quit()
+      vehicle_information_formatted = json.dumps(vehicle_information, indent=2)
+      print(vehicle_information_formatted)
+
+      vehicles_with_price.append(vehicle_information)
+      with open("json/vehicles_with_price.json", "w") as jsonFile:
+        json.dump(vehicles_with_price, jsonFile, indent=2)
+
+      print("\n=======================\n")
+    
+    else:
+      break
+
+  # Fechamento de execução do web_scrapping
+  driver.quit()
+
+execution()
