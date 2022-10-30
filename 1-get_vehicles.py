@@ -65,7 +65,7 @@ def web_scrapping():
       modelo = f'tr.{parity}:nth-child({j + 1}) > td:nth-child(2) > a:nth-child(1) > span:nth-child(3)'
       values[i][category_name].append({
         'marca': driver.find_element(By.CSS_SELECTOR, marca).text,
-        'modelo': driver.find_element(By.CSS_SELECTOR, modelo.lstrip()).text
+        'modelo': driver.find_element(By.CSS_SELECTOR, modelo.lstrip()).text.strip()
       })
 
   # Encerra o selenium

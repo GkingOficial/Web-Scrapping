@@ -4,43 +4,43 @@
       "Hatch compacto": [
         {
           "marca": "Hyundai",
-          "modelo": " HB20"
+          "modelo": "HB20"
         },
         {
           "marca": "Chevrolet",
-          "modelo": " Onix"
+          "modelo": "Onix"
         },
         {
           "marca": "Volkswagen",
-          "modelo": " Gol"
+          "modelo": "Gol"
         },
         {
           "marca": "Fiat",
-          "modelo": " Mobi"
+          "modelo": "Mobi"
         },
         {
           "marca": "Fiat",
-          "modelo": " Argo"
+          "modelo": "Argo"
         },
         {
           "marca": "Renault",
-          "modelo": " Kwid"
+          "modelo": "Kwid"
         },
         {
           "marca": "Peugeot",
-          "modelo": " 208"
+          "modelo": "208"
         },
         {
           "marca": "Toyota",
-          "modelo": " Yaris"
+          "modelo": "Yaris"
         },
         {
           "marca": "Honda",
-          "modelo": " City hatchback"
+          "modelo": "City hatchback"
         },
         {
           "marca": "Renault",
-          "modelo": " Sandero"
+          "modelo": "Sandero"
         }
       ]
     },
@@ -48,43 +48,43 @@
       "Sedã compacto": [
         {
           "marca": "Chevrolet",
-          "modelo": " Onix Plus"
+          "modelo": "Onix Plus"
         },
         {
           "marca": "Fiat",
-          "modelo": " Cronos"
+          "modelo": "Cronos"
         },
         {
           "marca": "Volkswagen",
-          "modelo": " Voyage"
+          "modelo": "Voyage"
         },
         {
           "marca": "Hyundai",
-          "modelo": " HB20S"
+          "modelo": "HB20S"
         },
         {
           "marca": "Honda",
-          "modelo": " City"
+          "modelo": "City"
         },
         {
           "marca": "Toyota",
-          "modelo": " Yaris Sedã"
+          "modelo": "Yaris Sedã"
         },
         {
           "marca": "Renault",
-          "modelo": " Logan"
+          "modelo": "Logan"
         },
         {
           "marca": "Nissan",
-          "modelo": " Versa"
+          "modelo": "Versa"
         },
         {
           "marca": "Fiat",
-          "modelo": " Grand Siena"
+          "modelo": "Grand Siena"
         },
         {
           "marca": "Volkswagen",
-          "modelo": " Virtus"
+          "modelo": "Virtus"
         }
       ]
     },
@@ -92,27 +92,27 @@
       "Aventureiro compacto": [
         {
           "marca": "Fiat",
-          "modelo": " Pulse"
+          "modelo": "Pulse"
         },
         {
           "marca": "Volkswagen",
-          "modelo": " Nivus"
+          "modelo": "Nivus"
         },
         {
           "marca": "CAOA Chery",
-          "modelo": " Tiggo 3X"
+          "modelo": "Tiggo 3X"
         },
         {
           "marca": "Honda",
-          "modelo": " WR-V"
+          "modelo": "WR-V"
         },
         {
           "marca": "CAOA Chery",
-          "modelo": " Tiggo 2"
+          "modelo": "Tiggo 2"
         },
         {
           "marca": "JAC",
-          "modelo": " T40"
+          "modelo": "T40"
         }
       ]
     },
@@ -120,43 +120,43 @@
       "SUV compacto": [
         {
           "marca": "Volkswagen",
-          "modelo": " T-Cross"
+          "modelo": "T-Cross"
         },
         {
           "marca": "Chevrolet",
-          "modelo": " Tracker"
+          "modelo": "Tracker"
         },
         {
           "marca": "Hyundai",
-          "modelo": " Creta"
+          "modelo": "Creta"
         },
         {
           "marca": "Jeep",
-          "modelo": " Renegade"
+          "modelo": "Renegade"
         },
         {
           "marca": "Nissan",
-          "modelo": " Kicks"
+          "modelo": "Kicks"
         },
         {
           "marca": "Renault",
-          "modelo": " Duster"
+          "modelo": "Duster"
         },
         {
           "marca": "Citroën",
-          "modelo": " C4 Cactus"
+          "modelo": "C4 Cactus"
         },
         {
           "marca": "CAOA Chery",
-          "modelo": " Tiggo 5X"
+          "modelo": "Tiggo 5X"
         },
         {
           "marca": "Honda",
-          "modelo": " HR-V"
+          "modelo": "HR-V"
         },
         {
           "marca": "Peugeot",
-          "modelo": " 2008"
+          "modelo": "2008"
         }
       ]
     },
@@ -164,15 +164,15 @@
       "Familiar compacto": [
         {
           "marca": "Chevrolet",
-          "modelo": " Spin"
+          "modelo": "Spin"
         },
         {
           "marca": "Honda",
-          "modelo": " Fit"
+          "modelo": "Fit"
         },
         {
           "marca": "BYD",
-          "modelo": " D1 EV"
+          "modelo": "D1 EV"
         }
       ]
     },
@@ -180,15 +180,15 @@
       "Picape compacta": [
         {
           "marca": "Fiat",
-          "modelo": " Strada"
+          "modelo": "Strada"
         },
         {
           "marca": "Volkswagen",
-          "modelo": " Saveiro"
+          "modelo": "Saveiro"
         },
         {
           "marca": "Chevrolet",
-          "modelo": " Montana"
+          "modelo": "Montana"
         }
       ]
     },
@@ -196,43 +196,43 @@
       "SUV médio": [
         {
           "marca": "Jeep",
-          "modelo": " Compass"
+          "modelo": "Compass"
         },
         {
           "marca": "Toyota",
-          "modelo": " Corolla Cross"
+          "modelo": "Corolla Cross"
         },
         {
           "marca": "Jeep",
-          "modelo": " Commander"
+          "modelo": "Commander"
         },
         {
           "marca": "CAOA Chery",
-          "modelo": " Tiggo 8"
+          "modelo": "Tiggo 8"
         },
         {
           "marca": "Volkswagen",
-          "modelo": " Taos"
+          "modelo": "Taos"
         },
         {
           "marca": "CAOA Chery",
-          "modelo": " Tiggo 7"
+          "modelo": "Tiggo 7"
         },
         {
           "marca": "BMW",
-          "modelo": " X1"
+          "modelo": "X1"
         },
         {
           "marca": "Mitsubishi",
-          "modelo": " Eclipse Cross"
+          "modelo": "Eclipse Cross"
         },
         {
           "marca": "Hyundai",
-          "modelo": " New Tucson"
+          "modelo": "New Tucson"
         },
         {
           "marca": "Volvo",
-          "modelo": " XC60"
+          "modelo": "XC60"
         }
       ]
     },
@@ -240,39 +240,39 @@
       "Sedã médio": [
         {
           "marca": "Toyota",
-          "modelo": " Corolla"
+          "modelo": "Corolla"
         },
         {
           "marca": "Chevrolet",
-          "modelo": " Cruze"
+          "modelo": "Cruze"
         },
         {
           "marca": "Honda",
-          "modelo": " Civic"
+          "modelo": "Civic"
         },
         {
           "marca": "CAOA Chery",
-          "modelo": " Arrizo 6"
+          "modelo": "Arrizo 6"
         },
         {
           "marca": "Volkswagen",
-          "modelo": " Jetta"
+          "modelo": "Jetta"
         },
         {
           "marca": "Mercedes-Benz",
-          "modelo": " CLA"
+          "modelo": "CLA"
         },
         {
           "marca": "Audi",
-          "modelo": " A3 Sedan"
+          "modelo": "A3 Sedan"
         },
         {
           "marca": "Kia",
-          "modelo": " Cerato"
+          "modelo": "Cerato"
         },
         {
           "marca": "Hyundai",
-          "modelo": " Ioniq"
+          "modelo": "Ioniq"
         }
       ]
     },
@@ -280,15 +280,15 @@
       "Picape compacta-média": [
         {
           "marca": "Fiat",
-          "modelo": " Toro"
+          "modelo": "Toro"
         },
         {
           "marca": "Renault",
-          "modelo": " Oroch"
+          "modelo": "Oroch"
         },
         {
           "marca": "Ford",
-          "modelo": " Maverick"
+          "modelo": "Maverick"
         }
       ]
     },
@@ -296,39 +296,39 @@
       "Picape média": [
         {
           "marca": "Toyota",
-          "modelo": " Hilux"
+          "modelo": "Hilux"
         },
         {
           "marca": "Chevrolet",
-          "modelo": " S10"
+          "modelo": "S10"
         },
         {
           "marca": "Mitsubishi",
-          "modelo": " L200 Triton"
+          "modelo": "L200 Triton"
         },
         {
           "marca": "Ford",
-          "modelo": " Ranger"
+          "modelo": "Ranger"
         },
         {
           "marca": "Nissan",
-          "modelo": " Frontier"
+          "modelo": "Frontier"
         },
         {
           "marca": "Volkswagen",
-          "modelo": " Amarok"
+          "modelo": "Amarok"
         },
         {
           "marca": "RAM",
-          "modelo": " 1500"
+          "modelo": "1500"
         },
         {
           "marca": "Jeep",
-          "modelo": " Gladiator"
+          "modelo": "Gladiator"
         },
         {
           "marca": "JAC",
-          "modelo": " iEV 330P"
+          "modelo": "iEV 330P"
         }
       ]
     }
