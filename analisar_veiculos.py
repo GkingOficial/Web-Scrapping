@@ -157,17 +157,46 @@ def return_float_number(string):
 
 # Busca do inicio do periodo
 setup()
+
+vehicle_to_search = {
+  "marca": "VolksWagen",
+  "modelos_base": []
+}
+
 models_names = get_models_from_model_base("Hyundai", " HB20", "setembro", 2019)
 
+vehicles_name_to_search = []
 for word in "Aut.", "Mec.":
   new_models_names = return_models_with_an_especific_word(models_names, word)
   print(json.dumps(new_models_names, indent=2))
 
   list_values = []
-  for index, model in enumerate(new_models_names):
+  for model in new_models_names:
     float_number = return_float_number(model[1])
     if float_number != None:
-      list_values.append((index, float_number))
+      list_values.append((model[0], float_number))
   print(json.dumps(list_values, indent=2))
+
+  maximum_value = max(list_values, key=lambda x:x[1])
+  minimum_value = min(list_values, key=lambda x:x[1])
+
+  vehicles_name_to_search.append(maximum_value)
+  vehicles_name_to_search.append(minimum_value)
+
+print(vehicles_name_to_search)
+
+def get_names_from_indexes(list_indexes, list_names):
+  new_list_names = []
+  indexes_not_repeated = []
+  for item in list_indexes:
+    if item[0] is not indexes_not_repeated:
+      new_list_names.append(list_names[item[0]][1])
+      indexes_not_repeated.append(item[0])
+  return new_list_names
+
+
+
+vehicle_to_search['modelos_base'].append(get_names_from_indexes(vehicles_name_to_search, models_names))
+print(json.dumps(vehicle_to_search, indent=2))
 
 driver.close()
