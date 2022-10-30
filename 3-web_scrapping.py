@@ -1,5 +1,6 @@
 import time
 import json
+import util
 
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
@@ -9,7 +10,6 @@ from selenium.common.exceptions import ElementNotInteractableException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-import util
 
 # Site onde sera realizado o web scrapping
 url = "https://veiculos.fipe.org.br/"
@@ -23,11 +23,11 @@ cars_selector = '#front > div.content > div.tab.vertical.tab-veiculos > ul > li:
 # Seletor do seletor de data referencia
 time_period_selector = '#selectTabelaReferenciacarro_chosen > a'
 
-# Input da data referencia
+# Seletor do input da data referencia
 input_time_period_selector = '#selectTabelaReferenciacarro_chosen > div:nth-child(2) > div:nth-child(1) > input:nth-child(1)'
 
-# Item da data referencia
-item_time_period_selector = '.active-result'
+# Seletor do item da data referencia
+item_time_period_selector = '#selectTabelaReferenciacarro_chosen > div > ul > li'
 
 # Seletor da marca do veiculo
 brand_selector = '#selectMarcacarro_chosen > a'
@@ -47,6 +47,9 @@ input_model_selector='#selectAnoModelocarro_chosen > div:nth-child(2) > div:nth-
 # Seletor da lista de modelos
 ul_model_selector = '#selectAnoModelocarro_chosen > div:nth-child(2) > ul:nth-child(2)'
 
+# Seletor do item correspondente ao modelo desejado
+item_model_selector = 'li.active-result:nth-child(1)'
+
 # Seletor do botao 'Pesquisar'
 search_button_selector = '#buttonPesquisarcarro'
 
@@ -64,6 +67,9 @@ input_year_model_selector = '#selectAnocarro_chosen > div > div > input[type=tex
 
 # Seletor do input do ano-modelo
 ul_year_model_selector = '#selectAnocarro_chosen > div > ul'
+
+# Seletor do item do ano-modelo desejado
+item_year_model_selector = 'li.active-result:nth-child(1)'
 
 # Seletor do preço
 price_vehicle = '#resultadoConsultacarroFiltros > table > tbody > tr.last > td:nth-child(2) > p'
@@ -137,11 +143,9 @@ def get_model_prices(anos, meses, marca, modelo, anos_modelo):
       driver.find_element(By.CSS_SELECTOR, input_time_period_selector).send_keys(f"{mes_busca}/{ano_busca}")
       time.sleep(3)
 
-      period_selector = '#selectTabelaReferenciacarro_chosen > div > ul > li'
-
       # Seleciona o primeiro item do período
       elemento = wait.until(
-        EC.element_to_be_clickable((By.CSS_SELECTOR, period_selector))
+        EC.element_to_be_clickable((By.CSS_SELECTOR, item_time_period_selector))
       )
       elemento.click()
 
@@ -163,21 +167,13 @@ def get_model_prices(anos, meses, marca, modelo, anos_modelo):
 
       # Filtro do modelo desejado
       driver.find_element(By.CSS_SELECTOR, input_model_selector).send_keys(modelo)
-      time.sleep(1)
-
-      # Pega todos os filhos da <ul> de modelos
-      ul_model_element = driver.find_element(By.CSS_SELECTOR, ul_model_selector)
-      ul_model_element_children = ul_model_element.find_elements(By.XPATH, "./*")
-      
-      item_model_selector = f'li.active-result:nth-child({0 + 1})'
+      time.sleep(1)      
 
       # Seleciona modelo desejado
       driver.find_element(By.CSS_SELECTOR, item_model_selector).click()
       time.sleep(1)
 
       for ano_modelo_busca in anos_modelo:
-
-        vehicle_information['anos'][ano_busca][mes_busca][ano_modelo_busca] = None
 
         print(f"Ano_modelo: {ano_modelo_busca}")
 
@@ -206,8 +202,6 @@ def get_model_prices(anos, meses, marca, modelo, anos_modelo):
           print(f"Quantidade de anos-modelo: 0")
         else:
           print(f"Quantidade de anos-modelo: {len(ul_year_model_element_children)}")
-
-          item_year_model_selector = f'li.active-result:nth-child({0 + 1})'
 
           # Selecionar o ano-modelo desejado
           driver.find_element(By.CSS_SELECTOR, item_year_model_selector).click()
@@ -267,8 +261,6 @@ while True:
     json.dump(vehicles_with_price, jsonFile, indent=2)
 
   print("\n=======================\n")
-
-
 
 # Fechamento de execução do web_scrapping
 driver.quit()

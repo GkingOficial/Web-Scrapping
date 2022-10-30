@@ -47,7 +47,7 @@ def update_index():
         raise IndexError
   
   print(indices)
-  with open("indices_de_busca.json", "w") as jsonFile:
+  with open("json/indices_de_busca.json", "w") as jsonFile:
     json.dump(indices, jsonFile)
   
   indices["modelo_especifico"] += 1
