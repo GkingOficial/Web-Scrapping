@@ -228,47 +228,38 @@ def get_model_prices(anos, meses, marca, modelo, anos_modelo):
 
 
 def execution():
-  with open("json/vehicles_with_price.json") as jsonFile:
-    vehicles_with_price = json.load(jsonFile)
-
   # Identificador básico: [marca][modelo_base][modelo_especifico]
-  # Leitura do JSON dos veiculos que queremos buscar
-  with open("json/vehicles_to_search.json") as jsonFile:
-    vehicles_to_search = json.load(jsonFile)
+  vehicles_to_search = util.read_json("json/vehicles_to_search.json")
+  vehicles_with_price = util.read_json("json/vehicles_with_price.json")
+  # Busca dos indices de: marca, modelo_base e modelo_especifico
+  indices_de_busca = util.read_json("json/indices_de_busca.json")
+  print(indices_de_busca)
 
   setup()
-  while True:
-    updated = util.update_index()
+  while util.check_indexes(vehicles_to_search, indices_de_busca):
+    vehicle_information = get_model_prices(
+      anos, 
+      meses, 
+      vehicles_to_search
+        [indices_de_busca["marca"]]["marca"],
+      vehicles_to_search
+        [indices_de_busca["marca"]]["modelos_base"]
+        [indices_de_busca["modelo_base"]]
+        [indices_de_busca["modelo_especifico"]],
+      anos_modelo
+    )
 
-    if updated:
+    vehicle_information_formatted = json.dumps(vehicle_information, indent=2)
+    print(vehicle_information_formatted)
 
-      # Busca dos indices de: marca, modelo_base e modelo_especifico
-      with open("json/indices_de_busca.json") as jsonFile:
-        indices = json.load(jsonFile)
+    vehicles_with_price.append(vehicle_information)
+    with open("json/vehicles_with_price.json", "w") as jsonFile:
+      json.dump(vehicles_with_price, jsonFile, indent=2)
+    print("\n=======================\n")
 
-      vehicle_information = get_model_prices(
-        anos, 
-        meses, 
-        vehicles_to_search
-          [indices["marca"]]["marca"],
-        vehicles_to_search
-          [indices["marca"]]["modelos_base"]
-          [indices["modelo_base"]]
-          [indices["modelo_especifico"]],
-        anos_modelo
-      )
-
-      vehicle_information_formatted = json.dumps(vehicle_information, indent=2)
-      print(vehicle_information_formatted)
-
-      vehicles_with_price.append(vehicle_information)
-      with open("json/vehicles_with_price.json", "w") as jsonFile:
-        json.dump(vehicles_with_price, jsonFile, indent=2)
-
-      print("\n=======================\n")
-    
-    else:
+    if util.update_indexes(vehicles_to_search, indices_de_busca) == False:
       break
+    indices_de_busca = util.read_json("json/indices_de_busca.json")
 
   # Fechamento de execução do web_scrapping
   driver.quit()
