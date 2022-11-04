@@ -4,7 +4,7 @@ import util
 import selectors_html
 
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import ElementNotInteractableException
@@ -35,7 +35,7 @@ option = Options()
 option.headless = True
 option.set_window_rect
 
-driver = webdriver.Chrome(options=option)
+driver = webdriver.Firefox(options=option)
 wait = WebDriverWait(driver, 10)
 
 
