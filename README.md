@@ -19,7 +19,7 @@
 ### Requisitos
 
 Para rodar esta aplicação, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Python + pip](https://www.python.org/downloads/) e [virtualenv](https://virtualenv.pypa.io/en/latest/).
+[Git](https://git-scm.com), [Python + pip](https://www.python.org/downloads/), [virtualenv](https://virtualenv.pypa.io/en/latest/) e [Firefox](https://www.mozilla.org/pt-BR/firefox/new/).
 
 ### Passo-a-passo
 
@@ -40,6 +40,14 @@ $ source myENV/bin/activate
 $ pip3 install -r requirements.txt
 
 ```
+
+O selenium (que é uma biblioteca que estamos utilizando) trabalha por baixo dos panos com um navegador de internet. Para este projeto, escolhemos o navegador Firefox, por ser mais comum nos computadores. Então, para que o projeto funcione, é necessário que você tenha instalado esse navegador em seu computador.
+
+Após isto, você deve baixar o [Geckodriver (do Firefox)](https://github.com/mozilla/geckodriver/releases) referente ao seu sistema operacional. No meu caso, baixei o arquivo 'geckodriver-v0.32.0-linux64.tar.gz'.
+
+Extraia o arquivo, e você obterá outro arquivo chamado 'geckodriver'.
+
+Mova o geckodriver para o ambiente virtual myENV que foi criado anteriormente. Especificamente, você deve movê-lo para a pasta /myENV/bin.
 
 ### Execução
 
