@@ -33,7 +33,6 @@ anos_modelo = [
 
 option = Options()
 option.headless = True
-option.set_window_rect
 
 driver = webdriver.Firefox(options=option)
 wait = WebDriverWait(driver, 10)
