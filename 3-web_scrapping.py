@@ -32,7 +32,7 @@ anos_modelo = [
 
 
 option = Options()
-option.headless = False
+option.headless = True
 option.set_window_rect
 
 driver = webdriver.Firefox(options=option)
@@ -164,7 +164,7 @@ def get_model_prices(anos, meses, marca, modelo, anos_modelo):
 
   return vehicle_information
 
-
+# Faz a execução do Web Scrapping de acordo com o que desejamos
 def execution():
   # Identificador básico: [marca][modelo_base][modelo_especifico]
   vehicles_to_search = util.read_json("json/vehicles_to_search.json")

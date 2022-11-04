@@ -34,7 +34,7 @@ def setup():
   driver.find_element(By.CSS_SELECTOR, selectors_html.time_period_selector).click()
   time.sleep(1)
 
-# Listar todos os modelos que possuem aquele modelo_base [(0, nome_0), (1, nome_1), ...]
+# Listar todos os modelos que possuem aquele modelo_base [(0, nome_0)]
 def get_models_from_model_base(marca, modelo_base, mes_busca, ano_busca): 
   # Seleciona o input do periodo
   driver.find_element(By.CSS_SELECTOR, selectors_html.input_time_period_selector).send_keys(f"{mes_busca}/{ano_busca}")
