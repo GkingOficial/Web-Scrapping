@@ -1,0 +1,31 @@
+{
+  "computadores": [
+    {
+      "id": 1,
+      "ativo": true,
+      "marca": 0,
+      "modelo_base": 0,
+      "modelo_especifico": 1
+    },
+    {
+      "id": 2,
+      "ativo": false,
+      "marca": 0,
+      "modelo_base": 0,
+      "modelo_especifico": 0
+    },
+    {
+      "id": 3,
+      "ativo": true,
+      "marca": 0,
+      "modelo_base": 0,
+      "modelo_especifico": 2
+    }
+  ],
+  "proximo": {
+    "identificador": 1,
+    "marca": 0,
+    "modelo_base": 0,
+    "modelo_especifico": 2
+  }
+}
