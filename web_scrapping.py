@@ -20,10 +20,10 @@ class Web_Scrapping:
     self.url = "https://veiculos.fipe.org.br/"
 
     self.anos = [
-      2020
+      2020, 2021
     ]
     self.meses = [
-      "janeiro"
+      "janeiro", "fevereiro"
     ]
 
     self.anos_modelo = [
@@ -42,7 +42,7 @@ class Web_Scrapping:
   def setup(self):
     # Carregar a página
     self.driver.get(self.url)
-    time.sleep(3)
+    time.sleep(1)
 
     # Zoom In
     self.driver.set_context("chrome")
@@ -76,7 +76,7 @@ class Web_Scrapping:
 
         # Seleciona o input do periodo
         self.driver.find_element(By.CSS_SELECTOR, selectors_html.input_time_period_selector).send_keys(f"{mes_busca}/{ano_busca}")
-        time.sleep(3)
+        time.sleep(1)
 
         # Seleciona o primeiro item do período
         elemento = self.wait.until(
@@ -125,13 +125,13 @@ class Web_Scrapping:
             input.send_keys(Keys.BACK_SPACE)
 
           input.send_keys(str(ano_modelo_busca))
-          time.sleep(3)
+          time.sleep(1)
 
           # Pega todos os filhos da <ul> de anos-modelo
           ul_year_model_element = self.driver.find_element(By.CSS_SELECTOR, selectors_html.ul_year_model_selector)
           ul_year_model_element_children = ul_year_model_element.find_elements(By.XPATH, "./*")
 
-          time.sleep(3)
+          time.sleep(1)
         
           if(ul_year_model_element_children[0].get_attribute("class") == 'no-results'):
             print(f"Quantidade de anos-modelo: 0")
