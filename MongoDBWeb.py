@@ -1,6 +1,5 @@
-import json
-from pprint import pprint
 from pymongo import MongoClient
+import json
 
 class MongoDBWeb:
   def __init__(self):
@@ -34,5 +33,11 @@ class MongoDBWeb:
       }
     )
 
-mongoWeb = MongoDBWeb()
-mongoWeb.update_indexes(1, 2, 3)
+  def persistent(self, file):
+    fileData = json.load(file)
+    self.collection.insert_one(fileData)
+
+  def get_indexes(self):
+    value = self.collection.find_one({"id": 1})
+    value.pop('_id')
+    return value

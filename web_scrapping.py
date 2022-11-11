@@ -3,6 +3,8 @@ import json
 import util
 import selectors_html
 
+from MongoDBWeb import MongoDBWeb
+
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.keys import Keys
@@ -33,6 +35,8 @@ class Web_Scrapping:
 
     self.driver = webdriver.Firefox(options=option)
     self.wait = WebDriverWait(self.driver, 10)
+
+    self.mongoWeb = MongoDBWeb()
 
   # Configura inicialmente o web_scrapping
   def setup(self):
@@ -166,23 +170,15 @@ class Web_Scrapping:
   # Identificador básico: [marca][modelo_base][modelo_especifico]
   def get_vehicles_to_search(self):
     self.vehicles_to_search = util.read_json("json/vehicles_to_search.json")
-    util.print_formatted_json(self.vehicles_to_search)
 
   # Leitura de Json com as informações dos veiculos
   def get_vehicles_with_price(self):
     self.vehicles_with_price = util.read_json("json/vehicles_with_price.json")
-    util.print_formatted_json(self.vehicles_with_price)
 
   # Leitura de Json com indices de busca
   # marca, modelo_base e modelo_especifico
   def get_indices_de_busca(self):
-    self.indices_de_busca = util.read_json("json/indices_de_busca.json")
-    util.print_formatted_json(self.indices_de_busca)
-
-
-
-
-
+    self.indices_de_busca = self.mongoWeb.get_indexes()
 
   def check_indexes(self):
     try:
@@ -196,20 +192,16 @@ class Web_Scrapping:
       return False
     return True
 
-
-
-
-
-
   def update_vehicles_with_price_json(self):
     with open("json/vehicles_with_price.json", "w") as jsonFile:
       json.dump(self.vehicles_with_price, jsonFile, indent=2)
   
-  def update_indices_de_busca_json(self):
-    with open("json/indices_de_busca.json", "w") as jsonFile:
-      json.dump(self.indices_de_busca, jsonFile, indent=2)
-
-
+  def update_indices_de_busca_client(self):
+    self.mongoWeb.update_indexes(
+      self.indices_de_busca['marca'],
+      self.indices_de_busca['modelo_base'],
+      self.indices_de_busca['modelo_especifico']
+    )
 
 
 
@@ -235,7 +227,7 @@ class Web_Scrapping:
           self.indices_de_busca["modelo_especifico"] = None
 
     print(self.indices_de_busca)
-    self.update_indices_de_busca_json()
+    self.update_indices_de_busca_client()
 
     return indexes_OK
 
