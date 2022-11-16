@@ -18,14 +18,14 @@ def run_web_scrapping():
   vehicles_to_search = get_vehicles_to_search()
 
   web = Web_Scrapping(indices_de_busca, vehicles_to_search)
+  web.get_vehicles_with_price()
 
   # Salvar no arquivo vehicles_with_price.json
   web.execution()
 
 def save_BD():
-  vehicles_with_price = util.read_json("json/vehicles_with_price.json")
   bd = MongoDBWeb()
-  bd.save(vehicles_with_price)
+  bd.persistent("json/vehicles_with_price.json")
 
 run_web_scrapping()
 save_BD()

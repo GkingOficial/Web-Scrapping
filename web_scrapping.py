@@ -15,7 +15,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 class Web_Scrapping:
   # Constructor
-  def __init__(self):
+  def __init__(self, indices_de_busca, vehicles_to_search):
     # Site onde sera realizado o web scrapping
     self.url = "https://veiculos.fipe.org.br/"
 
@@ -37,6 +37,9 @@ class Web_Scrapping:
     self.wait = WebDriverWait(self.driver, 10)
 
     self.mongoWeb = MongoDBWeb()
+
+    self.indices_de_busca = indices_de_busca
+    self.vehicles_to_search = vehicles_to_search
 
   # Configura inicialmente o web_scrapping
   def setup(self):
@@ -180,6 +183,9 @@ class Web_Scrapping:
   def get_indices_de_busca(self):
     self.indices_de_busca = self.mongoWeb.get_indexes()
 
+
+
+
   def check_indexes(self):
     try:
       print(
@@ -191,20 +197,6 @@ class Web_Scrapping:
     except:
       return False
     return True
-
-  def update_vehicles_with_price_json(self):
-    with open("json/vehicles_with_price.json", "w") as jsonFile:
-      json.dump(self.vehicles_with_price, jsonFile, indent=2)
-  
-  def update_indices_de_busca_client(self):
-    self.mongoWeb.update_indexes(
-      self.indices_de_busca['marca'],
-      self.indices_de_busca['modelo_base'],
-      self.indices_de_busca['modelo_especifico']
-    )
-
-
-
 
   def update_indexes(self):
     self.indices_de_busca["modelo_especifico"] += 1
@@ -230,6 +222,20 @@ class Web_Scrapping:
     self.update_indices_de_busca_client()
 
     return indexes_OK
+
+  def update_indices_de_busca_client(self):
+    self.mongoWeb.update_indexes(
+      self.indices_de_busca['marca'],
+      self.indices_de_busca['modelo_base'],
+      self.indices_de_busca['modelo_especifico']
+    )
+
+
+
+  def update_vehicles_with_price_json(self):
+    with open("json/vehicles_with_price.json", "w") as jsonFile:
+      json.dump(self.vehicles_with_price, jsonFile, indent=2)
+
 
 
   # Faz a execução do Web Scrapping de acordo com o que desejamos
