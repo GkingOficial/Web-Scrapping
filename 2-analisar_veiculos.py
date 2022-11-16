@@ -168,7 +168,13 @@ def get_names_from_indexes(list_indexes, list_names):
 
 
 
-values_with_indexes = get_larger_and_smaller_vehicle(marca, modelo_base, mes_busca, ano_busca, words[1])
+values_with_indexes = get_larger_and_smaller_vehicle(
+  marca, 
+  modelo_base, 
+  mes_busca, 
+  ano_busca, 
+  words[1]
+)
 new_list_names = get_names_from_indexes(values_with_indexes, models_names)
 
 vehicle_to_search['modelos_base'].append(new_list_names)

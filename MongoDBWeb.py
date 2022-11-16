@@ -33,11 +33,12 @@ class MongoDBWeb:
       }
     )
 
-  def persistent(self, file):
-    fileData = json.load(file)
-    self.collection.insert_one(fileData)
-
   def get_indexes(self):
     value = self.collection.find_one({"id": 1})
     value.pop('_id')
     return value
+    
+  def persistent(self, file):
+    fileData = json.load(file)
+    self.collection.insert_one(fileData)
+
