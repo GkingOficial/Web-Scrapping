@@ -38,7 +38,11 @@ class MongoDBWeb:
     value.pop('_id')
     return value
     
-  def persistent(self, file):
-    fileData = json.load(file)
-    self.collection.insert_one(fileData)
-
+  def persistent(self, path):
+    with open(path) as file:
+      fileData = json.load(file)
+    
+    if isinstance(fileData, list):
+      self.collection.insert_many(fileData)
+    else:
+      self.collection.insert_one(fileData)
