@@ -2,7 +2,7 @@ from pymongo import MongoClient
 import json
 
 class MongoDBWeb:
-  def __init__(self, vehicles_to_search_length, number_of_computers):
+  def __init__(self, vehicles_to_search_length=[], number_of_computers=0):
     self.password = "20deAbril%5Cn"
     self.user = "Gking"
     self.cluster = "ic-cluster"

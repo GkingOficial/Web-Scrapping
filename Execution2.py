@@ -2,7 +2,7 @@ import util
 from MongoDBWeb import MongoDBWeb
 from web_scrapping import Web_Scrapping
 
-computer_id = 1
+computer_id = 0
 number_of_computers = 3
 
 def get_vehicles_to_search():
