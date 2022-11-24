@@ -15,15 +15,21 @@ from selenium.webdriver.support import expected_conditions as EC
 
 class Web_Scrapping:
   # Constructor
-  def __init__(self, indices_de_busca, vehicles_to_search):
-    # Site onde sera realizado o web scrapping
+  def __init__(
+    self, 
+    indices_de_busca, 
+    vehicles_to_search,
+    computer_id,
+    number_of_computers
+  ):
+    # Site onde será realizado o web scrapping
     self.url = "https://veiculos.fipe.org.br/"
 
     self.anos = [
-      2020, 2021
+      2020
     ]
     self.meses = [
-      "janeiro", "fevereiro"
+      "janeiro"
     ]
 
     self.anos_modelo = [
@@ -32,14 +38,33 @@ class Web_Scrapping:
 
     option = Options()
     option.headless = False
-
     self.driver = webdriver.Firefox(options=option)
     self.wait = WebDriverWait(self.driver, 10)
 
-    self.mongoWeb = MongoDBWeb()
-
     self.indices_de_busca = indices_de_busca
     self.vehicles_to_search = vehicles_to_search
+    self.computer_id = computer_id
+
+    self.mongoWeb = MongoDBWeb()
+
+    self.vehicles_to_search_length = len(vehicles_to_search)
+    self.number_of_computers = number_of_computers
+
+    self.update_boundaries()
+  
+  # PODE DAR PROBLEMA
+  def update_boundaries(self):
+    self.boundaries_for_computers = []
+    number_of_indexes = int(self.vehicles_to_search_length / self.number_of_computers)
+
+    for computer_id in range(self.number_of_computers):
+      boundary = number_of_indexes * (computer_id + 1)
+
+      if computer_id == (self.number_of_computers - 1):
+        self.boundaries_for_computers.append(self.vehicles_to_search_length)
+      else:
+        self.boundaries_for_computers.append(boundary)
+
 
   # Configura inicialmente o web_scrapping
   def setup(self):
@@ -178,12 +203,6 @@ class Web_Scrapping:
   def get_vehicles_with_price(self):
     self.vehicles_with_price = util.read_json("json/vehicles_with_price.json")
 
-  # Leitura de Json com indices de busca
-  # marca, modelo_base e modelo_especifico
-  def get_indices_de_busca(self):
-    self.indices_de_busca = self.mongoWeb.get_indexes()
-
-
 
 
   def check_indexes(self):
@@ -197,7 +216,16 @@ class Web_Scrapping:
     except:
       return False
     return True
+  
+  def check_indexes_boundary(self):
+    marca = self.indices_de_busca["marca"]
 
+    maximum = self.boundaries_for_computers[self.computer_id]
+    if (marca < maximum):
+      return True
+    return False
+
+  # PODE DAR PROBLEMA
   def update_indexes(self):
     self.indices_de_busca["modelo_especifico"] += 1
     indexes_OK = self.check_indexes()
@@ -212,8 +240,9 @@ class Web_Scrapping:
         self.indices_de_busca["modelo_base"] = 0
         self.indices_de_busca["modelo_especifico"] = 0
         indexes_OK = self.check_indexes()
+        boundary_OK = self.check_indexes_boundary()
 
-        if indexes_OK == False:
+        if (indexes_OK == False) or (boundary_OK == False):
           self.indices_de_busca["marca"] = None
           self.indices_de_busca["modelo_base"] = None
           self.indices_de_busca["modelo_especifico"] = None
@@ -224,11 +253,7 @@ class Web_Scrapping:
     return indexes_OK
 
   def update_indices_de_busca_client(self):
-    self.mongoWeb.update_indexes(
-      self.indices_de_busca['marca'],
-      self.indices_de_busca['modelo_base'],
-      self.indices_de_busca['modelo_especifico']
-    )
+    self.mongoWeb.update_indexes(self.computer_id, self.indices_de_busca)
 
 
 
@@ -237,8 +262,7 @@ class Web_Scrapping:
       json.dump(self.vehicles_with_price, jsonFile, indent=2)
 
 
-
-  # Faz a execução do Web Scrapping de acordo com o que desejamos
+  # Faz a execução do Web Scrapping
   def execution(self):
     self.setup()
 

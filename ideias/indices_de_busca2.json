@@ -1,0 +1,29 @@
+[
+  {
+    "id": 0,
+    "ativo": false,
+    "indices": {
+      "marca": 0,
+      "modelo_base": 0,
+      "modelo_especifico": 0
+    }
+  },
+  {
+    "id": 1,
+    "ativo": false,
+    "indices": {
+      "marca": 33,
+      "modelo_base": 0,
+      "modelo_especifico": 0
+    }
+  },
+  {
+    "id": 2,
+    "ativo": false,
+    "indices": {
+      "marca": 66,
+      "modelo_base": 0,
+      "modelo_especifico": 0
+    }
+  }
+]
