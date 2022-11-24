@@ -4,6 +4,7 @@ import util
 import selectors_html
 
 from MongoDBWeb import MongoDBWeb
+from settings import anos, meses, anos_modelo
 
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
@@ -25,16 +26,9 @@ class Web_Scrapping:
     # Site onde será realizado o web scrapping
     self.url = "https://veiculos.fipe.org.br/"
 
-    self.anos = [
-      2020
-    ]
-    self.meses = [
-      "janeiro"
-    ]
-
-    self.anos_modelo = [
-      2020, 2021, "zero"
-    ]
+    self.anos = anos
+    self.meses = meses
+    self.anos_modelo = anos_modelo
 
     option = Options()
     option.headless = False
@@ -96,14 +90,11 @@ class Web_Scrapping:
     vehicle_information = {
       "marca": marca,
       "modelo": modelo,
-      "anos": {}
+      "anos_modelo": {}
     }
 
     for ano_busca in self.anos:
-      vehicle_information['anos'][ano_busca] = {}
-
       for mes_busca in self.meses:
-        vehicle_information['anos'][ano_busca][mes_busca] = {}
 
         # Seleciona o input do periodo
         self.driver.find_element(By.CSS_SELECTOR, selectors_html.input_time_period_selector).send_keys(f"{mes_busca}/{ano_busca}")
@@ -140,6 +131,8 @@ class Web_Scrapping:
         time.sleep(1)
 
         for ano_modelo_busca in self.anos_modelo:
+
+          vehicle_information["anos_modelo"][ano_modelo_busca] = []
 
           print(f"Ano_modelo: {ano_modelo_busca}")
 
@@ -179,7 +172,9 @@ class Web_Scrapping:
 
             # Pegar o preço do veiculo
             price = self.driver.find_element(By.CSS_SELECTOR, selectors_html.price_vehicle).text
-            vehicle_information['anos'][ano_busca][mes_busca][ano_modelo_busca] = price
+            vehicle_information["anos_modelo"][ano_modelo_busca].append({
+              f"{mes_busca}/{ano_busca}": price
+            })
 
             print(f"Preço: {price}\n")
 

@@ -1,1699 +1,749 @@
-1669293254488	geckodriver	INFO	Listening on 127.0.0.1:56129
-1669293255205	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "45581" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilebTDvOh"
+1669310586241	geckodriver	INFO	Listening on 127.0.0.1:46593
+1669310586299	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "43007" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofiletm1o4R"
 ATTENTION: default value of option mesa_glthread overridden by environment.
 ATTENTION: default value of option mesa_glthread overridden by environment.
 ATTENTION: default value of option mesa_glthread overridden by environment.
 ATTENTION: default value of option mesa_glthread overridden by environment.
-1669293256288	Marionette	INFO	Marionette enabled
-1669293256295	Marionette	INFO	Listening on port 42109
-Read port: 42109
-WebDriver BiDi listening on ws://127.0.0.1:45581
-1669293256580	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilebTDvOh/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:45581/devtools/browser/a970f22d-5a34-4bc0-84bf-65daad3e928c
-1669293329421	geckodriver	INFO	Listening on 127.0.0.1:49347
-1669293329507	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "34113" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile8xDIM8"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669293330360	Marionette	INFO	Marionette enabled
-1669293330365	Marionette	INFO	Listening on port 38619
-Read port: 38619
-WebDriver BiDi listening on ws://127.0.0.1:34113
-1669293330522	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile8xDIM8/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:34113/devtools/browser/d8f0124d-ff98-4780-8d8b-3571ff250a80
-1669293337705	Marionette	INFO	Stopped listening on port 38619
-console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
-1669293340786	Marionette	INFO	Stopped listening on port 42109
-console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
-1669293368274	geckodriver	INFO	Listening on 127.0.0.1:52369
-1669293368347	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "35701" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileGA87pP"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669293369189	Marionette	INFO	Marionette enabled
-1669293369194	Marionette	INFO	Listening on port 46125
-Read port: 46125
-WebDriver BiDi listening on ws://127.0.0.1:35701
-1669293369372	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileGA87pP/search.json.mozlz4", (void 0)))
-1669293371161	Marionette	INFO	Stopped listening on port 46125
-1669293371173	CDP	WARN	Failed to remove undefined (Could not parse path (undefined): NS_ERROR_FILE_UNRECOGNIZED_PATH)
-JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 719: Error: Phase "quit-application-granted" is finished, it is too late to register completion condition "ContentParent: id=7eff374e0100"
-console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
-Exiting due to channel error.
-Exiting due to channel error.
-1669293402902	geckodriver	INFO	Listening on 127.0.0.1:45443
-1669293403014	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "41069" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileFQTRuo"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669293403876	Marionette	INFO	Marionette enabled
-1669293403881	Marionette	INFO	Listening on port 33683
-Read port: 33683
-WebDriver BiDi listening on ws://127.0.0.1:41069
-1669293404030	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileFQTRuo/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:41069/devtools/browser/dedf894f-2135-4933-892b-f57674f66551
-1669293406545	Marionette	INFO	Stopped listening on port 33683
-console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
-1669293822067	geckodriver	INFO	Listening on 127.0.0.1:46795
-1669293822127	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "40809" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilel59ngR"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669293823003	Marionette	INFO	Marionette enabled
-1669293823009	Marionette	INFO	Listening on port 41517
-Read port: 41517
-WebDriver BiDi listening on ws://127.0.0.1:40809
-1669293823160	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilel59ngR/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:40809/devtools/browser/7aea0ce7-c24e-4a75-a8cd-a1d3e782cbcd
-1669293828402	Marionette	INFO	Stopped listening on port 41517
-console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
-1669294225992	geckodriver	INFO	Listening on 127.0.0.1:45567
-1669294226074	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "54043" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileexoR8l"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669294226866	Marionette	INFO	Marionette enabled
-1669294226871	Marionette	INFO	Listening on port 45703
-Read port: 45703
-WebDriver BiDi listening on ws://127.0.0.1:54043
-1669294227052	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileexoR8l/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:54043/devtools/browser/d89a0898-0d5e-4b93-a420-555c15f44ac4
-1669294240237	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669294244151	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669294248373	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669294254639	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669294264365	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669294269308	Marionette	INFO	Stopped listening on port 45703
-1669294542840	geckodriver	INFO	Listening on 127.0.0.1:38355
-1669294542931	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "44799" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileKsrImv"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669294543755	Marionette	INFO	Marionette enabled
-1669294543761	Marionette	INFO	Listening on port 45725
-Read port: 45725
-WebDriver BiDi listening on ws://127.0.0.1:44799
-1669294543907	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileKsrImv/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:44799/devtools/browser/f90499bf-19be-45ff-8058-337479ac1e0f
-1669294557766	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669294561788	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669294565950	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669294572143	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669294581632	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669294591722	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669294595857	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669294602007	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669294611610	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669294615954	Marionette	INFO	Stopped listening on port 45725
-1669294643885	geckodriver	INFO	Listening on 127.0.0.1:51963
-1669294643986	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "37417" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileEGeF1r"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669294644808	Marionette	INFO	Marionette enabled
-1669294644813	Marionette	INFO	Listening on port 36167
-Read port: 36167
-WebDriver BiDi listening on ws://127.0.0.1:37417
-1669294644968	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileEGeF1r/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:37417/devtools/browser/17675077-83b5-46bb-b7e8-e2a7e04fb5ae
-1669294657794	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669294661756	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669294665972	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669294678562	Marionette	INFO	Stopped listening on port 36167
-1669295339043	geckodriver	INFO	Listening on 127.0.0.1:60719
-1669295339168	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "60231" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile8w25qJ"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669295341351	Marionette	INFO	Marionette enabled
-1669295341357	Marionette	INFO	Listening on port 42495
-Read port: 42495
-WebDriver BiDi listening on ws://127.0.0.1:60231
-1669295341556	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile8w25qJ/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:60231/devtools/browser/fc6291e7-653f-4c22-9b93-d81f666abfbb
-1669295354161	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669295358163	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669295362291	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669295368454	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669295377981	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669295387906	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669295392069	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669295398226	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669295407690	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669295412318	Marionette	INFO	Stopped listening on port 42495
-1669295711214	geckodriver	INFO	Listening on 127.0.0.1:50033
-1669295711299	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "52361" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileo3gHVV"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669295712132	Marionette	INFO	Marionette enabled
-1669295712137	Marionette	INFO	Listening on port 33869
-Read port: 33869
-WebDriver BiDi listening on ws://127.0.0.1:52361
-1669295712292	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileo3gHVV/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:52361/devtools/browser/5597ef8e-8c45-4ad5-b2c4-76884c88c12c
-1669295727974	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669295731972	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669295736104	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669295742272	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-Exiting due to channel error.
-Exiting due to channel error.
-Exiting due to channel error.
-1669295845289	geckodriver	INFO	Listening on 127.0.0.1:59617
-1669295845852	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "41821" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileQEG4Y1"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669295846727	Marionette	INFO	Marionette enabled
-1669295846732	Marionette	INFO	Listening on port 36685
-Read port: 36685
-WebDriver BiDi listening on ws://127.0.0.1:41821
-1669295846883	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileQEG4Y1/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:41821/devtools/browser/8cb2083a-6113-492d-b7b2-2db11498b1cc
-1669295859245	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669295863288	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669295867421	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669295873584	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669295883106	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669295893332	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669295897424	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-Exiting due to channel error.
-Exiting due to channel error.
-Exiting due to channel error.
-1669295909554	geckodriver	INFO	Listening on 127.0.0.1:37919
-1669295909638	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "42681" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile5C72at"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669295910458	Marionette	INFO	Marionette enabled
-1669295910463	Marionette	INFO	Listening on port 35241
-Read port: 35241
-WebDriver BiDi listening on ws://127.0.0.1:42681
-1669295910616	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile5C72at/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:42681/devtools/browser/47b059cb-e390-4404-af02-0e7d8230bad0
-1669295922386	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669295926433	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669295930592	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669295936762	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669295946265	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310587079	Marionette	INFO	Marionette enabled
+1669310587085	Marionette	INFO	Listening on port 37051
+Read port: 37051
+WebDriver BiDi listening on ws://127.0.0.1:43007
+1669310587236	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiletm1o4R/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:43007/devtools/browser/73f4b4c2-7a94-41dd-a15c-ae0e1432d588
+1669310599545	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-Exiting due to channel error.
-Exiting due to channel error.
-Exiting due to channel error.
-1669296092011	geckodriver	INFO	Listening on 127.0.0.1:58677
-1669296092066	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "40939" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile6ITBXs"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669296092862	Marionette	INFO	Marionette enabled
-1669296092867	Marionette	INFO	Listening on port 43405
-Read port: 43405
-WebDriver BiDi listening on ws://127.0.0.1:40939
-1669296093016	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile6ITBXs/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:40939/devtools/browser/e4efb1e1-3d25-4643-9c18-7e1847a18897
-1669296105294	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669296109558	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669296113684	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669296119842	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669296129405	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669296134182	Marionette	INFO	Stopped listening on port 43405
-1669296799834	geckodriver	INFO	Listening on 127.0.0.1:47369
-1669296799907	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "51503" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileDrHcWq"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669296800741	Marionette	INFO	Marionette enabled
-1669296800745	Marionette	INFO	Listening on port 42343
-Read port: 42343
-WebDriver BiDi listening on ws://127.0.0.1:51503
-1669296800910	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileDrHcWq/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:51503/devtools/browser/3990d361-6b54-4551-b480-e18e59fd1020
-1669296811402	Marionette	INFO	Stopped listening on port 42343
-1669297789395	geckodriver	INFO	Listening on 127.0.0.1:59969
-1669297789475	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "53805" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileYhm3jS"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669297790318	Marionette	INFO	Marionette enabled
-1669297790323	Marionette	INFO	Listening on port 33283
-Read port: 33283
-WebDriver BiDi listening on ws://127.0.0.1:53805
-1669297790480	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileYhm3jS/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:53805/devtools/browser/18b365e6-1529-498f-b7c0-1f095e0662e7
-1669297803658	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669297807819	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669297812036	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669297832527	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669297848825	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669297853008	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310602590	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669297872944	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310606738	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669297892877	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310619243	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669297909925	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310625317	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669297914023	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310628537	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669297920171	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310632662	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669297929698	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310645213	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669297939248	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310651102	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669297943417	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310654400	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-Exiting due to channel error.
-Exiting due to channel error.
-Exiting due to channel error.
-1669299080257	geckodriver	INFO	Listening on 127.0.0.1:44769
-1669299080310	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "45513" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilehBqDbh"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669299081145	Marionette	INFO	Marionette enabled
-1669299081150	Marionette	INFO	Listening on port 33863
-Read port: 33863
-WebDriver BiDi listening on ws://127.0.0.1:45513
-1669299081282	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilehBqDbh/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:45513/devtools/browser/68dfd8fa-546a-4983-a5ef-a75b3ebc3c47
-1669299096766	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669299100639	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669299104767	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669299110927	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669299120372	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669299125202	Marionette	INFO	Stopped listening on port 33863
-1669299174673	geckodriver	INFO	Listening on 127.0.0.1:47753
-1669299174759	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "55813" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile5eQGc2"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669299175565	Marionette	INFO	Marionette enabled
-1669299175570	Marionette	INFO	Listening on port 40231
-Read port: 40231
-WebDriver BiDi listening on ws://127.0.0.1:55813
-1669299175725	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile5eQGc2/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:55813/devtools/browser/3a5050be-c4ed-4414-aed5-1cf56a92cca3
-1669299187990	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669299191943	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669299196149	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669299216544	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
-TimedPromise@chrome://remote/content/marionette/sync.js:221:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669299222655	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310658581	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669299232260	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310672197	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669299241628	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310675312	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669299245746	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310679427	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669299251938	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310693072	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669299261387	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310696345	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669299270945	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310700510	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669299275063	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310714107	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669299281184	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310717171	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669299290579	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310721277	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669299294807	Marionette	INFO	Stopped listening on port 40231
-1669299688794	geckodriver	INFO	Listening on 127.0.0.1:35511
-1669299688847	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "55841" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilegfqv9F"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669299689618	Marionette	INFO	Marionette enabled
-1669299689623	Marionette	INFO	Listening on port 34011
-Read port: 34011
-WebDriver BiDi listening on ws://127.0.0.1:55841
-1669299689795	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilegfqv9F/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:55841/devtools/browser/e2cfde65-2cc9-46e5-af9a-44eafe736511
-1669299705249	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310735414	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669299709178	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310738454	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669299713368	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310742608	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669299734235	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310755081	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669299740359	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310761210	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669299749887	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310764310	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669299759264	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310768434	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669299763473	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310780879	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669299783570	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310786885	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669299795518	Marionette	INFO	Stopped listening on port 34011
-1669300580369	geckodriver	INFO	Listening on 127.0.0.1:48511
-1669300580426	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "43081" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileYQceki"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669300581195	Marionette	INFO	Marionette enabled
-1669300581200	Marionette	INFO	Listening on port 45057
-Read port: 45057
-WebDriver BiDi listening on ws://127.0.0.1:43081
-1669300581348	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileYQceki/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:43081/devtools/browser/db70f2ef-1fe7-44b2-8818-9bdacc05a598
-1669300594340	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310789930	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669300598220	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310794077	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669300602393	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310807655	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669300623654	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310810824	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669300629809	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310814947	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669300639476	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310828471	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669300648803	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310831507	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669300652961	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310835636	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669300665007	Marionette	INFO	Stopped listening on port 45057
-1669300854043	geckodriver	INFO	Listening on 127.0.0.1:32863
-1669300854110	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "51169" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile2iO6kF"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669300854891	Marionette	INFO	Marionette enabled
-1669300854896	Marionette	INFO	Listening on port 42337
-Read port: 42337
-WebDriver BiDi listening on ws://127.0.0.1:51169
-1669300855049	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile2iO6kF/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:51169/devtools/browser/d9fa61f3-8f45-4727-b3e3-a1c7da6e7b18
-1669300868386	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310849141	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669300872370	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310852171	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669300876600	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310856307	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669300889177	Marionette	INFO	Stopped listening on port 42337
-1669300922819	geckodriver	INFO	Listening on 127.0.0.1:57823
-1669300922945	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "54225" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilew9onAV"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669300923863	Marionette	INFO	Marionette enabled
-1669300923868	Marionette	INFO	Listening on port 40401
-Read port: 40401
-WebDriver BiDi listening on ws://127.0.0.1:54225
-1669300924017	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilew9onAV/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:54225/devtools/browser/1b1fd8a7-3f8e-40e6-8e15-bac24fba2ebf
-1669300934348	Marionette	INFO	Stopped listening on port 40401
-1669300970719	geckodriver	INFO	Listening on 127.0.0.1:47357
-1669300970774	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "58991" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilemisLxs"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669300971568	Marionette	INFO	Marionette enabled
-1669300971573	Marionette	INFO	Listening on port 42285
-Read port: 42285
-WebDriver BiDi listening on ws://127.0.0.1:58991
-1669300971730	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilemisLxs/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:58991/devtools/browser/e669e81a-1abd-47fc-b4ad-95396b12ddc5
-1669300984540	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310869908	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669300987621	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310872955	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669300991775	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310877073	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301012075	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310889457	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301023975	Marionette	INFO	Stopped listening on port 42285
-1669301073663	geckodriver	INFO	Listening on 127.0.0.1:46283
-1669301073723	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "45415" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilejfcufv"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669301074507	Marionette	INFO	Marionette enabled
-1669301074512	Marionette	INFO	Listening on port 36727
-Read port: 36727
-WebDriver BiDi listening on ws://127.0.0.1:45415
-1669301074663	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilejfcufv/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:45415/devtools/browser/0632445c-9872-495c-a6df-08bfc4dd57d9
-1669301087567	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310895350	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301090671	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310898386	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301094923	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310902472	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301112738	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310914896	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301116857	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310920701	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301122970	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310923789	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301132453	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310927936	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301136634	Marionette	INFO	Stopped listening on port 36727
-1669301148790	geckodriver	INFO	Listening on 127.0.0.1:35989
-1669301148870	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "49207" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilepCPWvF"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669301149724	Marionette	INFO	Marionette enabled
-1669301149730	Marionette	INFO	Listening on port 36565
-Read port: 36565
-WebDriver BiDi listening on ws://127.0.0.1:49207
-1669301149912	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilepCPWvF/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:49207/devtools/browser/ed3e8532-cf0d-43e6-9bb9-80bc3d198d81
-1669301162403	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310941462	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301166269	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310944629	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301170425	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310948750	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301176610	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310962230	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301186044	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310965254	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301195931	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310969355	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301199994	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310982885	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301206140	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310985934	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301215599	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669310990063	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301219881	Marionette	INFO	Stopped listening on port 36565
-Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
-1669301224927	geckodriver	INFO	Listening on 127.0.0.1:56045
-1669301225006	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "33555" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileVW30az"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669301225819	Marionette	INFO	Marionette enabled
-1669301225824	Marionette	INFO	Listening on port 43833
-Read port: 43833
-WebDriver BiDi listening on ws://127.0.0.1:33555
-1669301225972	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileVW30az/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:33555/devtools/browser/21cbcb2c-899d-4b0c-88a0-a71f1aa22359
-1669301239010	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311004284	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301242926	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311008200	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301247034	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311012359	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301253187	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311024753	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301262641	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311030607	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301267397	Marionette	INFO	Stopped listening on port 43833
-1669301273102	geckodriver	INFO	Listening on 127.0.0.1:39369
-1669301273175	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "33071" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileQbtQgS"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669301273980	Marionette	INFO	Marionette enabled
-1669301273985	Marionette	INFO	Listening on port 34565
-Read port: 34565
-WebDriver BiDi listening on ws://127.0.0.1:33071
-1669301274140	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileQbtQgS/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:33071/devtools/browser/0b33cce1-ca32-4a13-beb5-04f32997f5cf
-1669301285370	Marionette	INFO	Stopped listening on port 34565
-1669301706512	geckodriver	INFO	Listening on 127.0.0.1:38079
-1669301706586	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "37345" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileIf3JHJ"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669301707390	Marionette	INFO	Marionette enabled
-1669301707395	Marionette	INFO	Listening on port 37531
-Read port: 37531
-WebDriver BiDi listening on ws://127.0.0.1:37345
-1669301707557	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileIf3JHJ/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:37345/devtools/browser/be2b6e0a-ff83-416f-883c-9b9c12aa51e0
-1669301720377	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311034433	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301724278	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311038548	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301728516	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311050906	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301748840	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311056768	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301754925	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311060766	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301764479	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311064915	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301768688	Marionette	INFO	Stopped listening on port 37531
-1669301815519	geckodriver	INFO	Listening on 127.0.0.1:43915
-1669301815582	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "41053" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileDRQhsL"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669301816366	Marionette	INFO	Marionette enabled
-1669301816371	Marionette	INFO	Listening on port 33769
-Read port: 33769
-WebDriver BiDi listening on ws://127.0.0.1:41053
-1669301816516	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileDRQhsL/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:41053/devtools/browser/8e27925d-f86e-4daa-8038-665d548a37b8
-1669301830940	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311071032	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301834739	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311080581	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301838938	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311086406	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301859364	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311090285	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669301871364	Marionette	INFO	Stopped listening on port 33769
-1669305036451	geckodriver	INFO	Listening on 127.0.0.1:38633
-1669305036515	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "37583" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileE700hK"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669305037303	Marionette	INFO	Marionette enabled
-1669305037308	Marionette	INFO	Listening on port 37205
-Read port: 37205
-WebDriver BiDi listening on ws://127.0.0.1:37583
-1669305037465	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileE700hK/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:37583/devtools/browser/2e4c5144-31b9-441c-ae97-4169a74610bf
-1669305050945	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311094392	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669305054933	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311100529	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669305059113	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311109939	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669305079526	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311119177	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669305085637	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311122205	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669305095026	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311127658	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669305099319	Marionette	INFO	Stopped listening on port 37205
-1669305135510	geckodriver	INFO	Listening on 127.0.0.1:36701
-1669305135583	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "51855" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofiley3U3vh"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669305136359	Marionette	INFO	Marionette enabled
-1669305136363	Marionette	INFO	Listening on port 42271
-Read port: 42271
-WebDriver BiDi listening on ws://127.0.0.1:51855
-1669305136513	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiley3U3vh/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:51855/devtools/browser/6ac33f47-7d6b-4966-a681-e5280174592e
-1669305148668	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311133775	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669305152591	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311143245	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669305156866	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311149114	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669305177289	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311152914	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669305189294	Marionette	INFO	Stopped listening on port 42271
-1669305236323	geckodriver	INFO	Listening on 127.0.0.1:59323
-1669305236402	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "41329" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileBxn4Sc"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669305237209	Marionette	INFO	Marionette enabled
-1669305237214	Marionette	INFO	Listening on port 38529
-Read port: 38529
-WebDriver BiDi listening on ws://127.0.0.1:41329
-1669305237357	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileBxn4Sc/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:41329/devtools/browser/fdd44f24-738a-44d9-983f-448d7df46d80
-1669305248983	Marionette	INFO	Stopped listening on port 38529
-1669305311255	geckodriver	INFO	Listening on 127.0.0.1:54619
-1669305311310	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "59425" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilelK9EhQ"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669305312158	Marionette	INFO	Marionette enabled
-1669305312163	Marionette	INFO	Listening on port 33749
-Read port: 33749
-WebDriver BiDi listening on ws://127.0.0.1:59425
-1669305312390	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilelK9EhQ/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:59425/devtools/browser/2bcc426a-93ec-493a-9b57-bebf2d91ab58
-1669305324863	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311157013	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669305328756	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311163123	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669305332960	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311172539	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-Exiting due to channel error.
-Exiting due to channel error.
-Exiting due to channel error.
-1669305374554	geckodriver	INFO	Listening on 127.0.0.1:55411
-1669305374638	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "37603" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilebDu5vm"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669305375409	Marionette	INFO	Marionette enabled
-1669305375414	Marionette	INFO	Listening on port 41757
-Read port: 41757
-WebDriver BiDi listening on ws://127.0.0.1:37603
-1669305375577	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilebDu5vm/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:37603/devtools/browser/77231d23-6edd-457a-a732-84db9a5c16e1
-1669305388573	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311178444	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669305392721	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311182337	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669305396905	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311186476	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669305403030	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311198886	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669305412589	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311205004	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669305422539	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311209502	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669305426701	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311213718	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-Exiting due to channel error.
-Exiting due to channel error.
-Exiting due to channel error.
-1669305445058	geckodriver	INFO	Listening on 127.0.0.1:50529
-1669305445127	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "35393" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile6s6I8i"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669305445911	Marionette	INFO	Marionette enabled
-1669305445917	Marionette	INFO	Listening on port 36477
-Read port: 36477
-WebDriver BiDi listening on ws://127.0.0.1:35393
-1669305446070	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile6s6I8i/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:35393/devtools/browser/0f37593a-877f-49ea-96aa-8d2458bda7a0
-1669305458565	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311226269	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669305462547	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311232174	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669305466793	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311236542	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-Exiting due to channel error.
-Exiting due to channel error.
-Exiting due to channel error.
-1669306058119	geckodriver	INFO	Listening on 127.0.0.1:51591
-1669306058186	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "43989" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilegFgW6X"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669306058984	Marionette	INFO	Marionette enabled
-1669306058989	Marionette	INFO	Listening on port 45397
-WebDriver BiDi listening on ws://127.0.0.1:43989
-Read port: 45397
-1669306059253	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilegFgW6X/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:43989/devtools/browser/2cd743fe-c972-4938-bfc4-2c2f0243b137
-1669306071479	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311240738	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306075492	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311246946	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306079688	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311256474	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306100113	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311262488	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-Exiting due to channel error.
-Exiting due to channel error.
-Exiting due to channel error.
-1669306117086	geckodriver	INFO	Listening on 127.0.0.1:33351
-1669306117154	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "45143" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilewYXQgk"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669306117962	Marionette	INFO	Marionette enabled
-1669306117967	Marionette	INFO	Listening on port 45121
-Read port: 45121
-WebDriver BiDi listening on ws://127.0.0.1:45143
-1669306118131	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilewYXQgk/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:45143/devtools/browser/22347c81-e728-496e-b742-89f40c582cbc
-1669306132611	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311266859	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306136602	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311271088	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306141010	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311277253	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306147162	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311286725	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306156631	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311292612	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306166640	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311297133	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306170815	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311301288	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-Exiting due to channel error.
-Exiting due to channel error.
-Exiting due to channel error.
-1669306184093	geckodriver	INFO	Listening on 127.0.0.1:55271
-1669306184155	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "54905" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileEXfmtD"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669306184968	Marionette	INFO	Marionette enabled
-1669306184973	Marionette	INFO	Listening on port 44555
-Read port: 44555
-WebDriver BiDi listening on ws://127.0.0.1:54905
-1669306185126	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileEXfmtD/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:54905/devtools/browser/097aecde-3dad-40c0-9cba-7766ce70eea6
-1669306197390	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311307481	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306201730	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311317163	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306205964	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311323106	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-Exiting due to channel error.
-Exiting due to channel error.
-Exiting due to channel error.
-1669306227817	geckodriver	INFO	Listening on 127.0.0.1:57877
-1669306227891	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "50259" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileb09vfR"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669306228692	Marionette	INFO	Marionette enabled
-1669306228697	Marionette	INFO	Listening on port 43565
-Read port: 43565
-WebDriver BiDi listening on ws://127.0.0.1:50259
-1669306228863	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileb09vfR/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:50259/devtools/browser/651665f8-bf77-4d49-bdfe-c5c62c7c0f22
-1669306242571	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311327845	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306246717	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311332023	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306250943	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311338183	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306263434	Marionette	INFO	Stopped listening on port 43565
-1669306275455	geckodriver	INFO	Listening on 127.0.0.1:60915
-1669306275514	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "41497" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileeLfAVG"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669306276295	Marionette	INFO	Marionette enabled
-1669306276300	Marionette	INFO	Listening on port 34977
-Read port: 34977
-WebDriver BiDi listening on ws://127.0.0.1:41497
-1669306276450	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileeLfAVG/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:41497/devtools/browser/3ecce42c-de2b-4b10-b812-9503f2313e3d
-1669306289994	Marionette	INFO	Stopped listening on port 34977
-1669306330094	geckodriver	INFO	Listening on 127.0.0.1:33557
-1669306330175	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "43381" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileKkh4BB"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669306330949	Marionette	INFO	Marionette enabled
-1669306330954	Marionette	INFO	Listening on port 44403
-Read port: 44403
-WebDriver BiDi listening on ws://127.0.0.1:43381
-1669306331109	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileKkh4BB/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:43381/devtools/browser/8c56425a-f5bd-4ec3-9d46-ec80e61834b5
-1669306343087	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311347738	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306347076	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311353884	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306351301	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311358394	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306371620	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311362501	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306377712	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311375098	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306387159	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311378406	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306391647	Marionette	INFO	Stopped listening on port 44403
-1669306399827	geckodriver	INFO	Listening on 127.0.0.1:47621
-1669306399890	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "36685" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileyN8UTG"
-1669306413098	geckodriver	INFO	Listening on 127.0.0.1:34295
-1669306413166	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "53533" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilesNZJ1k"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669306413967	Marionette	INFO	Marionette enabled
-1669306413972	Marionette	INFO	Listening on port 38933
-Read port: 38933
-WebDriver BiDi listening on ws://127.0.0.1:53533
-1669306414130	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilesNZJ1k/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:53533/devtools/browser/5ce0b90f-9688-47ee-a0db-44e239f9a79b
-1669306426435	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311381500	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306430456	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311385893	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306434719	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311390039	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306455090	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311402494	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306467062	Marionette	INFO	Stopped listening on port 38933
-1669306497769	geckodriver	INFO	Listening on 127.0.0.1:41027
-1669306497823	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "57195" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilejwhkUG"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669306498612	Marionette	INFO	Marionette enabled
-1669306498617	Marionette	INFO	Listening on port 41275
-Read port: 41275
-WebDriver BiDi listening on ws://127.0.0.1:57195
-1669306498833	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilejwhkUG/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:57195/devtools/browser/21258d47-74f2-44b0-b562-7d9b39aef9f0
-1669306508776	Marionette	INFO	Stopped listening on port 41275
-1669306578698	geckodriver	INFO	Listening on 127.0.0.1:43721
-1669306578775	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "47049" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileOZ3E7C"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669306579542	Marionette	INFO	Marionette enabled
-1669306579547	Marionette	INFO	Listening on port 41889
-Read port: 41889
-WebDriver BiDi listening on ws://127.0.0.1:47049
-1669306579710	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileOZ3E7C/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:47049/devtools/browser/e8effd71-5c0b-4638-9419-20de0089d0cd
-Exiting due to channel error.
-Exiting due to channel error.
-Exiting due to channel error.
-1669306601871	geckodriver	INFO	Listening on 127.0.0.1:60791
-1669306601928	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "54111" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileNSsciu"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669306602719	Marionette	INFO	Marionette enabled
-1669306602723	Marionette	INFO	Listening on port 45585
-Read port: 45585
-WebDriver BiDi listening on ws://127.0.0.1:54111
-1669306602874	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileNSsciu/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:54111/devtools/browser/7476f38f-72af-4be4-b5ee-474284ce078d
-1669306614988	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311408412	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306618095	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311413106	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306622277	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311417300	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306642502	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311423474	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306662269	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311433054	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306679353	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311439042	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306683469	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311443474	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306689581	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311447701	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306699036	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311453897	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306708414	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311463325	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306712522	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311469262	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306718650	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311473675	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306728049	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311477863	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306737538	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311484010	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306741672	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311490350	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306747846	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311496596	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306757293	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311502474	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306761583	Marionette	INFO	Stopped listening on port 45585
-Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
-1669306770178	geckodriver	INFO	Listening on 127.0.0.1:46067
-1669306770238	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "36637" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile4DpTwj"
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-ATTENTION: default value of option mesa_glthread overridden by environment.
-1669306771046	Marionette	INFO	Marionette enabled
-1669306771051	Marionette	INFO	Listening on port 34113
-Read port: 34113
-WebDriver BiDi listening on ws://127.0.0.1:36637
-1669306771201	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile4DpTwj/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:36637/devtools/browser/06eb77fc-4b6d-45dc-ba08-b320ac70328d
-1669306783300	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311507153	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306787147	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311511321	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306791280	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311517524	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306797438	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311523842	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306806913	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1669311530171	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
 TimedPromise@chrome://remote/content/marionette/sync.js:221:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
-1669306811648	Marionette	INFO	Stopped listening on port 34113
+1669311534425	Marionette	INFO	Stopped listening on port 37051
