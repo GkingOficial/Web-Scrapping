@@ -1,5 +1,5 @@
 from pymongo import MongoClient
-import json
+import util
 
 class MongoDBWeb:
   def __init__(self, vehicles_to_search_length=[], number_of_computers=0):
@@ -43,13 +43,24 @@ class MongoDBWeb:
     value.pop('_id')
     return value
     
-  def persistent(self, jsonObject_dictionary):
-    self.collection.insert_one(jsonObject_dictionary)
+  def persistent(self, jsonObject_list):
+    self.collection.update_one(
+      { "site": "Fipe" },
+      { 
+        "$push": { 
+          "vehicles": {
+            "$each": jsonObject_list
+          }
+        }
+      },
+      upsert=True
+    )
 
   def print_all(self):
     documents_list = self.collection.find({})
     for document in documents_list:
-      print(document)
+      document.pop('_id')
+      util.print_formatted_json(document)
 
   def delete_all(self):
     self.collection.delete_many({})

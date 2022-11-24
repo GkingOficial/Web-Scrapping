@@ -44,6 +44,7 @@ class Web_Scrapping:
     self.indices_de_busca = indices_de_busca
     self.vehicles_to_search = vehicles_to_search
     self.computer_id = computer_id
+    self.vehicles_with_price = []
 
     self.vehicles_to_search_length = len(vehicles_to_search)
     self.number_of_computers = number_of_computers
@@ -265,11 +266,13 @@ class Web_Scrapping:
 
 
   # Faz a execução do Web Scrapping
-  def execution(self):
+  def execution(self, mini_batch):
     self.setup()
 
+    execution_times = 0
+    
     print(self.indices_de_busca)
-    while self.check_indexes():
+    while (self.check_indexes() and execution_times < mini_batch):
       vehicle_information = self.search_vehicle_information(
         
         # marca
@@ -287,6 +290,7 @@ class Web_Scrapping:
       self.vehicles_with_price.append(vehicle_information)
       self.update_vehicles_with_price_json()
 
+      execution_times += 1
       if self.update_indexes() == False:
         break
 

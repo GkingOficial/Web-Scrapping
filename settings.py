@@ -1,6 +1,7 @@
 
+# NÃO PODEM MUDAR
 number_of_computers = 2
-computer_id = 0
 
-# Define a quantidade de modelos a serem buscados em cada execução da DAG
-mini_batch = 20
+# PODEM MUDAR
+computer_id = 1
+mini_batch = 6
