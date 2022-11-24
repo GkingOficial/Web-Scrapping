@@ -43,9 +43,8 @@ class MongoDBWeb:
     value.pop('_id')
     return value
     
-  def persistent(self, file):
-    fileData = json.load(file)
-    self.collection.insert_one(fileData)
+  def persistent(self, jsonObject_dictionary):
+    self.collection.insert_one(jsonObject_dictionary)
 
   def print_all(self):
     documents_list = self.collection.find({})

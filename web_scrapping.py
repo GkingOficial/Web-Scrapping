@@ -45,10 +45,10 @@ class Web_Scrapping:
     self.vehicles_to_search = vehicles_to_search
     self.computer_id = computer_id
 
-    self.mongoWeb = MongoDBWeb()
-
     self.vehicles_to_search_length = len(vehicles_to_search)
     self.number_of_computers = number_of_computers
+
+    self.mongoWeb = MongoDBWeb(self.vehicles_to_search_length, number_of_computers)
 
     self.update_boundaries()
   
