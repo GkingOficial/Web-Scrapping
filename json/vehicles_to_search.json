@@ -3,7 +3,8 @@
     "marca": "VolksWagen",
     "modelos_base": [
       [
-        "AMAROK CD2.0 16V/S CD2.0 16V TDI 4x2 Die"
+        "AMAROK CD2.0 16V/S CD2.0 16V TDI 4x2 Die",
+        "AMAROK CS2.0 16V/S2.0 16V TDI 4x4 Diesel"
       ]
     ]
   },
@@ -20,7 +21,27 @@
     "marca": "VolksWagen",
     "modelos_base": [
       [
-        "AMAROK CS2.0 16V/S2.0 16V TDI 4x4 Diesel"
+        "Gol (novo) 1.0 Mi Total Flex 8V 2p",
+        "Gol (novo) 1.0 Mi Total Flex 8V 4p"
+      ]
+    ]
+  },
+  {
+    "marca": "Hyundai",
+    "modelos_base": [
+      [
+        "HB20 1 Million 1.6 Flex 16V Aut.",
+        "HB20 5 Anos 1.0 Flex 12V Mec.",
+        "HB20 5 Anos 1.6 Flex 16V Aut."
+      ]
+    ]
+  },
+  {
+    "marca": "Fiat",
+    "modelos_base": [
+      [
+        "MOBI DRIVE 1.0 Flex 6V 5p",
+        "MOBI DRIVE GSR 1.0 Flex 6V 5p"
       ]
     ]
   }

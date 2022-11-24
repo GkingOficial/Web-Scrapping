@@ -64,6 +64,8 @@ class Web_Scrapping:
         self.boundaries_for_computers.append(self.vehicles_to_search_length)
       else:
         self.boundaries_for_computers.append(boundary)
+    
+    print("Boundaries for computers:", self.boundaries_for_computers)
 
 
   # Configura inicialmente o web_scrapping

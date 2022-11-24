@@ -1,5 +1,5 @@
 from MongoDBWeb import MongoDBWeb
-from settings import number_of_computers, computer_id
+from settings import computer_id
 
 bd = MongoDBWeb()
 indices_de_busca = bd.get_indexes(computer_id)
