@@ -248,11 +248,11 @@ class Web_Scrapping:
           self.indices_de_busca["modelo_especifico"] = None
 
     print(self.indices_de_busca)
-    self.update_indices_de_busca_client()
+    self.update_indices_de_busca_BD()
 
     return indexes_OK
 
-  def update_indices_de_busca_client(self):
+  def update_indices_de_busca_BD(self):
     self.mongoWeb.update_indexes(self.computer_id, self.indices_de_busca)
 
 
