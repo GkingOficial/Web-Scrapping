@@ -1,5 +1,7 @@
 from pymongo import MongoClient
 import util
+from textwrap import indent
+from bson.json_util import dumps
 
 class MongoDBWeb:
   def __init__(self, vehicles_to_search_length=[], number_of_computers=0):
@@ -64,3 +66,10 @@ class MongoDBWeb:
 
   def delete_all(self):
     self.collection.delete_many({})
+
+  def generate_csv(self):
+    data = list(self.collection.find())
+    jsonData = dumps(data, indent = 2)
+    
+    with open('data1.json', 'w') as file:
+      file.write(jsonData)
