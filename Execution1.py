@@ -1,7 +1,6 @@
-from web_scrapping import Web_Scrapping
+from MongoDBWeb import MongoDBWeb
+from settings import computer_id
 
-web = Web_Scrapping()
-web.get_vehicles_to_search()
-web.get_vehicles_with_price()
-web.get_indices_de_busca()
-web.execution()
+bd = MongoDBWeb()
+indices_de_busca = bd.get_indexes(computer_id)
+print(indices_de_busca)
