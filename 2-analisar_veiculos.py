@@ -1,6 +1,7 @@
 import time
-import json
+import util
 import selectors_html
+import json
 
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
@@ -15,7 +16,7 @@ from selenium.common.exceptions import ElementNotInteractableException
 url = "https://veiculos.fipe.org.br/"
 
 option = Options()
-option.headless = True
+option.headless = False
 driver = webdriver.Firefox(options=option)
 
 wait = WebDriverWait(driver, 10)
@@ -119,34 +120,38 @@ marca = "Hyundai"
 modelo_base = "HB20"
 mes_busca = "setembro"
 ano_busca = 2019
+
 words = ["Aut.", "Mec."]
 
 vehicle_to_search = {
-  "marca": "Hyundai",
+  "marca": marca,
   "modelos_base": []
 }
 models_names = search_models(marca, modelo_base, mes_busca, ano_busca)
+util.print_formatted_json(models_names)
+print("1\n")
 
 
 
 
-
-
-# Retornar lista com maior e menor motorização de: marca e modelo_base
-def get_larger_and_smaller_vehicle(marca, modelo_base, mes_busca, ano_busca, word):
+# Retornar lista com maior e menor motorização de marca e modelo_base
+def get_larger_and_smaller_vehicle(word):
 
   values_with_indexes = []
   new_models_names = return_models_with_an_especific_word(models_names, word)
-  print(json.dumps(new_models_names, indent=2))
+  util.print_formatted_json(new_models_names)
+  print("2\n")
 
   list_values = []
   for model in new_models_names:
     float_number = return_float_number(model[1])
     if float_number != None:
       list_values.append((model[0], float_number))
-  print(json.dumps(list_values, indent=2))
+  util.print_formatted_json(list_values)
+  print("3\n")
 
   maximum_value = max(list_values, key=lambda x:x[1])
+  list_values.remove(maximum_value)
   minimum_value = min(list_values, key=lambda x:x[1])
 
   values_with_indexes.append(maximum_value)
@@ -166,18 +171,14 @@ def get_names_from_indexes(list_indexes, list_names):
   return new_list_names
 
 
+values_with_indexes = []
+for word in words:
+  values_with_indexes += get_larger_and_smaller_vehicle(word)
 
-
-values_with_indexes = get_larger_and_smaller_vehicle(
-  marca, 
-  modelo_base, 
-  mes_busca, 
-  ano_busca, 
-  words[1]
-)
 new_list_names = get_names_from_indexes(values_with_indexes, models_names)
 
 vehicle_to_search['modelos_base'].append(new_list_names)
-print(json.dumps(vehicle_to_search, indent=2))
+util.print_formatted_json(vehicle_to_search)
+print("4\n")
 
 driver.close()
