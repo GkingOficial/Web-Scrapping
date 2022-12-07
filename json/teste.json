@@ -86,5 +86,73 @@
         "YARIS XL 1.3 Flex 16V 5p Mec."
       ]
     ]
+  },
+  {
+    "marca": "Honda",
+    "modelos_base": [
+      [
+        "CITY Hatchback EXL 1.5 Flex 16V Aut.",
+        "CITY Hatchback Touring 1.5 Flex 16V Aut"
+      ]
+    ]
+  },
+  {
+    "marca": "Renault",
+    "modelos_base": [
+      [
+        "SANDERO Intense Flex 1.6 16V 5p Aut.",
+        "SANDERO STEPWAY Hi-Flex 1.6 16V 5p Aut.",
+        "SANDERO Zen Flex 1.6 16V 5p Mec.",
+        "SANDERO Life Flex 1.0 12V 5p Mec."
+      ]
+    ]
+  },
+  {
+    "marca": "Chevrolet",
+    "modelos_base": [
+      []
+    ]
+  },
+  {
+    "marca": "Fiat",
+    "modelos_base": [
+      [
+        "CRONOS 1.8 16V Flex Aut.",
+        "CRONOS DRIVE 1.3 8V Flex Aut.",
+        "CRONOS PRECISION 1.8 16V Flex Mec."
+      ]
+    ]
+  },
+  {
+    "marca": "Volkswagen",
+    "modelos_base": [
+      [
+        "VOYAGE 1.6 MSI Flex 16V 4p Aut.",
+        "VOYAGE CL 1.8",
+        "VOYAGE Trendline 1.0 T.Flex 8V 4p"
+      ]
+    ]
+  },
+  {
+    "marca": "Hyundai",
+    "modelos_base": [
+      [
+        "HB20S Impress 1.6 Flex 16V Aut.",
+        "HB20S Comfort 1.0 TB Flex 12V Aut.",
+        "HB20S Impress 1.6 Flex 16v Mec.",
+        "HB20S 5 Anos 1.0 Flex 12V Mec."
+      ]
+    ]
+  },
+  {
+    "marca": "Hyundai",
+    "modelos_base": [
+      [
+        "HB20 1 Million 1.6 Flex 16V Aut.",
+        "HB20 Copa Mundo Qatar 1.0 TB Flex Aut.",
+        "HB20 C./C.Plus/C.Style 1.6 Flex 16V Mec.",
+        "HB20 5 Anos 1.0 Flex 12V Mec."
+      ]
+    ]
   }
 ]

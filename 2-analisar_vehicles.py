@@ -24,7 +24,10 @@ categories_names = [
   "Picape média"
 ]
 
-vehicles_to_search = []
+try:
+  vehicles_to_search = util.read_json("json/teste.json")
+except:
+  vehicles_to_search = []
 
 for i, category in enumerate(vehicles["vehicles"]):
   list_vehicles = category[categories_names[i]]
@@ -39,6 +42,9 @@ for i, category in enumerate(vehicles["vehicles"]):
     vs.mes_busca = mes_busca
     vs.ano_busca = ano_busca
 
+    print("="*20)
+    print(vs.modelo_base)
+    print("="*20)
     vehicle_names = vs.execution()
 
     vehicle_json["marca"] = vehicle["marca"]

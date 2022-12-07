@@ -134,40 +134,38 @@ class Vehicle_Search():
   # Retornar lista com maior e menor motorização de marca e modelo_base
   def get_larger_and_smaller_vehicle(self, word, remove_list=[]):
 
-    util.print_formatted_json(self.models_names)
-    print("1\n")
-
     values_with_indexes = []
     new_models_names = self.return_models_with_an_especific_word(self.models_names, word)
     if len(new_models_names) == 0:
       new_models_names = self.return_models_with_an_especific_word(self.models_names, "")
-    util.print_formatted_json(new_models_names)
-    print("2\n")
 
     list_values = []
     for model in new_models_names:
       float_number = self.return_float_number(model[1])
       if float_number != None:
         list_values.append((model[0], float_number))
-    # util.print_formatted_json(list_values)
-    # print("3\n")
 
+    print("\nlist_values")
+    util.print_formatted_json(list_values)
+
+    # Itens que podem ser removidos da resposta de consulta (para não termos valores repetidos)
     for remove_item in remove_list:
       try:
         list_values.remove(remove_item)
       except:
-        print("Elemento não está na lista!")
+        print("Elemento não está na lista para ser removido!")
 
-    try:
+    if(len(list_values) > 1):
       maximum_value = max(list_values, key=lambda x:x[1])
       list_values.remove(maximum_value)
       minimum_value = min(list_values, key=lambda x:x[1])
-    except:
-      minimum_value = list_values[0]
-      maximum_value = list_values[1]
 
-    values_with_indexes.append(maximum_value)
-    values_with_indexes.append(minimum_value)
+      values_with_indexes.append(maximum_value)
+      values_with_indexes.append(minimum_value)
+    else:
+      print("Não há elementos suficientes na lista 'list_values'")
+      values_with_indexes = list_values
+
     return values_with_indexes
 
   # Retornar lista de nomes dos modelos a partir da lista de indices
