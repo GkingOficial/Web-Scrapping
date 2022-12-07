@@ -1,0 +1,90 @@
+[
+  {
+    "marca": "Hyundai",
+    "modelos_base": [
+      [
+        "HB20 1 Million 1.6 Flex 16V Aut.",
+        "HB20 Copa Mundo Qatar 1.0 TB Flex Aut.",
+        "HB20 C./C.Plus/C.Style 1.6 Flex 16V Mec.",
+        "HB20 5 Anos 1.0 Flex 12V Mec."
+      ]
+    ]
+  },
+  {
+    "marca": "Chevrolet",
+    "modelos_base": [
+      [
+        "ONIX HATCH ACTIV 1.4 8V Flex 5P Aut.",
+        "ONIX HATCH 1.0 12V TB Flex 5p Aut.",
+        "ONIX HATCH ACTIV 1.4 8V Flex 5p Mec.",
+        "ONIX Lollapalooza 1.0 F.Power 5p Mec."
+      ]
+    ]
+  },
+  {
+    "marca": "Volkswagen",
+    "modelos_base": [
+      [
+        "Golf 2.0/ 2.0 Mi Flex Comfortline Aut.",
+        "Golf Comfort. 200 TSI 1.0 Flex 12V Aut.",
+        "Golf SILVER EDIT. 2.0 Mi T.Flex 8v Mec.",
+        "Golf Comfortline 1.0 TSI Total Flex Mec."
+      ]
+    ]
+  },
+  {
+    "marca": "Fiat",
+    "modelos_base": [
+      [
+        "MOBI DRIVE 1.0 Flex 6V 5p",
+        "MOBI DRIVE GSR 1.0 Flex 6V 5p",
+        "MOBI EASY 1.0 Fire Flex 5p.",
+        "MOBI EASY COMFORT 1.0 Flex 5p."
+      ]
+    ]
+  },
+  {
+    "marca": "Fiat",
+    "modelos_base": [
+      [
+        "ARGO HGT 1.8 16V Flex Aut.",
+        "ARGO PRECISION 1.8 16V Flex Aut.",
+        "ARGO HGT 1.8 16V Flex Mec.",
+        "ARGO PRECISION 1.8 16V Flex Mec."
+      ]
+    ]
+  },
+  {
+    "marca": "Renault",
+    "modelos_base": [
+      [
+        "Kwid ConnecTV 1.0 Flex 12V Mec.",
+        "KWID Intense 1.0 Flex 12V 5p Mec.",
+        "KWID Life 1.0 Flex 12V 5p Mec.",
+        "KWID OUTSIDER 1.0 Flex 12V 5p Mec."
+      ]
+    ]
+  },
+  {
+    "marca": "Peugeot",
+    "modelos_base": [
+      [
+        "208 Active 1.6 Flex 16V 5p Aut.",
+        "208 Active Pack 1.6 Flex 16V 5p Aut.",
+        "208 Griffe 1.6 Flex 16V 5p Mec.",
+        "208 Like 1.0 Flex 6V 5p Mec."
+      ]
+    ]
+  },
+  {
+    "marca": "Toyota",
+    "modelos_base": [
+      [
+        "YARIS S 1.5 Flex 16V 5p Aut.",
+        "YARIS XL 1.3 Flex 16V 5p Aut.",
+        "YARIS XL Live Sedan 1.5 Flex 16V 4p Mec.",
+        "YARIS XL 1.3 Flex 16V 5p Mec."
+      ]
+    ]
+  }
+]
