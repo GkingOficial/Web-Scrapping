@@ -9,9 +9,15 @@ mini_batch = 6
 anos = [
   2019, 2020, 2021
 ]
+
 meses = [
   "janeiro", "fevereiro"
 ]
+
 anos_modelo = [
   2020, 2021, "zero"
 ]
+
+structure_columns = ['Marca', 'Modelo', 'Ano-modelo']
+for index in range(len(anos) * len(meses)):
+  structure_columns.append(f'Mes {index + 1}')

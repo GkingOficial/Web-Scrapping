@@ -2,6 +2,8 @@ from pymongo import MongoClient
 import util
 from textwrap import indent
 from bson.json_util import dumps
+import pandas
+from settings import structure_columns
 
 class MongoDBWeb:
   def __init__(self, vehicles_to_search_length=[], number_of_computers=0):
@@ -67,9 +69,32 @@ class MongoDBWeb:
   def delete_all(self):
     self.collection.delete_many({})
 
-  def generate_csv(self):
+  def generate_json(self):
     data = list(self.collection.find())
     jsonData = dumps(data, indent = 2)
     
     with open('data1.json', 'w') as file:
       file.write(jsonData)
+      
+  def generate_csv(self):
+    value = self.collection.find_one({"site": "Fipe"})
+    value.pop('_id')
+    value.pop('site')
+
+    structure = pandas.DataFrame(columns = structure_columns)
+    
+    for vehicle in value['vehicles']:
+      data = [vehicle['marca'], vehicle['modelo']]
+      for year in vehicle['anos_modelo'].keys():
+        data.append(year)
+        for month in vehicle['anos_modelo'][year]:
+          price = list(month.values())
+          data.append(price[0])
+
+        new = pandas.DataFrame([data], columns = structure_columns)
+        structure = pandas.concat([structure, new])
+
+        structure.fillna(value = "NULL", axis = 1, inplace = True)
+        del data[2 : ]
+    
+    structure.to_csv("data.csv", index = False, header = True)
