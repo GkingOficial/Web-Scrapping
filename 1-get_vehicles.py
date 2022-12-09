@@ -8,7 +8,7 @@ import json
 def web_scrapping():
   # Configuracoes do selenium
   option = Options()
-  option.headless = True
+  option.headless = False
   driver = webdriver.Firefox(options=option)
 
   # Site onde sera o webscrapping
@@ -47,9 +47,11 @@ def web_scrapping():
     more_popular_element.click()
     time.sleep(1)
 
+    #selectCatRank > select > option:nth-child(9)
+
     # Seleciona o ano especifico
     driver.find_element(By.CSS_SELECTOR, year_selector).click()
-    driver.find_element(By.CSS_SELECTOR, f'{year_selector} > option:nth-child(2)').click()
+    driver.find_element(By.CSS_SELECTOR, f'{year_selector} > option:nth-child(9)').click()
     time.sleep(2)
 
     # Verifica os filhos da tabela
@@ -80,6 +82,6 @@ print(values)
 json_object = json.dumps(values, indent=2, ensure_ascii=False)
 print(json_object)
 
-file = open("json/vehicles.json", "w", encoding="utf8")
+file = open("json/vehicles_2015.json", "w", encoding="utf8")
 file.write(json_object)
 file.close()

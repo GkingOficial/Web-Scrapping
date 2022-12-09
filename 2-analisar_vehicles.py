@@ -1,11 +1,11 @@
 from Vehicle_Search import Vehicle_Search
 import util
 
-vehicles = util.read_json("json/vehicles.json")
+vehicles = util.read_json("json/vehicles_2015.json")
 # util.print_formatted_json(vehicles)
 
-mes_busca = "dezembro"
-ano_busca = 2022
+mes_busca = "janeiro"
+ano_busca = 2015
 categories_names = [
   "Hatch compacto",
   "Sedã compacto",
@@ -20,7 +20,7 @@ categories_names = [
 ]
 
 try:
-  vehicles_to_search = util.read_json("json/teste.json")
+  vehicles_to_search = util.read_json("json/teste_2015.json")
 except:
   vehicles_to_search = []
 
@@ -49,6 +49,6 @@ for i, category in enumerate(vehicles["vehicles"]):
     vehicles_to_search.append(vehicle_json)
     util.print_formatted_json(vehicle_json)
 
-    util.update_json("json/teste.json", vehicles_to_search)
+    util.update_json("json/teste_2015.json", vehicles_to_search)
   
   vs.close()

@@ -1,0 +1,332 @@
+[
+  {
+    "marca": "Chevrolet",
+    "modelos_base": [
+      [
+        "ONIX HATCH LT 1.4 8V FlexPower 5p Aut.",
+        "ONIX HATCH LTZ 1.4 8V FlexPower 5p Aut.",
+        "ONIX HATCH LT 1.4 8V FlexPower 5p Mec.",
+        "ONIX Lollapalooza 1.0 F.Power 5p Mec."
+      ]
+    ]
+  },
+  {
+    "marca": "Fiat",
+    "modelos_base": [
+      [
+        "Palio ELX 1.8/ 1.8 mpi Flex 8V 4p",
+        "Palio 1.0 Cel. ECON./ITALIA F.Flex 8V 4p",
+        "Palio ELX Dualogic 1.8 mpi Flex 8V 4p",
+        "Palio 1.0 Celebr. ECONOMY F.Flex 8V 2p"
+      ]
+    ]
+  },
+  {
+    "marca": "Hyundai",
+    "modelos_base": [
+      [
+        "HB20 C.Style/C.Plus 1.6 Flex 16V Aut.",
+        "HB20 Copa do Mundo 1.6 Flex 16V Aut.",
+        "HB20 C./C.Plus/C.Style 1.6 Flex 16V Mec.",
+        "HB20 Copa do Mundo 1.0 Flex 12V Mec."
+      ]
+    ]
+  },
+  {
+    "marca": "Ford",
+    "modelos_base": [
+      [
+        "Ka 1.6 8V Flex 3p",
+        "Ka 1.0 8V/1.0 8V ST Flex 3p",
+        "Ka 1.6 TECNO 8V Flex 3p",
+        "Ka 1.0 SE/SE Plus TiVCT Flex 5p"
+      ]
+    ]
+  },
+  {
+    "marca": "Volkswagen",
+    "modelos_base": [
+      [
+        "Golf 2.0/ 2.0 Mi Flex Comfortline Aut.",
+        "Golf Comfortline 1.4 TSI 140cv Aut.",
+        "Golf SILVER EDIT. 2.0 Mi T.Flex 8v Mec.",
+        "Golf Comfortline 1.4 TSI 140cv Mec."
+      ]
+    ]
+  },
+  {
+    "marca": "Fiat",
+    "modelos_base": [
+      [
+        "Uno 1.6 mpi 2p e 4p",
+        "UNO ATTRACTIVE 1.0 Fire Flex 8V 5p",
+        "Uno CSL 1.6 4p (Argentino)",
+        "Uno City / Smart City 1.0 4p"
+      ]
+    ]
+  },
+  {
+    "marca": "Renault",
+    "modelos_base": [
+      [
+        "SANDERO STEPWAY Hi-Flex 1.6 16V 5p Aut.",
+        "SANDERO Authentique Hi-Flex 1.6 8V 5p",
+        "SANDERO Authentique Hi-Flex 1.0 16V 5p"
+      ]
+    ]
+  },
+  {
+    "marca": "Volkswagen",
+    "modelos_base": [
+      [
+        "Fox 1.6 Mi I MOTION Total Flex 8V 5p",
+        "Fox 1.0 Mi Total Flex 8V 3p",
+        "Fox 1.6 Mi Total Flex 8V 5p",
+        "Fox 1.0 Mi Total Flex 8V 5p"
+      ]
+    ]
+  },
+  {
+    "marca": "Volkswagen",
+    "modelos_base": [
+      [
+        "up! black/white/red 1.0 T. Flex 12V 5p",
+        "up! black/white/red I MOTION 1.0 Flex 5p",
+        "up! cross 1.0 T. Flex 12V 5p",
+        "up! cross I MOTION 1.0 T.Flex 12V 5p"
+      ]
+    ]
+  },
+  {
+    "marca": "Ford",
+    "modelos_base": [
+      [
+        "Fiesta 1.6 16V Flex Aut. 5p",
+        "Fiesta Sedan 1.6 16V Flex Aut.",
+        "Fiesta 1.6 16V Flex Mec. 5p",
+        "Fiesta 1.5 16V Flex Mec. 5p"
+      ]
+    ]
+  },
+  {
+    "marca": "Chevrolet",
+    "modelos_base": [
+      [
+        "PRISMA Sed. LT 1.4 8V FlexPower 4p Aut.",
+        "PRISMA Sed. LTZ 1.4 8V FlexPower 4p Aut.",
+        "PRISMA Sed. Maxx/ LT 1.4 8V ECONOF. 4p",
+        "PRISMA Sed. ADVANT. 1.0 8V FlexPower 4p"
+      ]
+    ]
+  },
+  {
+    "marca": "Fiat",
+    "modelos_base": [
+      [
+        "Siena ELX 1.8 mpi 8V 103cv 4p",
+        "Siena 1.0 mpi/ 500 1.0 mpi",
+        "Siena EX 1.8 mpi 8V 103cv 4p",
+        "Siena 1.0/ EX 1.0 mpi Fire/ Fire Flex 8v"
+      ]
+    ]
+  },
+  {
+    "marca": "Hyundai",
+    "modelos_base": [
+      [
+        "HB20S Copa do Mundo 1.6 Flex 16V Aut.",
+        "HB20S Premium 1.6 Flex 16V Aut. 4p",
+        "HB20S C.Plus/C.Style 1.6 Flex 16V Mec.4p",
+        "HB20S Copa do Mundo 1.0 Flex 12V Mec."
+      ]
+    ]
+  },
+  {
+    "marca": "Volkswagen",
+    "modelos_base": [
+      [
+        "VOYAGE CL 1.8",
+        "VOYAGE Trendline 1.0 T.Flex 8V 4p",
+        "VOYAGE GL 1.8 4p (Argentino)",
+        "VOYAGE Comfortline 1.0 T.Flex 8V 4p"
+      ]
+    ]
+  },
+  {
+    "marca": "Ford",
+    "modelos_base": [
+      []
+    ]
+  },
+  {
+    "marca": "Renault",
+    "modelos_base": [
+      [
+        "LOGAN Authentique Hi-Flex 1.6 8V 4p",
+        "LOGAN Authentique Hi-Flex 1.0 16V 4p",
+        "LOGAN Dyna. EasyR Hi-Flex 1.6 8V",
+        "LOGAN Avantage Hi-Flex 1.0 16V 4p"
+      ]
+    ]
+  },
+  {
+    "marca": "Chevrolet",
+    "modelos_base": [
+      [
+        "Monza Classic SE 2.0 /MPFI e EFI 2p e 4p",
+        "Classic ADVANTAGE 1.0 VHC FlexPower 4p",
+        "Monza Classic/ SL/e/SR 1.8",
+        "Classic Life/LS 1.0 VHC FlexP. 4p"
+      ]
+    ]
+  },
+  {
+    "marca": "Honda",
+    "modelos_base": [
+      [
+        "CITY Sedan DX 1.5 Flex 16V Aut.",
+        "CITY Sedan EX 1.5 Flex 16V 4p Aut.",
+        "CITY Sedan DX 1.5 Flex 16V Mec.",
+        "CITY Sedan EX 1.5 Flex 16V 4p Mec."
+      ]
+    ]
+  },
+  {
+    "marca": "Toyota",
+    "modelos_base": [
+      []
+    ]
+  },
+  {
+    "marca": "Chevrolet",
+    "modelos_base": [
+      [
+        "COBALT ADVANTAGE 1.8 8V Eco.Flex 4p Aut.",
+        "COBALT LT 1.8 8V Econo.Flex 4p Aut.",
+        "COBALT LT 1.8 8V Econo.Flex 4p Mec.",
+        "COBALT LTZ 1.8 8V Econo.Flex 4p Mec."
+      ]
+    ]
+  },
+  {
+    "marca": "Volkswagen",
+    "modelos_base": [
+      [
+        "CROSSFOX 1.6 T. Flex 16V 5p",
+        "CROSSFOX I MOTION 1.6 T. Flex 16V 5p",
+        "CROSSFOX 1.6 Mi Total Flex 8V 5p",
+        "CROSSFOX I MOTION 1.6 Mi T. Flex 8V 5p"
+      ]
+    ]
+  },
+  {
+    "marca": "Citro\u00ebn",
+    "modelos_base": [
+      [
+        "AIRCROSS Exclusive 1.6 Flex 16V 5p Aut.",
+        "AIRCROSS GLX 1.6 Flex 16V 5p Aut.",
+        "AIRCROSS Exclusive 1.6 Flex 16V 5p Mec.",
+        "AIRCROSS GL 1.6 Flex 16V 5p Mec."
+      ]
+    ]
+  },
+  {
+    "marca": "Volkswagen",
+    "modelos_base": [
+      []
+    ]
+  },
+  {
+    "marca": "Honda",
+    "modelos_base": [
+      []
+    ]
+  },
+  {
+    "marca": "Jeep",
+    "modelos_base": [
+      []
+    ]
+  },
+  {
+    "marca": "Renault",
+    "modelos_base": [
+      [
+        "DUSTER Dynamique 2.0 Flex 16V Aut.",
+        "DUSTER TECHROAD 2.0 Hi-Flex 16V Aut.",
+        "DUSTER Dynamique 2.0 Hi-Flex 16V Mec.",
+        "DUSTER 1.6 Hi-Flex 16V Mec."
+      ]
+    ]
+  },
+  {
+    "marca": "Ford",
+    "modelos_base": [
+      [
+        "EcoSport FREESTYLE 2.0 16V Flex 5p Aut.",
+        "EcoSport SE 2.0 16V Flex 5p Aut.",
+        "EcoSport XLT 2.0/ 2.0 Flex 16V 5p Mec.",
+        "EcoSport SE 1.6 16V Flex 5p Mec."
+      ]
+    ]
+  },
+  {
+    "marca": "Chevrolet",
+    "modelos_base": [
+      [
+        "TRACKER LTZ 1.8 16V Flex 4x2 Aut.",
+        "TRACKER Freeride 1.8 16V Flex 4x2 Mec."
+      ]
+    ]
+  },
+  {
+    "marca": "Peugeot",
+    "modelos_base": [
+      []
+    ]
+  },
+  {
+    "marca": "Lifan",
+    "modelos_base": [
+      [
+        "X60 1.8 16V 128cv 5p Mec."
+      ]
+    ]
+  },
+  {
+    "marca": "CAOA Chery",
+    "modelos_base": [
+      [
+        "Tiggo 2.0 16V Aut. 5p",
+        "Tiggo 2.0 16V Mec. 5p"
+      ]
+    ]
+  },
+  {
+    "marca": "Suzuki",
+    "modelos_base": [
+      []
+    ]
+  },
+  {
+    "marca": "Mini",
+    "modelos_base": [
+      [
+        "COOPER Countryman 1.6 Aut.",
+        "COOPER Countryman S 1.6 Aut.",
+        "COOPER Countryman S ALL4 1.6 Aut."
+      ]
+    ]
+  },
+  {
+    "marca": "Honda",
+    "modelos_base": [
+      [
+        "Fit DX 1.5 Flexone 16V 5p Aut.",
+        "Fit CX 1.4 Flex 16V 5p Aut.",
+        "Fit DX 1.5 Flexone 16V 5p Mec.",
+        "Fit CX 1.4 Flex 16V 5p Mec."
+      ]
+    ]
+  }
+]
