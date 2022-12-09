@@ -1,13 +1,8 @@
 from Vehicle_Search import Vehicle_Search
 import util
-import json
 
 vehicles = util.read_json("json/vehicles.json")
 # util.print_formatted_json(vehicles)
-
-def update_json(jsonPath, jsonObject):
-  with open(jsonPath, "w") as jsonFile:
-    json.dump(jsonObject, jsonFile, indent=2)
 
 mes_busca = "dezembro"
 ano_busca = 2022
@@ -54,6 +49,6 @@ for i, category in enumerate(vehicles["vehicles"]):
     vehicles_to_search.append(vehicle_json)
     util.print_formatted_json(vehicle_json)
 
-    update_json("json/teste.json", vehicles_to_search)
+    util.update_json("json/teste.json", vehicles_to_search)
   
   vs.close()

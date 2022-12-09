@@ -11,16 +11,4 @@ bd = MongoDBWeb(
 )
 bd.delete_all()
 bd.add_indexes()
-
-# indices_de_busca = bd.get_indexes(computer_id=0)
-# print(indices_de_busca)
-
-# indices_de_busca["id"] = 1
-# bd.update_indexes(computer_id=1, indices_de_busca=indices_de_busca)
-
-# indices_de_busca["id"] = 2
-# bd.update_indexes(computer_id=2, indices_de_busca=indices_de_busca)
-
-# bd.persistent(util.read_json("json/vehicles_to_search.json"))
-
 bd.print_all()
