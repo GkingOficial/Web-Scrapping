@@ -13,5 +13,5 @@ def clear_json(jsonPath):
     json.dump([], jsonFile)
 
 def update_json(jsonPath, jsonObject):
-  with open(jsonPath, "w") as jsonFile:
+  with open(jsonPath, "w", encoding="utf8") as jsonFile:
     json.dump(jsonObject, jsonFile, indent=2)

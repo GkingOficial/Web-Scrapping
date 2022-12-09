@@ -1,7 +1,7 @@
 from Vehicle_Search import Vehicle_Search
 import util
 
-vehicles = util.read_json("json/vehicles_2015.json")
+vehicles = util.read_json("json/vehicles_2022.json")
 # util.print_formatted_json(vehicles)
 
 mes_busca = "janeiro"
@@ -20,10 +20,12 @@ categories_names = [
 ]
 
 try:
-  vehicles_to_search = util.read_json("json/teste_2015.json")
+  vehicles_to_search = util.read_json("json/teste_2022.json")
 except:
   vehicles_to_search = []
 
+vehicles_discarded_count = 0
+vehicles_count = 0
 for i, category in enumerate(vehicles["vehicles"]):
   list_vehicles = category[categories_names[i]]
 
@@ -42,13 +44,22 @@ for i, category in enumerate(vehicles["vehicles"]):
     print("="*20)
     vehicle_names = vs.execution()
 
-    vehicle_json["marca"] = vehicle["marca"]
-    vehicle_json["modelos_base"] = []
-    vehicle_json["modelos_base"].append(vehicle_names)
+    if len(vehicle_names) > 0:
+      vehicle_json["marca"] = vehicle["marca"]
+      vehicle_json["modelos_base"] = []
+      vehicle_json["modelos_base"].append(vehicle_names)
 
-    vehicles_to_search.append(vehicle_json)
-    util.print_formatted_json(vehicle_json)
+      vehicles_to_search.append(vehicle_json)
+      util.print_formatted_json(vehicle_json)
 
-    util.update_json("json/teste_2015.json", vehicles_to_search)
+      util.update_json("json/teste_2022.json", vehicles_to_search)
+
+      vehicles_count += len(vehicle_names)
+    else:
+      print("Veiculo descartado:")
+      print(f'{vehicle["marca"]}/{vehicle["modelo"]}')
+      vehicles_discarded_count += 1
   
+  print("Modelos considerados:", vehicles_count)
+  print("Modelos_base descartados:", vehicles_discarded_count)
   vs.close()
