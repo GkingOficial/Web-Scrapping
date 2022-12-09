@@ -2,10 +2,10 @@ from Vehicle_Search import Vehicle_Search
 import util
 
 vehicles = util.read_json("json/vehicles_2022.json")
-# util.print_formatted_json(vehicles)
 
 mes_busca = "janeiro"
 ano_busca = 2015
+
 categories_names = [
   "Hatch compacto",
   "Sedã compacto",
