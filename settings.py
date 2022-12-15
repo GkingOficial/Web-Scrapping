@@ -5,14 +5,14 @@ number_of_years = 3
 
 # PODEM MUDAR
 computer_id = 1
-mini_batch = 1
+mini_batch = 5
 
 meses = [
-  "janeiro"
+  "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"
 ]
 
 anos_modelo = [
-  2015, 2016, 2017, 2018, 2019, 2020
+  2020
 ]
 
 structure_columns = ['Marca', 'Modelo', 'Ano-modelo']
