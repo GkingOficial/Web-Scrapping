@@ -1,8 +1,10 @@
 import time
+import json
+
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
-import json
+from settings import verbose
 
 # Faz o Web-Scrapping para algum site
 def web_scrapping():
@@ -77,10 +79,13 @@ def web_scrapping():
   return { "vehicles": values }
 
 values = web_scrapping()
-print(values)
+if verbose:
+  print(values)
 
 json_object = json.dumps(values, indent=2, ensure_ascii=False)
-print(json_object)
+
+if verbose:
+  print(json_object)
 
 file = open("json/vehicles_2015.json", "w", encoding="utf8")
 file.write(json_object)

@@ -9,6 +9,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+from settings import verbose
+
 class Vehicle_Search():
   # Constructor
   def __init__(self):
@@ -65,39 +67,38 @@ class Vehicle_Search():
     self.driver.find_element(By.CSS_SELECTOR, selectors_html.input_brand_selector).send_keys(marca)
     time.sleep(1)
 
-    # Seleciona a primeira marca disponivel (marca desejada)
-    self.driver.find_element(By.CSS_SELECTOR, selectors_html.item_brand_selector).click()
-    time.sleep(1)
-
-    # Seleciona o seletor dos modelos
-    self.driver.find_element(By.CSS_SELECTOR, selectors_html.model_selector).click()
-    time.sleep(1)
-
-    # Filtro do modelo desejado
-    input = self.driver.find_element(By.CSS_SELECTOR, selectors_html.input_model_selector)
-    input.send_keys(modelo_base)
-    time.sleep(1)
-
-    # Pega todos os filhos da <ul> de modelos
-    ul_model_element = self.driver.find_element(By.CSS_SELECTOR, selectors_html.ul_model_selector)
-    ul_model_element_children = ul_model_element.find_elements(By.XPATH, "./*")
-
-    # if len(ul_model_element_children) == 0:
-
-    #   for i in range(0, 20):
-    #     input.send_keys(Keys.BACK_SPACE)
-
-    #   # Filtro do modelo desejado
-    #   input.send_keys(modelo_base.split(" ")[0])
-    #   time.sleep(1)
-
-    #   # Pega todos os filhos da <ul> de modelos
-    #   ul_model_element = self.driver.find_element(By.CSS_SELECTOR, selectors_html.ul_model_selector)
-    #   ul_model_element_children = ul_model_element.find_elements(By.XPATH, "./*")
+    # Pega todos os filhos da <ul> de anos-modelo
+    ul_brand_model_element = self.driver.find_element(By.CSS_SELECTOR, "#selectMarcacarro_chosen > div:nth-child(2) > ul:nth-child(2)")
+    ul_brand_model_element_children = ul_brand_model_element.find_elements(By.XPATH, "./*")
 
     models_names = []
-    for index, item in enumerate(ul_model_element_children):
-      models_names.append((index, item.text))
+
+    if(ul_brand_model_element_children[0].get_attribute("class") == 'no-results'):
+      if verbose:
+        print(f"Quantidade de marcas: 0")
+    else:
+      if verbose:
+        print(f"Quantidade de marcas: {len(ul_brand_model_element_children)}")
+
+      # Seleciona a primeira marca disponivel (marca desejada)
+      self.driver.find_element(By.CSS_SELECTOR, selectors_html.item_brand_selector).click()
+      time.sleep(1)
+
+      # Seleciona o seletor dos modelos
+      self.driver.find_element(By.CSS_SELECTOR, selectors_html.model_selector).click()
+      time.sleep(1)
+
+      # Filtro do modelo desejado
+      input = self.driver.find_element(By.CSS_SELECTOR, selectors_html.input_model_selector)
+      input.send_keys(modelo_base)
+      time.sleep(1)
+
+      # Pega todos os filhos da <ul> de modelos
+      ul_model_element = self.driver.find_element(By.CSS_SELECTOR, selectors_html.ul_model_selector)
+      ul_model_element_children = ul_model_element.find_elements(By.XPATH, "./*")
+
+      for index, item in enumerate(ul_model_element_children):
+        models_names.append((index, item.text))
     
     return models_names
 
@@ -145,15 +146,17 @@ class Vehicle_Search():
       if float_number != None:
         list_values.append((model[0], float_number))
 
-    print("\nlist_values")
-    util.print_formatted_json(list_values)
+    if verbose:
+      print("\nlist_values")
+      util.print_formatted_json(list_values)
 
     # Itens que podem ser removidos da resposta de consulta (para não termos valores repetidos)
     for remove_item in remove_list:
       try:
         list_values.remove(remove_item)
       except:
-        print("Elemento não está na lista para ser removido!")
+        if verbose:
+          print("Elemento não está na lista para ser removido!")
 
     if(len(list_values) > 1):
       maximum_value = max(list_values, key=lambda x:x[1])
@@ -163,7 +166,8 @@ class Vehicle_Search():
       values_with_indexes.append(maximum_value)
       values_with_indexes.append(minimum_value)
     else:
-      print("Não há elementos suficientes na lista 'list_values'")
+      if verbose:
+        print("Não há elementos suficientes na lista 'list_values'")
       values_with_indexes = list_values
 
     return values_with_indexes
@@ -184,6 +188,32 @@ class Vehicle_Search():
   def close(self):
     self.driver.close()
 
+  # filtro para os nomes dos modelos
+  def filter_model_names(self, modelo_base):
+    new_model_names = []
+
+    for model in self.models_names:
+      names_splitted = model[1].split(' ')
+      if verbose:
+        print(names_splitted)
+      words_splitted = modelo_base.split(' ')
+      if verbose:
+        print(words_splitted)
+
+      length = len(names_splitted)
+      name_exists = 0
+
+      for name_splitted in names_splitted:
+        for word_splitted in words_splitted:
+          if name_splitted.count(word_splitted):
+            name_exists += 1
+            break
+
+      if name_exists >= length:
+        new_model_names.append(model)
+    
+    self.models_names = new_model_names
+
   # Execution
   def execution(self):
     
@@ -193,11 +223,15 @@ class Vehicle_Search():
       self.mes_busca,
       self.ano_busca
     )
-    # util.print_formatted_json(self.models_names)
+    # self.filter_model_names(self.modelo_base)
 
-    values_with_indexes = []
-    for word in self.words:
-      values_with_indexes += self.get_larger_and_smaller_vehicle(word, values_with_indexes)
+    if len(self.models_names):
+      values_with_indexes = []
+      for word in self.words:
+        values_with_indexes += self.get_larger_and_smaller_vehicle(word, values_with_indexes)
 
-    new_list_names = self.get_names_from_indexes(values_with_indexes, self.models_names)
-    return new_list_names
+      new_list_names = self.get_names_from_indexes(values_with_indexes, self.models_names)
+      return new_list_names
+
+    else:
+      return []

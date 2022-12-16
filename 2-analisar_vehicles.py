@@ -1,7 +1,9 @@
 from Vehicle_Search import Vehicle_Search
 import util
 
-ano_considerado = 2022
+from settings import verbose
+
+ano_considerado = 2015
 mes_busca = "janeiro"
 ano_busca = 2015
 
@@ -40,9 +42,11 @@ for i, category in enumerate(vehicles["vehicles"]):
     vs.mes_busca = mes_busca
     vs.ano_busca = ano_busca
 
-    print("="*20)
-    print(vs.modelo_base)
-    print("="*20)
+    if verbose:
+      print("="*20)
+      print(vs.modelo_base)
+      print("="*20)
+
     vehicle_names = vs.execution()
 
     if len(vehicle_names) > 0:
@@ -51,16 +55,33 @@ for i, category in enumerate(vehicles["vehicles"]):
       vehicle_json["modelos_base"].append(vehicle_names)
 
       vehicles_to_search.append(vehicle_json)
-      util.print_formatted_json(vehicle_json)
+
+      if verbose:
+        util.print_formatted_json(vehicle_json)
 
       util.update_json(f"json/vehicles_to_search_{ano_considerado}.json", vehicles_to_search)
 
       vehicles_count += len(vehicle_names)
     else:
-      print("Veiculo descartado:")
-      print(f'{vehicle["marca"]}/{vehicle["modelo"]}')
+      if verbose:
+        print("Veiculo descartado:")
+        print(f'{vehicle["marca"]}/{vehicle["modelo"]}')
       vehicles_discarded_count += 1
+
+      try:
+        modelos_descartados = util.read_json(f"json/modelos_descartados_{ano_considerado}.json")
+      except:
+        modelos_descartados = []
+
+      modelo_descartado = {
+        "marca": vehicle["marca"],
+        "modelo": vehicle["modelo"]
+      }
+      modelos_descartados.append(modelo_descartado)
+      
+      util.update_json(f"json/modelos_descartados_{ano_considerado}.json", modelos_descartados)
   
-  print("Modelos considerados:", vehicles_count)
-  print("Modelos_base descartados:", vehicles_discarded_count)
+  if verbose:
+    print("Modelos considerados:", vehicles_count)
+    print("Modelos_base descartados:", vehicles_discarded_count)
   vs.close()

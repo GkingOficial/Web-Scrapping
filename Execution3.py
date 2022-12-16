@@ -1,4 +1,7 @@
 from MongoDBWeb import MongoDBWeb
+from settings import verbose
 
 bd = MongoDBWeb()
-bd.print_all()
+
+if verbose:
+  bd.print_all()

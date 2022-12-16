@@ -2,6 +2,7 @@ import util
 from MongoDBWeb import MongoDBWeb
 from web_scrapping import Web_Scrapping
 from settings import number_of_computers, computer_id, mini_batch
+from settings import verbose
 
 def get_vehicles_to_search():
   vehicles_to_search = util.read_json("json/vehicles_to_search.json")

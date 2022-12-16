@@ -1,6 +1,8 @@
-from MongoDBWeb import MongoDBWeb
 import util
+from MongoDBWeb import MongoDBWeb
+
 from settings import number_of_computers
+from settings import verbose
 
 vehicles_to_search = util.read_json("json/vehicles_to_search.json")
 length = len(vehicles_to_search)
@@ -11,4 +13,6 @@ bd = MongoDBWeb(
 )
 bd.delete_all()
 bd.add_indexes()
-bd.print_all()
+
+if verbose:
+  bd.print_all()

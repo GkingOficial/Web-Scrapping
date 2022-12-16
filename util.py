@@ -1,4 +1,5 @@
 import json
+from settings import verbose
 
 def read_json(path):
   with open(path) as jsonFile:

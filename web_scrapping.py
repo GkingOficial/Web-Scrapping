@@ -5,6 +5,7 @@ import selectors_html
 
 from MongoDBWeb import MongoDBWeb
 from settings import meses, anos_modelo, number_of_years
+from settings import verbose
 
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
@@ -59,7 +60,8 @@ class Web_Scrapping:
       else:
         self.boundaries_for_computers.append(boundary)
     
-    print("Boundaries for computers:", self.boundaries_for_computers)
+    if verbose:
+      print("Boundaries for computers:", self.boundaries_for_computers)
 
 
   # Configura inicialmente o web_scrapping
@@ -134,8 +136,9 @@ class Web_Scrapping:
 
           #====#
 
-          print(f"Ano_modelo: {ano_modelo_busca}")
-          print(f"{mes_busca}/{ano_busca}")
+          if verbose:
+            print(f"Ano_modelo: {ano_modelo_busca}")
+            print(f"{mes_busca}/{ano_busca}")
 
           if ano_modelo_busca == self.anos_modelo[0]:
             # Selecionar seletor dos anos-modelo
@@ -159,13 +162,15 @@ class Web_Scrapping:
           time.sleep(1)
         
           if(ul_year_model_element_children[0].get_attribute("class") == 'no-results'):
-            print(f"Quantidade de anos-modelo: 0")
+            if verbose:
+              print(f"Quantidade de anos-modelo: 0")
             vehicle_information["anos_modelo"][ano_modelo_busca].append({
               f"{mes_busca}/{ano_busca}": None
             })
             
           else:
-            print(f"Quantidade de anos-modelo: {len(ul_year_model_element_children)}")
+            if verbose:
+              print(f"Quantidade de anos-modelo: {len(ul_year_model_element_children)}")
 
             # Selecionar o ano-modelo desejado
             self.driver.find_element(By.CSS_SELECTOR, selectors_html.item_year_model_selector).click()
@@ -181,16 +186,19 @@ class Web_Scrapping:
               f"{mes_busca}/{ano_busca}": price
             })
 
-            print(f"Preço: {price}\n")
+            if verbose:
+              print(f"Preço: {price}\n")
 
           # Limpar pesquisa
           try:
             element = self.driver.find_element(By.CSS_SELECTOR, selectors_html.clear_search_selector)
             element.click()
-            print("Limpando a pesquisa!\n")
+            if verbose:
+              print("Limpando a pesquisa!\n")
             time.sleep(1)
           except ElementNotInteractableException:
-            print("Não foi possível limpar a pesquisa!\n")
+            if verbose:
+              print("Não foi possível limpar a pesquisa!\n")
 
           util.update_json("json/teste.json", vehicle_information)
 
@@ -252,7 +260,8 @@ class Web_Scrapping:
           self.indices_de_busca["modelo_base"] = None
           self.indices_de_busca["modelo_especifico"] = None
 
-    print(self.indices_de_busca)
+    if verbose:
+      print(self.indices_de_busca)
     self.update_indices_de_busca_BD()
 
     return indexes_OK
@@ -273,7 +282,8 @@ class Web_Scrapping:
 
     execution_times = 0
     
-    print(self.indices_de_busca)
+    if verbose:
+      print(self.indices_de_busca)
     while (self.check_indexes() and execution_times < mini_batch):
       vehicle_information = self.search_vehicle_information(
         
@@ -289,7 +299,8 @@ class Web_Scrapping:
 
         # ano_modelo
       )
-      util.print_formatted_json(vehicle_information)
+      if verbose:
+        util.print_formatted_json(vehicle_information)
 
       self.vehicles_with_price.append(vehicle_information)
       self.update_vehicles_with_price_json()

@@ -1,4 +1,6 @@
 
+verbose = False
+
 # NÃO PODEM MUDAR
 number_of_computers = 2
 number_of_years = 3

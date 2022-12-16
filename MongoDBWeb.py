@@ -1,9 +1,11 @@
-from pymongo import MongoClient
-import util
-from textwrap import indent
-from bson.json_util import dumps
 import pandas
+import util
+
+from bson.json_util import dumps
+
+from pymongo import MongoClient
 from settings import structure_columns
+from settings import verbose
 
 class MongoDBWeb:
   def __init__(self, vehicles_to_search_length=[], number_of_computers=0):
@@ -64,7 +66,8 @@ class MongoDBWeb:
     documents_list = self.collection.find({})
     for document in documents_list:
       document.pop('_id')
-      util.print_formatted_json(document)
+      if verbose:
+        util.print_formatted_json(document)
 
   def delete_all(self):
     self.collection.delete_many({})
