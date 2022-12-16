@@ -66,9 +66,9 @@ class Vehicle_Search():
     # Filtro da marca desejada
     self.driver.find_element(By.CSS_SELECTOR, selectors_html.input_brand_selector).send_keys(marca)
     time.sleep(1)
-
+    
     # Pega todos os filhos da <ul> de anos-modelo
-    ul_brand_model_element = self.driver.find_element(By.CSS_SELECTOR, "#selectMarcacarro_chosen > div:nth-child(2) > ul:nth-child(2)")
+    ul_brand_model_element = self.driver.find_element(By.CSS_SELECTOR, selectors_html.ul_brand_model_element_selector)
     ul_brand_model_element_children = ul_brand_model_element.find_elements(By.XPATH, "./*")
 
     models_names = []
