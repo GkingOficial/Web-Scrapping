@@ -69,13 +69,6 @@ class MongoDBWeb:
 
   def delete_all(self):
     self.collection.delete_many({})
-
-  def generate_json(self):
-    data = list(self.collection.find())
-    jsonData = dumps(data, indent = 2)
-    
-    with open('data1.json', 'w') as file:
-      file.write(jsonData)
       
   def generate_csv(self):
     value = self.collection.find_one({"site": "Fipe"})
