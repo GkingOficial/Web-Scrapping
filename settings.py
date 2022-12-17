@@ -3,7 +3,7 @@ verbose = True
 
 # NÃO PODEM MUDAR
 number_of_computers = 2
-number_of_years = 3
+number_of_years = 2
 
 # PODEM MUDAR
 
@@ -12,11 +12,12 @@ computer_id = 0
 mini_batch = 2
 
 meses = [
-  "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"
+  "janeiro", "fevereiro"
 ]
 
 anos_modelo = [
-  2020
+  2020,
+  2021
 ]
 
 structure_columns = ['Marca', 'Modelo', 'Ano-modelo']
