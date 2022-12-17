@@ -11,5 +11,12 @@ for vehicle_2022 in vehicles_to_search_2022:
     vehicles_to_search.append(vehicle_2022)
 
 util.update_json("json/vehicles_to_search.json", vehicles_to_search)
+print("Redundância retirada!")
 
 # Contagem da quantidade de modelos para busca
+modelos_base_count = 0
+for vehicle in vehicles_to_search:
+  for modelo_base in vehicle["modelos_base"]:
+      modelos_base_count += len(modelo_base)
+
+print(f"Teremos a busca de {modelos_base_count} modelos diferentes!")
