@@ -86,7 +86,7 @@ class Web_Scrapping:
     time.sleep(1)
 
   # Retorna um dicionário com os valores correspondentes
-  def search_vehicle_information(self, marca, modelo):
+  def search_vehicle_information(self, marca, modelo, anos_modelo_pesquisados):
 
     vehicle_information = {
       "marca": marca,
@@ -95,8 +95,10 @@ class Web_Scrapping:
     }
   
     for ano_modelo_busca in self.anos_modelo:
+
       anos = [(ano_modelo_busca + i) for i in range(number_of_years)]
       vehicle_information["anos_modelo"][ano_modelo_busca] = []
+
       for ano_busca in anos:
         for mes_busca in self.meses:
 
@@ -138,7 +140,7 @@ class Web_Scrapping:
 
           if verbose:
             print(f"Ano_modelo: {ano_modelo_busca}")
-            print(f"{mes_busca}/{ano_busca}")
+            print(f"Data de busca: {mes_busca}/{ano_busca}")
 
           if ano_modelo_busca == self.anos_modelo[0]:
             # Selecionar seletor dos anos-modelo
@@ -164,6 +166,7 @@ class Web_Scrapping:
           if(ul_year_model_element_children[0].get_attribute("class") == 'no-results'):
             if verbose:
               print(f"Quantidade de anos-modelo: 0")
+            
             vehicle_information["anos_modelo"][ano_modelo_busca].append({
               f"{mes_busca}/{ano_busca}": None
             })
@@ -182,6 +185,7 @@ class Web_Scrapping:
 
             # Pegar o preço do veiculo
             price = self.driver.find_element(By.CSS_SELECTOR, selectors_html.price_vehicle).text
+
             vehicle_information["anos_modelo"][ano_modelo_busca].append({
               f"{mes_busca}/{ano_busca}": price
             })
@@ -193,6 +197,7 @@ class Web_Scrapping:
           try:
             element = self.driver.find_element(By.CSS_SELECTOR, selectors_html.clear_search_selector)
             element.click()
+
             if verbose:
               print("Limpando a pesquisa!\n")
             time.sleep(1)
@@ -297,7 +302,8 @@ class Web_Scrapping:
           [self.indices_de_busca["modelo_base"]]
           [self.indices_de_busca["modelo_especifico"]],
 
-        # ano_modelo
+        # anos_modelo (Que já foram pesquisados e salvos no "modelo_atual.json")
+        util.read_json("json/modelo_atual.json")["anos_modelo"]
       )
       if verbose:
         util.print_formatted_json(vehicle_information)
