@@ -47,10 +47,10 @@
     "marca": "Volkswagen",
     "modelos_base": [
       [
-        "Golf 2.0/ 2.0 Mi Flex Comfortline Aut.",
-        "Golf Comfortline 1.4 TSI 140cv Aut.",
-        "Golf SILVER EDIT. 2.0 Mi T.Flex 8v Mec.",
-        "Golf Comfortline 1.4 TSI 140cv Mec."
+        "Gol (novo) 1.0 Mi Total Flex 8V 2p",
+        "Gol (novo) 1.0 Mi Total Flex 8V 4p",
+        "Gol (novo) 1.6 Mi Total Flex 8V 2p",
+        "Gol (novo) 1.6 Mi Total Flex 8V 4p"
       ]
     ]
   },
@@ -167,9 +167,7 @@
     "marca": "Chevrolet",
     "modelos_base": [
       [
-        "Monza Classic SE 2.0 /MPFI e EFI 2p e 4p",
         "Classic ADVANTAGE 1.0 VHC FlexPower 4p",
-        "Monza Classic/ SL/e/SR 1.8",
         "Classic Life/LS 1.0 VHC FlexP. 4p"
       ]
     ]

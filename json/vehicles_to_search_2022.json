@@ -25,10 +25,10 @@
     "marca": "Volkswagen",
     "modelos_base": [
       [
-        "Golf 2.0/ 2.0 Mi Flex Comfortline Aut.",
-        "Golf Comfortline 1.4 TSI 140cv Aut.",
-        "Golf SILVER EDIT. 2.0 Mi T.Flex 8v Mec.",
-        "Golf Comfortline 1.4 TSI 140cv Mec."
+        "Gol (novo) 1.0 Mi Total Flex 8V 2p",
+        "Gol (novo) 1.0 Mi Total Flex 8V 4p",
+        "Gol (novo) 1.6 Mi Total Flex 8V 2p",
+        "Gol (novo) 1.6 Mi Total Flex 8V 4p"
       ]
     ]
   },
@@ -273,10 +273,10 @@
     "marca": "Mercedes-Benz",
     "modelos_base": [
       [
-        "Classe R 500 L 5.5 V8 388cv Aut.",
-        "C-180 Kompressor Classic 1.6 16V Aut.",
-        "Classe A 190 Classic/ Spirit 1.9 Mec.",
-        "Classe A 190 Elegance 1.9 Mec."
+        "CLA-200 First Edition 1.6 TB 16V Aut.",
+        "CLA-200 Urban 1.6 TB 16V/Flex Aut.",
+        "CLA-200 Vision 1.6 TB 16V Flex Aut.",
+        "CLA-250 Sport 4MATIC 2.0 16V 211cv Aut."
       ]
     ]
   },

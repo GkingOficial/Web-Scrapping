@@ -11,3 +11,5 @@ for vehicle_2022 in vehicles_to_search_2022:
     vehicles_to_search.append(vehicle_2022)
 
 util.update_json("json/vehicles_to_search.json", vehicles_to_search)
+
+# Contagem da quantidade de modelos para busca

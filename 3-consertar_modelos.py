@@ -1,8 +1,9 @@
 import util
 from Vehicle_Search import Vehicle_Search
 
-marca = "Volkswagen"
-modelo_base = "Gol"
+marca = "Chevrolet"
+modelo_base = "Classic"
+
 mes_busca = "janeiro"
 ano_busca = 2015
 
