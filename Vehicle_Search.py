@@ -9,7 +9,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-from settings import verbose
+from settings import verbose, headless
 
 class Vehicle_Search():
   # Constructor
@@ -19,14 +19,9 @@ class Vehicle_Search():
     self.url = "https://veiculos.fipe.org.br/"
 
     option = Options()
-    option.headless = False
+    option.headless = headless
     self.driver = webdriver.Firefox(options=option)
     self.wait = WebDriverWait(self.driver, 10)
-
-    # self.marca = marca
-    # self.modelo_base = modelo_base
-    # self.mes_busca = mes_busca
-    # self.ano_busca = ano_busca
 
     self.words = ["Aut.", "Mec."]
 
@@ -46,8 +41,6 @@ class Vehicle_Search():
 
   # Listar todos os modelos que possuem aquele modelo_base [(0, nome_0)]
   def get_models_from_model_base(self, marca, modelo_base, mes_busca, ano_busca):
-
-    # print("AQUIII!")
 
     # Seleciona o input do periodo
     self.driver.find_element(By.CSS_SELECTOR, selectors_html.input_time_period_selector).send_keys(f"{mes_busca}/{ano_busca}")

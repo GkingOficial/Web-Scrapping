@@ -1,11 +1,9 @@
 import time
-import json
 import util
 import selectors_html
 
 from MongoDBWeb import MongoDBWeb
-from settings import meses, anos_modelo, number_of_years
-from settings import verbose
+from settings import meses, anos_modelo, number_of_years, verbose, headless
 
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
@@ -31,7 +29,7 @@ class Web_Scrapping:
     self.anos_modelo = anos_modelo
 
     option = Options()
-    option.headless = False
+    option.headless = headless
     self.driver = webdriver.Firefox(options=option)
     self.wait = WebDriverWait(self.driver, 10)
 
@@ -87,8 +85,6 @@ class Web_Scrapping:
 
   # Retorna os últimos valores pesquisados de: ano_modelo, ano de busca e mês de busca
   def get_updated_values_from_modelo_atual(self, anosModelo_DICTIONARY):
-    self.DEFAULT_VALUE = 0
-
     ano_modelo_KEY = self.DEFAULT_VALUE
     mes_ano_KEY = (None, self.DEFAULT_VALUE)
 
@@ -314,12 +310,6 @@ class Web_Scrapping:
     self.mongoWeb.update_indexes(self.computer_id, self.indices_de_busca)
 
 
-
-  def update_vehicles_with_price_json(self):
-    with open("json/vehicles_with_price.json", "w") as jsonFile:
-      json.dump(self.vehicles_with_price, jsonFile, indent=2)
-
-
   # Faz a execução do Web Scrapping
   def execution(self, mini_batch):
     self.setup()
@@ -353,8 +343,8 @@ class Web_Scrapping:
         util.print_formatted_json(vehicle_information)
 
       self.vehicles_with_price.append(vehicle_information)
-      self.update_vehicles_with_price_json()
 
+      util.update_json("json/vehicles_with_price.json", self.vehicles_with_price)
       util.update_json("json/modelo_atual.json", {})
       anosModelo_DICTIONARY = {}
 

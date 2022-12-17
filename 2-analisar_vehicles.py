@@ -10,16 +10,10 @@ ano_busca = 2015
 vehicles = util.read_json(f"json/vehicles_{ano_considerado}.json")
 
 categories_names = [
-  "Hatch compacto",
-  "Sedã compacto",
-  "Aventureiro compacto",
-  "SUV compacto",
-  "Familiar compacto",
-  "Picape compacta",
-  "SUV médio",
-  "Sedã médio",
-  "Picape compacta-média",
-  "Picape média"
+  category_name
+
+  for category_DICTIONARY in vehicles["vehicles"] 
+    for category_name in category_DICTIONARY
 ]
 
 try:

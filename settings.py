@@ -1,5 +1,6 @@
 
 verbose = True
+headless = False
 
 # NÃO PODEM MUDAR
 number_of_computers = 2

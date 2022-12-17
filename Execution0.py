@@ -1,8 +1,7 @@
 import util
 from MongoDBWeb import MongoDBWeb
 
-from settings import number_of_computers
-from settings import verbose
+from settings import number_of_computers, verbose
 
 vehicles_to_search = util.read_json("json/vehicles_to_search.json")
 length = len(vehicles_to_search)

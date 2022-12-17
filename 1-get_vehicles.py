@@ -1,20 +1,34 @@
 import time
-import json
+import util
 
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
-from settings import verbose
+from settings import verbose, headless
+
+
+ano = 2016
+
 
 # Faz o Web-Scrapping para algum site
 def web_scrapping():
   # Configuracoes do selenium
   option = Options()
-  option.headless = False
+  option.headless = headless
   driver = webdriver.Firefox(options=option)
 
   # Site onde sera o webscrapping
   url = "https://www.autoo.com.br/emplacamentos/"
+
+
+  #selectCatRank > select
+  #selectCatRank > select > option:nth-child(2)
+  #selectCatRank > select > option:nth-child(3)
+  #selectCatRank > select > option:nth-child(4)
+
+  #selectCatRank > select > option:nth-child(15)
+
+
 
 
   # Seletor da categoria
@@ -49,12 +63,18 @@ def web_scrapping():
     more_popular_element.click()
     time.sleep(1)
 
-    #selectCatRank > select > option:nth-child(9)
-
     # Seleciona o ano especifico
-    driver.find_element(By.CSS_SELECTOR, year_selector).click()
-    driver.find_element(By.CSS_SELECTOR, f'{year_selector} > option:nth-child(9)').click()
-    time.sleep(2)
+    seletor_do_ano = driver.find_element(By.CSS_SELECTOR, year_selector)
+    seletor_do_ano.click()
+
+    seletor_do_ano_children = seletor_do_ano.find_elements(By.XPATH, "./*")
+
+    for index, seletor_do_ano_child in enumerate(seletor_do_ano_children):
+      if str(ano) == seletor_do_ano_child.text:
+
+        driver.find_element(By.CSS_SELECTOR, f'{year_selector} > option:nth-child({index + 1})').click()
+        time.sleep(2)
+        break
 
     # Verifica os filhos da tabela
     table = driver.find_element(By.CSS_SELECTOR, table_selector)
@@ -82,11 +102,7 @@ values = web_scrapping()
 if verbose:
   print(values)
 
-json_object = json.dumps(values, indent=2, ensure_ascii=False)
-
 if verbose:
-  print(json_object)
+  util.print_formatted_json(values)
 
-file = open("json/vehicles_2015.json", "w", encoding="utf8")
-file.write(json_object)
-file.close()
+util.update_json(f"json/vehicles_{ano}.json", values)

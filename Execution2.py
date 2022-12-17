@@ -2,21 +2,17 @@ import util
 from MongoDBWeb import MongoDBWeb
 from web_scrapping import Web_Scrapping
 from settings import number_of_computers, computer_id, mini_batch
-from settings import verbose
 
 def get_vehicles_to_search():
   vehicles_to_search = util.read_json("json/vehicles_to_search.json")
-  # print(vehicles_to_search)
 
   return vehicles_to_search
 
 def get_indices_de_busca(vehicles_to_search):
   vehicles_to_search_length = len(vehicles_to_search)
-  # print(vehicles_to_search_length)
 
   bd = MongoDBWeb(vehicles_to_search_length, number_of_computers)
   indices_de_busca = bd.get_indexes(computer_id)
-  # print(indices_de_busca)
 
   return indices_de_busca
 
@@ -28,8 +24,6 @@ def run_web_scrapping(indices_de_busca, vehicles_to_search):
     number_of_computers=number_of_computers
   )
   web.get_vehicles_with_price()
-  # print(web.boundaries_for_computers)
-
   web.execution(mini_batch)
 
 def save_BD():
