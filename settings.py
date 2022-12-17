@@ -1,13 +1,15 @@
 
-verbose = False
+verbose = True
 
 # NÃO PODEM MUDAR
 number_of_computers = 2
 number_of_years = 3
 
 # PODEM MUDAR
-computer_id = 1
-mini_batch = 5
+
+# Começa em 0
+computer_id = 0
+mini_batch = 2
 
 meses = [
   "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"

@@ -30,7 +30,6 @@ class MongoDBWeb:
     for computer_id in range(self.number_of_computers):
       indices.append({
         "id": computer_id,
-        "ativo": False,
         "marca": computer_id * number_of_indexes,
         "modelo_base": 0,
         "modelo_especifico": 0
