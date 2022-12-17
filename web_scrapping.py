@@ -44,10 +44,10 @@ class Web_Scrapping:
     self.number_of_computers = number_of_computers
 
     self.mongoWeb = MongoDBWeb(self.vehicles_to_search_length, number_of_computers)
-
     self.update_boundaries()
+
+    self.DEFAULT_VALUE = 0
   
-  # PODE DAR PROBLEMA
   def update_boundaries(self):
     self.boundaries_for_computers = []
     number_of_indexes = int(self.vehicles_to_search_length / self.number_of_computers)
@@ -85,6 +85,28 @@ class Web_Scrapping:
     self.driver.find_element(By.CSS_SELECTOR, selectors_html.time_period_selector).click()
     time.sleep(1)
 
+  # Retorna os últimos valores pesquisados de: ano_modelo, ano de busca e mês de busca
+  def get_updated_values_from_modelo_atual(self, anosModelo_DICTIONARY):
+    self.DEFAULT_VALUE = 0
+
+    ano_modelo_KEY = self.DEFAULT_VALUE
+    mes_ano_KEY = (None, self.DEFAULT_VALUE)
+
+    # Extrair último ano_modelo pesquisado
+    for anoModelo in anosModelo_DICTIONARY:
+      ano_modelo_KEY = int(anoModelo)
+    print("ano_modelo_KEY:", ano_modelo_KEY)
+
+    # Extrair última data (mes/ano) pesquisada
+    if ano_modelo_KEY != self.DEFAULT_VALUE:
+      mes_ano_DICTIONARY = anosModelo_DICTIONARY[str(ano_modelo_KEY)][-1]
+      for mes_ano in mes_ano_DICTIONARY:
+        values = str(mes_ano).split('/')
+        mes_ano_KEY = (values[0], int(values[1]))
+    print("mes_ano_KEY:", mes_ano_KEY)
+
+    return ano_modelo_KEY, mes_ano_KEY
+
   # Retorna um dicionário com os valores correspondentes
   def search_vehicle_information(self, marca, modelo, anosModelo_DICTIONARY):
 
@@ -93,38 +115,14 @@ class Web_Scrapping:
       "modelo": modelo,
       "anos_modelo": anosModelo_DICTIONARY
     }
+    do_the_search = False
 
-    default_value = 0
-
-    ano_modelo_KEY = default_value
-    ano_KEY = default_value
-    mes_KEY = ""
-    continue_where_you_left_off = False
-
-    # Extrair anos_modelo_pesquisados
-    for ano_modelo_busca in self.anos_modelo:
-      for anoModelo in anosModelo_DICTIONARY:
-        ano_modelo_KEY = int(anoModelo)
-
-    print("ano_modelo_KEY:", ano_modelo_KEY)
-
-    # Extrair última data pesquisada
-    if ano_modelo_KEY == default_value:
-      continue_where_you_left_off = True
-    else:
-      for mes_ano_DICTIONARY in anosModelo_DICTIONARY[str(ano_modelo_KEY)]:
-        for mes_ano in mes_ano_DICTIONARY:
-          values = str(mes_ano).split('/')
-          
-          mes_KEY = values[0]
-          ano_KEY = int(values[1])
-
-    print("ano_KEY:", ano_KEY)
-    print("mes_KEY:", mes_KEY)
-
+    ano_modelo_KEY, mes_ano_KEY = self.get_updated_values_from_modelo_atual(anosModelo_DICTIONARY)
+    if ano_modelo_KEY == self.DEFAULT_VALUE:
+      do_the_search = True
   
     for ano_modelo_busca in self.anos_modelo:
-      if continue_where_you_left_off or (ano_modelo_busca >= ano_modelo_KEY):
+      if do_the_search or (ano_modelo_busca >= ano_modelo_KEY):
 
         anos = [(ano_modelo_busca + i) for i in range(number_of_years)]
         if (ano_modelo_busca > ano_modelo_KEY):
@@ -132,13 +130,13 @@ class Web_Scrapping:
 
         for ano_busca in anos:
 
-          if continue_where_you_left_off or (ano_busca >= ano_KEY):
+          if do_the_search or (ano_busca >= mes_ano_KEY[1]):
 
             for mes_busca in self.meses:
 
-              if continue_where_you_left_off or (mes_busca == mes_KEY):
+              if do_the_search or (mes_busca == mes_ano_KEY[0]):
 
-                if continue_where_you_left_off:
+                if do_the_search:
 
                   # Seleciona o input do periodo
                   self.driver.find_element(
@@ -247,7 +245,7 @@ class Web_Scrapping:
 
                   util.update_json("json/modelo_atual.json", vehicle_information)
 
-                continue_where_you_left_off = True
+                do_the_search = True
 
     return vehicle_information
 
@@ -285,7 +283,6 @@ class Web_Scrapping:
       return True
     return False
 
-  # PODE DAR PROBLEMA
   def update_indexes(self):
     self.indices_de_busca["modelo_especifico"] += 1
     indexes_OK = self.check_indexes()
