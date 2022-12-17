@@ -9,7 +9,6 @@ from settings import verbose, headless
 
 ano = 2016
 
-
 # Faz o Web-Scrapping para algum site
 def web_scrapping():
   # Configuracoes do selenium
@@ -19,17 +18,6 @@ def web_scrapping():
 
   # Site onde sera o webscrapping
   url = "https://www.autoo.com.br/emplacamentos/"
-
-
-  #selectCatRank > select
-  #selectCatRank > select > option:nth-child(2)
-  #selectCatRank > select > option:nth-child(3)
-  #selectCatRank > select > option:nth-child(4)
-
-  #selectCatRank > select > option:nth-child(15)
-
-
-
 
   # Seletor da categoria
   category_selector = "#formRankCat > select"

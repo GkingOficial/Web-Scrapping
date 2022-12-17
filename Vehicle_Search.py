@@ -183,29 +183,7 @@ class Vehicle_Search():
 
   # filtro para os nomes dos modelos
   def filter_model_names(self, modelo_base):
-    new_model_names = []
-
-    for model in self.models_names:
-      names_splitted = model[1].split(' ')
-      if verbose:
-        print(names_splitted)
-      words_splitted = modelo_base.split(' ')
-      if verbose:
-        print(words_splitted)
-
-      length = len(names_splitted)
-      name_exists = 0
-
-      for name_splitted in names_splitted:
-        for word_splitted in words_splitted:
-          if name_splitted.count(word_splitted):
-            name_exists += 1
-            break
-
-      if name_exists >= length:
-        new_model_names.append(model)
-    
-    self.models_names = new_model_names
+    self.models_names = self.models_names
 
   # Execution
   def execution(self):
@@ -216,7 +194,7 @@ class Vehicle_Search():
       self.mes_busca,
       self.ano_busca
     )
-    # self.filter_model_names(self.modelo_base)
+    self.filter_model_names(self.modelo_base)
 
     if len(self.models_names):
       values_with_indexes = []
