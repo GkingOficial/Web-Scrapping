@@ -9,11 +9,12 @@ number_of_years = 1
 # PODEM MUDAR
 
 # Começa em 0
-computer_id = 0
+computer_id = 1
 mini_batch = 2
 
 meses = [
-  "janeiro", "fevereiro"
+  "janeiro", "fevereiro", "março", "abril", "maio", "junho",
+  "julho", "agosto", "setembro", "outubro", "novembro"
 ]
 
 anos_modelo = [
