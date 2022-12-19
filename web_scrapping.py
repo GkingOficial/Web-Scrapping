@@ -203,6 +203,9 @@ class Web_Scrapping:
 
                   price = None
                   if(ul_year_model_element_children[0].get_attribute("class") != 'no-results'):
+                    if verbose:
+                      print(f"Quantidade de anos-modelo: {len(ul_year_model_element_children)}")
+
                     # Selecionar o ano-modelo desejado
                     self.driver.find_element(By.CSS_SELECTOR, selectors_html.item_year_model_selector).click()
                     time.sleep(1)
@@ -225,6 +228,7 @@ class Web_Scrapping:
                   try:
                     element = self.driver.find_element(By.CSS_SELECTOR, selectors_html.clear_search_selector)
                     element.click()
+
                     time.sleep(1)
                   except ElementNotInteractableException:
                     print('')
