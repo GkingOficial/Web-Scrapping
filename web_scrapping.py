@@ -202,13 +202,7 @@ class Web_Scrapping:
                   time.sleep(1)
 
                   price = None
-                  if(ul_year_model_element_children[0].get_attribute("class") == 'no-results'):
-                    if verbose:
-                      print(f"Quantidade de anos-modelo: 0")
-                  else:
-                    if verbose:
-                      print(f"Quantidade de anos-modelo: {len(ul_year_model_element_children)}")
-
+                  if(ul_year_model_element_children[0].get_attribute("class") != 'no-results'):
                     # Selecionar o ano-modelo desejado
                     self.driver.find_element(By.CSS_SELECTOR, selectors_html.item_year_model_selector).click()
                     time.sleep(1)
@@ -231,13 +225,9 @@ class Web_Scrapping:
                   try:
                     element = self.driver.find_element(By.CSS_SELECTOR, selectors_html.clear_search_selector)
                     element.click()
-
-                    if verbose:
-                      print("Limpando a pesquisa!\n")
                     time.sleep(1)
                   except ElementNotInteractableException:
-                    if verbose:
-                      print("Não foi possível limpar a pesquisa!\n")
+                    print('')
 
                   util.update_json("json/modelo_atual.json", vehicle_information)
 
