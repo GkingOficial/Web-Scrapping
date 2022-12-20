@@ -1,10 +1,15 @@
+absolute_path = ""
+
+vehicles_to_search_path = f"{absolute_path}json/vehicles_to_search.json"
+vehicles_with_price_path = f"{absolute_path}json/vehicles_with_price.json"
+modelo_atual_path = f"{absolute_path}json/modelo_atual.json"
 
 verbose = True
 headless = False
 
 # NÃO PODEM MUDAR
 number_of_computers = 5
-number_of_years = 1
+number_of_years = 3
 
 # PODEM MUDAR
 
