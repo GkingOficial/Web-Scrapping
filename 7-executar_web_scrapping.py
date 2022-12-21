@@ -1,10 +1,12 @@
 import util
 from MongoDBWeb import MongoDBWeb
 from web_scrapping import Web_Scrapping
+
 from settings import number_of_computers, computer_id, mini_batch
+from settings import vehicles_to_search_path, vehicles_with_price_path
 
 def get_vehicles_to_search():
-  vehicles_to_search = util.read_json("json/vehicles_to_search.json")
+  vehicles_to_search = util.read_json(vehicles_to_search_path)
 
   return vehicles_to_search
 
@@ -28,12 +30,12 @@ def run_web_scrapping(indices_de_busca, vehicles_to_search):
 
 def save_BD():
   bd = MongoDBWeb()
-  vehicles_with_price = util.read_json("json/vehicles_with_price.json")
+  vehicles_with_price = util.read_json(vehicles_with_price_path)
   
   bd.persistent(vehicles_with_price)
 
 def clean_vehicles_with_price():
-  util.clear_json("json/vehicles_with_price.json")
+  util.clear_json(vehicles_with_price_path)
   
 
 vehicles_to_search = get_vehicles_to_search()

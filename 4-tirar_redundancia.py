@@ -1,4 +1,5 @@
 import util
+from settings import vehicles_to_search_path
 
 anos = [ 2015, 2022 ]
 
@@ -10,7 +11,7 @@ for vehicle_2022 in vehicles_to_search_2022:
   if occurances == 0:
     vehicles_to_search.append(vehicle_2022)
 
-util.update_json("json/vehicles_to_search.json", vehicles_to_search)
+util.update_json(vehicles_to_search_path, vehicles_to_search)
 print("Redundância retirada!")
 
 # Contagem da quantidade de modelos para busca

@@ -4,6 +4,7 @@ import selectors_html
 
 from MongoDBWeb import MongoDBWeb
 from settings import meses, anos_modelo, number_of_years, verbose, headless
+from settings import vehicles_with_price_path, vehicles_to_search_path, modelo_atual_path
 
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
@@ -233,7 +234,7 @@ class Web_Scrapping:
                   except ElementNotInteractableException:
                     print('')
 
-                  util.update_json("json/modelo_atual.json", vehicle_information)
+                  util.update_json(modelo_atual_path, vehicle_information)
 
                 do_the_search = True
 
@@ -245,11 +246,11 @@ class Web_Scrapping:
   # Leitura de Json com veiculos para buscar
   # Identificador básico: [marca][modelo_base][modelo_especifico]
   def get_vehicles_to_search(self):
-    self.vehicles_to_search = util.read_json("json/vehicles_to_search.json")
+    self.vehicles_to_search = util.read_json(vehicles_to_search_path)
 
   # Leitura de Json com as informações dos veiculos
   def get_vehicles_with_price(self):
-    self.vehicles_with_price = util.read_json("json/vehicles_with_price.json")
+    self.vehicles_with_price = util.read_json(vehicles_with_price_path)
 
 
 
@@ -313,7 +314,7 @@ class Web_Scrapping:
       print(self.indices_de_busca)
 
     try:
-      anosModelo_DICTIONARY = util.read_json("json/modelo_atual.json")["anos_modelo"]
+      anosModelo_DICTIONARY = util.read_json(modelo_atual_path)["anos_modelo"]
     except:
       anosModelo_DICTIONARY = {}
 
@@ -338,8 +339,8 @@ class Web_Scrapping:
 
       self.vehicles_with_price.append(vehicle_information)
 
-      util.update_json("json/vehicles_with_price.json", self.vehicles_with_price)
-      util.update_json("json/modelo_atual.json", {})
+      util.update_json(vehicles_with_price_path, self.vehicles_with_price)
+      util.update_json(modelo_atual_path, {})
       anosModelo_DICTIONARY = {}
 
       execution_times += 1

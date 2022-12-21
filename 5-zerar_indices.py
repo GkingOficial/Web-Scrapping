@@ -2,8 +2,9 @@ import util
 from MongoDBWeb import MongoDBWeb
 
 from settings import number_of_computers, verbose
+from settings import vehicles_to_search_path
 
-vehicles_to_search = util.read_json("json/vehicles_to_search.json")
+vehicles_to_search = util.read_json(vehicles_to_search_path)
 length = len(vehicles_to_search)
 
 bd = MongoDBWeb(
