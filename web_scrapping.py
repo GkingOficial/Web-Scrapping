@@ -186,9 +186,12 @@ class Web_Scrapping:
                   if(ul_model_element_children[0].get_attribute("class") == 'no-results'):
                     
                     the_model_exists = False
-                    vehicle_information["anos_modelo"] = {}
 
-                    break
+                    # # Descomente se quiser desconsiderar as informações do modelo
+                    # # que não aparecer pelo menos uma vez na caixa de seleção na tabela FIPE
+                    # vehicle_information["anos_modelo"] = {}
+                    # break
+
                   else:
                     # Seleciona modelo desejado
                     self.driver.find_element(By.CSS_SELECTOR, selectors_html.item_model_selector).click()
