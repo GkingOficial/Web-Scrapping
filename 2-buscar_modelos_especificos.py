@@ -1,5 +1,6 @@
 from Vehicle_Search import Vehicle_Search
 import util
+
 from settings import verbose
 
 ano_considerado = 2015

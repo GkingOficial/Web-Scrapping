@@ -6,7 +6,8 @@ from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
 from settings import verbose, headless
 
-ano_considerado = 2015
+
+ano = 2016
 
 # Faz o Web-Scrapping para algum site
 def web_scrapping():
@@ -57,7 +58,7 @@ def web_scrapping():
     seletor_do_ano_children = seletor_do_ano.find_elements(By.XPATH, "./*")
 
     for index, seletor_do_ano_child in enumerate(seletor_do_ano_children):
-      if str(ano_considerado) == seletor_do_ano_child.text:
+      if str(ano) == seletor_do_ano_child.text:
 
         driver.find_element(By.CSS_SELECTOR, f'{year_selector} > option:nth-child({index + 1})').click()
         time.sleep(2)
@@ -92,4 +93,4 @@ if verbose:
 if verbose:
   util.print_formatted_json(values)
 
-util.update_json(f"json/vehicles_{ano_considerado}.json", values)
+util.update_json(f"json/vehicles_{ano}.json", values)
