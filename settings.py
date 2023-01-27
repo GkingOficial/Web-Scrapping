@@ -16,7 +16,7 @@ number_of_years = 3
 # PODEM MUDAR
 
 # Começa em 0
-computer_id = 5
+computer_id = 0
 mini_batch = 1
 
 meses = [

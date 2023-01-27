@@ -52,5 +52,6 @@ vehicles_to_search = get_vehicles_to_search()
 indices_de_busca = get_indices_de_busca(vehicles_to_search)
 
 run_web_scrapping(indices_de_busca, vehicles_to_search)
+
 save_BD()
 clean_vehicles_with_price()
