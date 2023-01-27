@@ -12,6 +12,3 @@ bd = MongoDBWeb(
   number_of_computers=number_of_computers
 )
 bd.add_indexes()
-
-if verbose:
-  bd.print_all()
