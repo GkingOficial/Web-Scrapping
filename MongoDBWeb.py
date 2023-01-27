@@ -2,7 +2,7 @@ import pandas
 import util
 
 from pymongo import MongoClient
-from settings import structure_columns, verbose
+from settings import structure_columns, verbose, incomplete_path, meses
 
 class MongoDBWeb:
   def __init__(self, vehicles_to_search_length=[], number_of_computers=0):
@@ -74,8 +74,8 @@ class MongoDBWeb:
     value.pop('site')
 
     structure = pandas.DataFrame(columns = structure_columns)
-    
-    for vehicle in value['vehicles']:
+    model_incomplete = []
+    for i, vehicle in enumerate(value['vehicles']):
       data = [vehicle['marca'], vehicle['modelo']]
       for year in vehicle['anos_modelo'].keys():
         data.append(year)
@@ -83,10 +83,23 @@ class MongoDBWeb:
           price = list(month.values())
           data.append(price[0])
 
-        new = pandas.DataFrame([data], columns = structure_columns)
-        structure = pandas.concat([structure, new])
+        if(len(data) < 39):
+          model_incomplete.append({
+            "marca": data[0],
+            "modelo": data[1],
+            "anos_modelo": {
+              f"{data[2]}": [
+                { f"{meses[j % 12]}/{int(data[2]) + (j // 12)}": data[j + 3] } 
+                for j in range(len(data[3:]))
+              ]
+            }
+          })
+        else:
+          new = pandas.DataFrame([data], columns = structure_columns)
+          structure = pandas.concat([structure, new])
 
-        structure.fillna(value = "NULL", axis = 1, inplace = True)
+          structure.fillna(value = "NULL", axis = 1, inplace = True)
+
         del data[2 : ]
-    
+        util.update_json(incomplete_path, model_incomplete)
     structure.to_csv("data.csv", index = False, header = True)
