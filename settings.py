@@ -5,6 +5,8 @@ vehicles_with_price_path = f"{absolute_path}json/vehicles_with_price.json"
 modelo_atual_path = f"{absolute_path}json/modelo_atual.json"
 incomplete_path = f"{absolute_path}json/incomplete.json"
 incomplete_to_search_path = f"{absolute_path}json/incomplete_to_search_path.json"
+data_path = f"{absolute_path}csv/data.csv"
+data_without_null_path = f"{absolute_path}csv/data_without_null.csv"
 
 verbose = True
 headless = False

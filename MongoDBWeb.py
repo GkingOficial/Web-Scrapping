@@ -4,6 +4,7 @@ import util
 from pymongo import MongoClient
 from settings import structure_columns, verbose
 from settings import incomplete_path, meses, incomplete_to_search_path
+from settings import data_path
 
 class MongoDBWeb:
   def __init__(self, vehicles_to_search_length=[], number_of_computers=0):
@@ -114,4 +115,4 @@ class MongoDBWeb:
         
         util.update_json(incomplete_to_search_path, incomplete_to_search)
         util.update_json(incomplete_path, model_incomplete)
-    structure.to_csv("data.csv", index = False, header = True)
+    structure.to_csv(data_path, index = False, header = True)
