@@ -2,7 +2,7 @@ import util
 from MongoDBWeb import MongoDBWeb
 from web_scrapping import Web_Scrapping
 
-from settings import number_of_computers, computer_id, mini_batch
+from settings import number_of_computers, computer_id
 from settings import vehicles_with_price_path, incomplete_to_search_path
 from settings import incomplete_path, modelo_atual_path
 
@@ -31,7 +31,7 @@ def run_web_scrapping(indices_de_busca, vehicles_to_search):
     number_of_computers=number_of_computers
   )
   web.get_vehicles_with_price()
-  web.execution(mini_batch)
+  web.execution(1)
   
   # Remover primeiro elemento de incomplete.json
   del incomplete[0]
