@@ -20,6 +20,10 @@ def get_indices_de_busca(vehicles_to_search):
   return indices_de_busca
 
 def run_web_scrapping(indices_de_busca, vehicles_to_search):
+  # Pegar o elemento de incomplete.json e passar para modelo atual
+  incomplete = util.read_json(incomplete_path)
+  util.update_json(modelo_atual_path, incomplete[0])
+
   web = Web_Scrapping(
     indices_de_busca=indices_de_busca,
     vehicles_to_search=vehicles_to_search,
@@ -28,12 +32,7 @@ def run_web_scrapping(indices_de_busca, vehicles_to_search):
   )
   web.get_vehicles_with_price()
   web.execution(mini_batch)
-
-  # AQUI
-  # Pegar o elemento de incomplete.json e passar para modelo atual
-  incomplete = util.read_json(incomplete_path)
-  util.update_json(modelo_atual_path, incomplete[0])
-
+  
   # Remover primeiro elemento de incomplete.json
   del incomplete[0]
   util.update_json(incomplete_path, incomplete)
