@@ -2,7 +2,8 @@ import pandas
 import util
 
 from pymongo import MongoClient
-from settings import structure_columns, verbose, incomplete_path, meses
+from settings import structure_columns, verbose
+from settings import incomplete_path, meses, incomplete_to_search_path
 
 class MongoDBWeb:
   def __init__(self, vehicles_to_search_length=[], number_of_computers=0):
@@ -75,6 +76,7 @@ class MongoDBWeb:
 
     structure = pandas.DataFrame(columns = structure_columns)
     model_incomplete = []
+    incomplete_to_search = []
     for i, vehicle in enumerate(value['vehicles']):
       data = [vehicle['marca'], vehicle['modelo']]
       for year in vehicle['anos_modelo'].keys():
@@ -84,7 +86,7 @@ class MongoDBWeb:
           data.append(price[0])
 
         if(len(data) < 39):
-          model_incomplete.append({
+          value_for_incomplete = {
             "marca": data[0],
             "modelo": data[1],
             "anos_modelo": {
@@ -93,7 +95,15 @@ class MongoDBWeb:
                 for j in range(len(data[3:]))
               ]
             }
-          })
+          }
+          
+          value_for_incomplete_to_search = {"marca": data[0], "modelos_base": [[data[1]]]}
+          if not value_for_incomplete_to_search in incomplete_to_search:
+            incomplete_to_search.append(value_for_incomplete_to_search)
+
+          if not value_for_incomplete in model_incomplete:
+            model_incomplete.append(value_for_incomplete)
+            
         else:
           new = pandas.DataFrame([data], columns = structure_columns)
           structure = pandas.concat([structure, new])
@@ -101,5 +111,7 @@ class MongoDBWeb:
           structure.fillna(value = "NULL", axis = 1, inplace = True)
 
         del data[2 : ]
+        
+        util.update_json(incomplete_to_search_path, incomplete_to_search)
         util.update_json(incomplete_path, model_incomplete)
     structure.to_csv("data.csv", index = False, header = True)

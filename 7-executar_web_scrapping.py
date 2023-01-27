@@ -3,10 +3,10 @@ from MongoDBWeb import MongoDBWeb
 from web_scrapping import Web_Scrapping
 
 from settings import number_of_computers, computer_id, mini_batch
-from settings import vehicles_to_search_path, vehicles_with_price_path
+from settings import vehicles_to_search_path, vehicles_with_price_path, incomplete_to_search_path
 
 def get_vehicles_to_search():
-  vehicles_to_search = util.read_json(vehicles_to_search_path)
+  vehicles_to_search = util.read_json(incomplete_to_search_path)
 
   return vehicles_to_search
 

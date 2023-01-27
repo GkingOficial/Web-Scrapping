@@ -4,6 +4,7 @@ vehicles_to_search_path = f"{absolute_path}json/vehicles_to_search.json"
 vehicles_with_price_path = f"{absolute_path}json/vehicles_with_price.json"
 modelo_atual_path = f"{absolute_path}json/modelo_atual.json"
 incomplete_path = f"{absolute_path}json/incomplete.json"
+incomplete_to_search_path = f"{absolute_path}json/incomplete_to_search_path.json"
 
 verbose = True
 headless = False
@@ -15,8 +16,8 @@ number_of_years = 3
 # PODEM MUDAR
 
 # Começa em 0
-computer_id = 1
-mini_batch = 8
+computer_id = 5
+mini_batch = 1
 
 meses = [
   "janeiro", "fevereiro", "março", "abril", "maio", "junho",
