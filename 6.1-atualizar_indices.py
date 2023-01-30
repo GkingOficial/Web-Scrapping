@@ -4,7 +4,7 @@ from settings import computer_id, verbose
 bd = MongoDBWeb()
 
 indices_de_busca = {
-  'marca': 0, 
+  'marca': 1, 
   'modelo_base': 0, 
   'modelo_especifico': 0
 }
