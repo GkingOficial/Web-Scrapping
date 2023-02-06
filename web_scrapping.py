@@ -96,7 +96,11 @@ class Web_Scrapping:
 
     # Extrair última data (mes/ano) pesquisada
     if ano_modelo_KEY != self.DEFAULT_VALUE:
-      mes_ano_DICTIONARY = anosModelo_DICTIONARY[str(ano_modelo_KEY)][-1]
+      try:
+        mes_ano_DICTIONARY = anosModelo_DICTIONARY[str(ano_modelo_KEY)][-1]
+      except:
+        mes_ano_DICTIONARY = { f"{meses[0]}/{ano_modelo_KEY}": None }
+
       for mes_ano in mes_ano_DICTIONARY:
         values = str(mes_ano).split('/')
         mes_ano_KEY = (values[0], int(values[1]))
@@ -186,18 +190,10 @@ class Web_Scrapping:
                   if(ul_model_element_children[0].get_attribute("class") == 'no-results'):
                     
                     the_model_exists = False
-
-                    # # Descomente se quiser desconsiderar as informações do modelo
-                    # # que não aparecer pelo menos uma vez na caixa de seleção na tabela FIPE
-                    # vehicle_information["anos_modelo"] = {}
-                    # break
-
                   else:
                     # Seleciona modelo desejado
                     self.driver.find_element(By.CSS_SELECTOR, selectors_html.item_model_selector).click()
                     time.sleep(1)
-
-                    #====#
 
                     if verbose:
                       print(f"Ano_modelo: {ano_modelo_busca}")

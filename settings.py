@@ -7,7 +7,7 @@ verbose = True
 headless = False
 
 # Começa em 0
-computer_id = 0
+computer_id = 2
 mini_batch = 1
 
 
